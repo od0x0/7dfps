@@ -1,0 +1,2 @@
+*.ai -crlf -diff
+*.psd -crlf -diff
