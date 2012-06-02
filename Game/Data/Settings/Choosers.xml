@@ -1,0 +1,65 @@
+<Choosers>
+<Chooser name="Chooser Example">
+<Frame on="true" title="Chooser Example" x="50" y="80" width="900" height="620" />
+<Key ok_id="120" cancel_id="122" />
+<Items>
+<Item id="110" x="80" y="300" width="400" height="150" clickable="true" file="Test_Image" />
+</Items>
+<Models>
+<Model id="111" x="700" y="500" model="JoeFoe" animate="WalkAttacking" rot="0,0,0" resize="0.6" />
+</Models>
+<Texts>
+<Text id="100" x="80" y="125" data="Choosers are used to display information or interactive UIs such{r}as inventory, conversation, stories, etc." size="25" just="left" />
+<Text id="101" x="500" y="190" data="Choosers text can be in different sizes and justification, and can have{r}{0}." size="20" just="center" />
+<Text id="102" x="80" y="540" data="Choosers can include clickable text, images, models, and buttons.  Each of{r}these can automatically go to new chooser page or trigger an event{r}in a script." size="20" just="left" />
+</Texts>
+<Buttons>
+<Button id="120" x="90" y="620" width="260" height="60" goto="Template Example Base" name="Goto Template Example" />
+<Button id="121" x="450" y="620" width="260" height="60" name="Callback To Script" />
+<Button id="122" x="800" y="620" width="130" height="60" name="Cancel" />
+</Buttons>
+</Chooser>
+<Chooser name="Template Example Base" template="Chooser Test">
+<Frame on="true" title="Chooser Example" x="50" y="80" width="900" height="620" />
+<Key ok_id="140" cancel_id="142" />
+<Items>
+</Items>
+<Models>
+</Models>
+<Texts>
+<Text id="130" x="80" y="125" data="Choosers can be templates for other choosers.  Template pieces,{r}like the text below, can easily be substituted without{r}creating a new chooser from scratch." size="25" just="left" />
+<Text id="131" x="80" y="230" data="Click a button to substitute text!" size="25" just="left" />
+</Texts>
+<Buttons>
+<Button id="140" x="90" y="620" width="250" height="60" goto="Template Example 1" name="Template 1" />
+<Button id="141" x="400" y="620" width="250" height="60" goto="Template Example 2" name="Template 2" />
+<Button id="142" x="800" y="620" width="130" height="60" name="Cancel" />
+</Buttons>
+</Chooser>
+<Chooser name="Template Example 1" template="Template Example Base">
+<Frame x="0" y="0" width="0" height="0" />
+<Key ok_id="-1" cancel_id="-1" />
+<Items>
+</Items>
+<Models>
+</Models>
+<Texts>
+<Text id="130" x="0" y="0" data="Text Substitution 1" size="20" just="left" />
+</Texts>
+<Buttons>
+</Buttons>
+</Chooser>
+<Chooser name="Template Example 2" template="Template Example Base">
+<Frame x="0" y="0" width="0" height="0" />
+<Key ok_id="-1" cancel_id="-1" />
+<Items>
+</Items>
+<Models>
+</Models>
+<Texts>
+<Text id="131" x="0" y="0" data="Text Substitution 2" size="20" just="left" />
+</Texts>
+<Buttons>
+</Buttons>
+</Chooser>
+</Choosers>

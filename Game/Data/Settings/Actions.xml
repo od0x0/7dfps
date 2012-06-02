@@ -1,0 +1,94 @@
+<Actions>
+<Action name="move_forward" display="Move Forward" show="true" />
+<Action name="move_backward" display="Move Backward" show="true" />
+<Action name="turn_left" display="Turn Left" show="true" />
+<Action name="turn_right" display="Turn Right" show="true" />
+<Action name="sidestep_left" display="Sidestep Left" show="true" />
+<Action name="sidestep_right" display="Sidestep Right" show="true" />
+<Action name="run" display="Run" show="true" />
+<Action name="jump" display="Jump" show="true" />
+<Action name="duck" display="Duck" show="true" />
+<Action name="up" display="Up" show="true" />
+<Action name="down" display="Down" show="true" />
+<Action name="enter-exit" display="Enter-Exit Vehicle" show="true" />
+<Action name="next_weapon" display="Next Weapon" show="true" />
+<Action name="previous_weapon" display="Previous Weapon" show="true" />
+<Action name="fire_0" display="Fire" show="true" />
+<Action name="fire_1" display="Alternate Fire 1" show="true" />
+<Action name="fire_2" display="Alternate Fire 2" show="true" />
+<Action name="fire_3" />
+<Action name="zoom" display="Scope On/Off" show="true" />
+<Action name="zoom_increase" display="Scope Zoom Increase" show="true" />
+<Action name="zoom_decrease" display="Scope Zoom Decrease" show="true" />
+<Action name="target_next" display="Next Homing Target" show="true" />
+<Action name="target_previous" display="Previous Homing Target" show="true" />
+<Action name="weapon_0" display="Hammer" show="true" />
+<Action name="weapon_1" display="Pistol" show="true" />
+<Action name="weapon_2" display="Ray Gun" show="true" />
+<Action name="weapon_3" display="Missile Launcher" show="true" />
+<Action name="weapon_4" display="Mines" show="true" />
+<Action name="weapon_5" display="Shock Gun" show="true" />
+<Action name="weapon_6" />
+<Action name="weapon_7" />
+<Action name="weapon_8" />
+<Action name="weapon_9" />
+<Action name="weapon_10" />
+<Action name="weapon_11" />
+<Action name="weapon_12" />
+<Action name="weapon_13" />
+<Action name="weapon_14" />
+<Action name="weapon_15" />
+<Action name="weapon_16" />
+<Action name="weapon_17" />
+<Action name="weapon_18" />
+<Action name="weapon_19" />
+<Action name="game_0" />
+<Action name="game_1" />
+<Action name="game_2" />
+<Action name="game_3" />
+<Action name="game_4" />
+<Action name="game_5" />
+<Action name="game_6" />
+<Action name="game_7" />
+<Action name="game_8" />
+<Action name="game_9" />
+<Action name="game_10" />
+<Action name="game_11" />
+<Action name="game_12" />
+<Action name="game_13" />
+<Action name="game_14" />
+<Action name="game_15" />
+<Action name="game_16" />
+<Action name="game_17" />
+<Action name="game_18" />
+<Action name="game_19" />
+<Action name="player_0" display="Throw Grenade" show="true" />
+<Action name="player_1" />
+<Action name="player_2" display="Fly Mode" show="true" />
+<Action name="player_3" display="Camera Mode" show="true" />
+<Action name="player_4" />
+<Action name="player_5" />
+<Action name="player_6" />
+<Action name="player_7" />
+<Action name="player_8" />
+<Action name="player_9" />
+<Action name="player_10" />
+<Action name="player_11" />
+<Action name="player_12" />
+<Action name="player_13" />
+<Action name="player_14" />
+<Action name="player_15" />
+<Action name="player_16" />
+<Action name="player_17" />
+<Action name="player_18" />
+<Action name="player_19" />
+<Action name="console" display="Console" show="true" />
+<Action name="menu" display="Menu" show="true" />
+<Action name="quick_save" display="Quick Save" show="true" />
+<Action name="save" display="Save Game" show="true" />
+<Action name="load" display="Load Game" show="true" />
+<Action name="message" display="Type Multiplayer Message" show="true" />
+<Action name="network_score" display="Show Network Score" show="true" />
+<Action name="debug_status" display="Print Debug Status" show="true" />
+<Action name="debug_screenshot" display="Screenshot" show="true" />
+</Actions>

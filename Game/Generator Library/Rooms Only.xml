@@ -1,0 +1,240 @@
+<auto_generate>
+
+	<size room_min_count="10" room_max_count="15" room_size="500" room_high="80" story_count="1" />
+	<option mirror="false" auto_connect="false" />
+	
+	<shapes>
+
+		<shape name="box" single_floor="false" spawn_spots="true">
+			<vertexes>
+				<vertex c2="0,0" />
+				<vertex c2="20,0" />
+				<vertex c2="40,0" />
+				<vertex c2="60,0" />
+				<vertex c2="80,0" />
+				<vertex c2="100,0" />
+				<vertex c2="100,20" />
+				<vertex c2="100,40" />
+				<vertex c2="100,60" />
+				<vertex c2="100,80" />
+				<vertex c2="100,100" />
+				<vertex c2="80,100" />
+				<vertex c2="60,100" />
+				<vertex c2="40,100" />
+				<vertex c2="20,100" />
+				<vertex c2="0,100" />
+				<vertex c2="0,80" />
+				<vertex c2="0,60" />
+				<vertex c2="0,40" />
+				<vertex c2="0,20" />
+			</vertexes>
+			<polys>
+				<poly v="19,0,1" floor="t" />
+				<poly v="4,5,6" floor="t" />
+				<poly v="19,1,2,18" floor="t" />
+				<poly v="6,4,3,7" floor="t" />
+				<poly v="18,2,3,7" floor="t" />
+				<poly v="18,7,8,17" floor="lr" />
+				<poly v="17,8,12,13" floor="b" />
+				<poly v="17,13,14,16" floor="b" />
+				<poly v="12,8,9,11" floor="b" />
+				<poly v="11,9,10" floor="b" />
+				<poly v="14,16,15" floor="b" />
+			</polys>
+			<connectors>
+				<connector v="1,2" prefer="false" />
+				<connector v="2,3" prefer="false" />
+				<connector v="3,4" prefer="false" />
+				<connector v="6,7" prefer="false" />
+				<connector v="7,8" prefer="false" />
+				<connector v="8,9" prefer="false" />
+				<connector v="11,12" prefer="false" />
+				<connector v="12,13" prefer="false" />
+				<connector v="13,14" prefer="false" />
+				<connector v="16,17" prefer="false" />
+				<connector v="17,18" prefer="false" />
+				<connector v="18,19" prefer="false" />
+			</connectors>
+		</shape>
+
+		<shape name="box slant corner" single_floor="false" spawn_spots="true">
+			<vertexes>
+				<vertex c2="20,0" />
+				<vertex c2="40,0" />
+				<vertex c2="60,0" />
+				<vertex c2="80,0" />
+				<vertex c2="100,20" />
+				<vertex c2="100,40" />
+				<vertex c2="100,60" />
+				<vertex c2="100,80" />
+				<vertex c2="80,100" />
+				<vertex c2="60,100" />
+				<vertex c2="40,100" />
+				<vertex c2="20,100" />
+				<vertex c2="0,80" />
+				<vertex c2="0,60" />
+				<vertex c2="0,40" />
+				<vertex c2="0,20" />
+			</vertexes>
+			<polys>
+				<poly v="15,0,1" floor="t" />
+				<poly v="2,3,4" floor="t" />
+				<poly v="7,8,9" floor="b" />
+				<poly v="10,11,12" floor="b" />
+				<poly v="15,1,2,4" floor="t" />
+				<poly v="14,15,4,5" floor="t" />
+				<poly v="14,5,6,13" floor="lr" />
+				<poly v="13,6,7,12" floor="b" />
+				<poly v="12,7,9,10" floor="b" />
+			</polys>
+			<connectors>
+				<connector v="1,2" prefer="false" />
+				<connector v="5,6" prefer="false" />
+				<connector v="9,10" prefer="false" />
+				<connector v="13,14" prefer="false" />
+			</connectors>
+		</shape>
+
+		<shape name="clover" single_floor="false" spawn_spots="true">
+			<vertexes>
+				<vertex c2="0,40" />
+				<vertex c2="10,25" />
+				<vertex c2="20,20" />
+				<vertex c2="25,10" />
+				<vertex c2="40,0" />
+				<vertex c2="60,0" />
+				<vertex c2="75,10" />
+				<vertex c2="80,20" />
+				<vertex c2="90,25" />
+				<vertex c2="100,40" />
+				<vertex c2="100,60" />
+				<vertex c2="90,75" />
+				<vertex c2="80,80" />
+				<vertex c2="75,90" />
+				<vertex c2="60,100" />
+				<vertex c2="40,100" />
+				<vertex c2="25,90" />
+				<vertex c2="20,80" />
+				<vertex c2="10,75" />
+				<vertex c2="0,60" />
+			</vertexes>
+			<polys>
+				<poly v="3,4,5,6" floor="t" />
+				<poly v="2,3,6,7" floor="t" />
+				<poly v="1,2,7,8" floor="t" />
+				<poly v="0,1,8,9" floor="t" />
+				<poly v="19,0,9,10" floor="lr" />
+				<poly v="18,19,10,11" floor="b" />
+				<poly v="17,18,11,12" floor="b" />
+				<poly v="16,17,12,13" floor="b" />
+				<poly v="15,16,13,14" floor="b" />
+			</polys>
+			<connectors>
+				<connector v="4,5" prefer="false" />
+				<connector v="9,10" prefer="false" />
+				<connector v="14,15" prefer="false" />
+				<connector v="19,0" prefer="false" />
+			</connectors>
+		</shape>
+
+		<shape name="star" single_floor="false" spawn_spots="true">
+			<vertexes>
+				<vertex c2="0,0" />
+				<vertex c2="20,0" />
+				<vertex c2="30,10" />
+				<vertex c2="40,0" />
+				<vertex c2="60,0" />
+				<vertex c2="70,10" />
+				<vertex c2="80,0" />
+				<vertex c2="100,0" />
+				<vertex c2="100,20" />
+				<vertex c2="90,30" />
+				<vertex c2="100,40" />
+				<vertex c2="100,60" />
+				<vertex c2="90,70" />
+				<vertex c2="100,80" />
+				<vertex c2="100,100" />
+				<vertex c2="80,100" />
+				<vertex c2="70,90" />
+				<vertex c2="60,100" />
+				<vertex c2="40,100" />
+				<vertex c2="30,90" />
+				<vertex c2="20,100" />
+				<vertex c2="0,100" />
+				<vertex c2="0,80" />
+				<vertex c2="10,70" />
+				<vertex c2="0,60" />
+				<vertex c2="0,40" />
+				<vertex c2="10,30" />
+				<vertex c2="0,20" />
+			</vertexes>
+			<polys>
+				<poly v="27,0,1" floor="t" />
+				<poly v="1,2,26,27" floor="t" />
+				<poly v="6,7,8" floor="t" />
+				<poly v="6,8,9,5" floor="t" />
+				<poly v="13,14,15" floor="b" />
+				<poly v="12,13,15,16" floor="b" />
+				<poly v="20,21,22" floor="b" />
+				<poly v="19,20,22,23" floor="b" />
+				<poly v="2,3,4,5" floor="t" />
+				<poly v="9,10,11,12" floor="lr" />
+				<poly v="16,17,18,19" floor="b" />
+				<poly v="23,24,25,26" floor="lr" />
+				<poly v="2,5,9,26" floor="t" />
+				<poly v="26,9,12,23" floor="lr" />
+				<poly v="23,12,16,19" floor="b" />
+			</polys>
+			<connectors>
+				<connector v="3,4" prefer="false" />
+				<connector v="10,11" prefer="false" />
+				<connector v="17,18" prefer="false" />
+				<connector v="24,25" prefer="false" />
+			</connectors>
+		</shape>
+
+		<shape name="circle" single_floor="false" spawn_spots="true">
+			<vertexes>
+ 				<vertex c2="40,0" />
+ 				<vertex c2="60,0" />
+ 				<vertex c2="75,7" />
+ 				<vertex c2="85,15" />
+ 				<vertex c2="93,26" />
+ 				<vertex c2="100,40" />
+ 				<vertex c2="100,60" />
+ 				<vertex c2="93,75" />
+ 				<vertex c2="85,85" />
+ 				<vertex c2="75,93" />
+ 				<vertex c2="60,100" />
+ 				<vertex c2="40,100" />
+ 				<vertex c2="26,93" />
+ 				<vertex c2="15,85" />
+ 				<vertex c2="7,74" />
+ 				<vertex c2="0,60" />
+ 				<vertex c2="0,40" />
+ 				<vertex c2="7,26" />
+ 				<vertex c2="15,15" />
+ 				<vertex c2="25,7" />
+			</vertexes>
+			<polys>
+				<poly v="19,0,1,2" floor="t" />
+				<poly v="18,19,2,3" floor="t" />
+				<poly v="17,18,3,4" floor="t" />
+				<poly v="16,17,4,5" floor="t" />
+				<poly v="15,16,5,6" floor="lr" />
+				<poly v="14,15,6,7" floor="b" />
+				<poly v="13,14,7,8" floor="b" />
+				<poly v="12,13,8,9" floor="b" />
+				<poly v="11,12,9,10" floor="b" />
+			</polys>
+			<connectors>
+				<connector v="0,1" prefer="false" />
+				<connector v="5,6" prefer="false" />
+				<connector v="10,11" prefer="false" />
+				<connector v="15,16" prefer="false" />
+			</connectors>
+		</shape> 
+
+	</shapes>
+
+</auto_generate>

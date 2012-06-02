@@ -1,0 +1,154 @@
+<auto_generate>
+
+	<size room_min_count="10" room_max_count="15" room_size="500" room_high="80" story_count="1" />
+	<option mirror="false" auto_connect="true" />
+	
+	<shapes>
+
+		<shape name="plus" single_floor="true" spawn_spots="false">
+			<vertexes>
+				<vertex c2="40,40" />
+				<vertex c2="40,0" />
+				<vertex c2="60,0" />
+				<vertex c2="60,40" />
+				<vertex c2="100,40" />
+				<vertex c2="100,60" />
+				<vertex c2="60,60" />
+				<vertex c2="60,100" />
+				<vertex c2="40,100" />
+				<vertex c2="40,60" />
+				<vertex c2="0,60" />
+				<vertex c2="0,40" />
+			</vertexes>
+			<polys>
+				<poly v="0,1,2,3" />
+				<poly v="3,4,5,6" />
+				<poly v="6,7,8,9" />
+				<poly v="9,10,11,0" />
+				<poly v="0,3,6,9" />
+			</polys>
+			<connectors>
+				<connector v="1,2" prefer="true" />
+				<connector v="4,5" prefer="true" />
+				<connector v="7,8" prefer="true" />
+				<connector v="10,11" prefer="true" />
+			</connectors>
+		</shape>
+
+		<shape name="x" single_floor="true" spawn_spots="false">
+			<vertexes>
+				<vertex c2="0,0" />
+				<vertex c2="20,0" />
+				<vertex c2="50,30" />
+				<vertex c2="80,0" />
+				<vertex c2="100,0" />
+				<vertex c2="100,20" />
+				<vertex c2="70,50" />
+				<vertex c2="100,80" />
+				<vertex c2="100,100" />
+				<vertex c2="80,100" />
+				<vertex c2="50,70" />
+				<vertex c2="20,100" />
+				<vertex c2="0,100" />
+				<vertex c2="0,80" />
+				<vertex c2="30,50" />
+				<vertex c2="0,20" />
+			</vertexes>
+			<polys>
+				<poly v="15,0,1" />
+				<poly v="15,1,2,14" />
+				<poly v="3,4,5" />
+				<poly v="3,5,6,2" />
+				<poly v="7,8,9" />
+				<poly v="7,9,10,6" />
+				<poly v="11,12,13" />
+				<poly v="11,13,14,10" />
+				<poly v="2,6,10,14" />
+			</polys>
+			<connectors>
+				<connector v="0,1" prefer="true" />
+				<connector v="3,4" prefer="true" />
+				<connector v="4,5" prefer="true" />
+				<connector v="7,8" prefer="true" />
+				<connector v="8,9" prefer="true" />
+				<connector v="11,12" prefer="true" />
+				<connector v="12,13" prefer="true" />
+				<connector v="15,0" prefer="true" />
+			</connectors>
+		</shape>
+
+		<shape name="curve 1" single_floor="true" spawn_spots="false">
+			<vertexes>
+				<vertex c2="0,80" />
+				<vertex c2="20,80" />
+				<vertex c2="40,80" />
+				<vertex c2="80,40" />
+				<vertex c2="80,20" />
+				<vertex c2="80,0" />
+				<vertex c2="100,0" />
+				<vertex c2="100,20" />
+				<vertex c2="100,40" />
+				<vertex c2="100,60" />
+				<vertex c2="100,80" />
+				<vertex c2="80,100" />
+				<vertex c2="60,100" />
+				<vertex c2="40,100" />
+				<vertex c2="20,100" />
+				<vertex c2="0,100" />
+			</vertexes>
+			<polys>
+				<poly v="0,1,14,15" />
+				<poly v="1,2,13,14" />
+				<poly v="2,12,13" />
+				<poly v="2,11,12" />
+				<poly v="2,3,10,11" />
+				<poly v="3,9,10" />
+				<poly v="3,8,9" />
+				<poly v="3,4,7,8" />
+				<poly v="4,5,6,7" />
+ 			</polys>
+			<connectors>
+				<connector v="15,0" prefer="true" />
+				<connector v="5,6" prefer="true" />
+			</connectors>
+		</shape>
+
+		<shape name="curve 2" single_floor="true" spawn_spots="false">
+			<vertexes>
+				<vertex c2="100,20" />
+				<vertex c2="80,20" />
+				<vertex c2="60,20" />
+				<vertex c2="20,60" />
+				<vertex c2="20,80" />
+				<vertex c2="20,100" />
+				<vertex c2="0,100" />
+				<vertex c2="0,80" />
+				<vertex c2="0,60" />
+				<vertex c2="0,40" />
+				<vertex c2="0,20" />
+				<vertex c2="20,0" />
+				<vertex c2="40,0" />
+				<vertex c2="60,0" />
+				<vertex c2="80,0" />
+				<vertex c2="100,0" />
+			</vertexes>
+			<polys>
+				<poly v="0,1,14,15" />
+				<poly v="1,2,13,14" />
+				<poly v="2,12,13" />
+				<poly v="2,11,12" />
+				<poly v="2,3,10,11" />
+				<poly v="3,9,10" />
+				<poly v="3,8,9" />
+				<poly v="3,4,7,8" />
+				<poly v="4,5,6,7" />
+ 			</polys>
+			<connectors>
+				<connector v="15,0" prefer="true" />
+				<connector v="5,6" prefer="true" />
+			</connectors>
+		</shape>
+
+	</shapes>
+
+</auto_generate>

@@ -1,0 +1,59 @@
+<Multiplayer>
+<Settings on="true" />
+<Games>
+<Game type="Death Match">
+<Script player="Player" bot="Bot DM" />
+<Spawn spot_name="Spawn" />
+<Score kill="1" death="0" suicide="-1" goal="1" />
+</Game>
+<Game type="Team Death Match" use_teams="true">
+<Script player="Player" bot="Bot DM" />
+<Spawn spot_name="Spawn" force_team_spot="true" />
+<Score kill="1" death="0" suicide="-1" goal="1" />
+</Game>
+<Game type="Co-Op" monsters="true">
+<Script player="Player" bot="Bot Coop" />
+<Spawn spot_name="Co-Op" />
+<Score kill="1" death="0" suicide="-1" goal="1" />
+</Game>
+<Game type="CTF" use_teams="true">
+<Script player="Player CTF" bot="Bot CTF" />
+<Spawn spot_name="Spawn" force_team_spot="true" />
+<Score kill="0" death="0" suicide="0" goal="1" />
+</Game>
+<Game type="King of the Hill" use_teams="true">
+<Script player="Player KotH" bot="Bot KotH" />
+<Spawn spot_name="Spawn" force_team_spot="true" />
+<Score kill="0" death="0" suicide="0" goal="1" />
+</Game>
+</Games>
+<Options>
+<Option name="Instagib" description="Instagib" />
+<Option name="WeaponStay" description="Weapons remain after pickup" />
+<Option name="NoWaitFire" description="Fast firing weapons" />
+<Option name="BigHead" description="Big Heads" />
+</Options>
+<Characters>
+<Character name="Slacker" model="Player" parameter="normal" interface_resize="1" interface_offset="0,0,0" />
+<Character name="Skeleton" model="PlayerJoeFoe" parameter="slow" interface_resize="0.7" interface_offset="-150,-100,0" />
+</Characters>
+<Bots>
+<Bot name="Caesar" />
+<Bot name="Augustus" />
+<Bot name="Tiberius" />
+<Bot name="Caligula" />
+<Bot name="Claudius" />
+<Bot name="Nero" />
+<Bot name="Galba" />
+<Bot name="Otho" />
+<Bot name="Vitellius" />
+<Bot name="Vespasian" />
+<Bot name="Titus" />
+<Bot name="Domitian" />
+<Bot name="Nerva" />
+<Bot name="Trajan" />
+<Bot name="Hadrian" />
+<Bot name="Pius" />
+</Bots>
+<News host="www.klinksoftware.net" port="80" url="/dim3/demo_news.txt" />
+</Multiplayer>

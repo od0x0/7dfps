@@ -1,0 +1,42 @@
+<Rings>
+<Ring name="Ray Ring">
+<Settings time="500" additive="true" />
+<Image file="ring_plain" count="1" time="200" />
+<Outer start="200" end="800" />
+<Inner start="10" end="590" />
+<Rotate x="0" y="0" z="0" x_add="0" y_add="0" z_add="0" x_accel="0" y_accel="0" z_accel="0" />
+<Move x="0" y="0" z="0" />
+<Color start="FFFFFF" end="555555" team="true" />
+<Alpha start="0.5" end="0.01" />
+</Ring>
+<Ring name="Shock Cube Trail">
+<Settings time="1000" additive="true" />
+<Image file="ring_balls" count="4" time="200" loop="true" />
+<Outer start="200" end="1500" />
+<Inner start="50" end="1200" />
+<Rotate x="0" y="0" z="0" x_add="0" y_add="0.5" z_add="0" x_accel="0" y_accel="0.5" z_accel="0" />
+<Move x="0" y="0" z="0" />
+<Color start="FFAA33" end="FF0000" />
+<Alpha start="0.7" end="0.01" />
+</Ring>
+<Ring name="JoeFoe Explode Ring">
+<Settings time="2300" />
+<Image file="ring_plain" count="1" time="200" />
+<Outer start="300" end="10000" />
+<Inner start="0" end="8000" />
+<Rotate x="90" y="0" z="10" x_add="0" y_add="0" z_add="0" x_accel="0" y_accel="0" z_accel="0" />
+<Move x="0" y="0" z="0" />
+<Color start="33FF00" end="00AA00" />
+<Alpha start="0.9" end="0.01" />
+</Ring>
+<Ring name="Teleport Ring">
+<Settings time="300" />
+<Image file="ring_plain" count="1" time="200" />
+<Outer start="500" end="2000" />
+<Inner start="0" end="1500" />
+<Rotate x="90" y="0" z="0" x_add="0" y_add="0" z_add="0" x_accel="0" y_accel="0" z_accel="0" />
+<Move x="0" y="0" z="0" />
+<Color start="33FF33" end="00AA00" />
+<Alpha start="0.5" end="0.01" />
+</Ring>
+</Rings>

@@ -1,0 +1,9 @@
+<Halos>
+<Halo name="Halo Big">
+<Image file="halo_big" />
+<Distance min="3000" max="75000" />
+<Size min="500" max="200" />
+<Alpha min="0.8" max="0.05" />
+<Option no_clip_self="true" />
+</Halo>
+</Halos>

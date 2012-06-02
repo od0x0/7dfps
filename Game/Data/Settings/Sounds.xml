@@ -1,0 +1,106 @@
+<Sounds>
+<Sound name="Splash">
+<Wave file="Splash" />
+<Distance min="1500" max="30000" />
+</Sound>
+<Sound name="JoeFoe Growl">
+<Wave file="Bear Growl" />
+<Distance min="1500" max="30000" />
+</Sound>
+<Sound name="JoeFoe Hurt">
+<Wave file="Bear Hurt" />
+<Distance min="1500" max="30000" />
+</Sound>
+<Sound name="Fireball Form">
+<Wave file="Fireball Form" />
+<Distance min="1500" max="30000" />
+</Sound>
+<Sound name="Hammer Swing">
+<Wave file="Hammer Swing" />
+<Distance min="1500" max="30000" />
+</Sound>
+<Sound name="Click">
+<Wave file="Click" />
+<Distance min="1500" max="30000" />
+</Sound>
+<Sound name="Shell Fire">
+<Wave file="Shell Fire" />
+<Distance min="1500" max="30000" />
+</Sound>
+<Sound name="Gun Fire">
+<Wave file="Gun Fire" />
+<Distance min="1500" max="30000" />
+</Sound>
+<Sound name="Shock">
+<Wave file="Shock" />
+<Distance min="1500" max="30000" />
+</Sound>
+<Sound name="Got Ammo">
+<Wave file="Got Ammo" />
+<Distance min="1500" max="30000" />
+</Sound>
+<Sound name="Crash">
+<Wave file="Crash" />
+<Distance min="1500" max="30000" />
+</Sound>
+<Sound name="Explosion">
+<Wave file="Explosion" />
+<Distance min="2500" max="30000" />
+</Sound>
+<Sound name="Squeak">
+<Wave file="Squeak" />
+<Distance min="1500" max="15000" />
+</Sound>
+<Sound name="Liquid">
+<Wave file="Liquid" />
+<Distance min="2500" max="20000" />
+</Sound>
+<Sound name="Crickets">
+<Wave file="Crickets" />
+<Distance min="2500" max="40000" />
+</Sound>
+<Sound name="Wind">
+<Wave file="Wind" />
+<Distance min="2500" max="40000" />
+</Sound>
+<Sound name="Fire">
+<Wave file="Fire" />
+<Distance min="10" max="15000" />
+</Sound>
+<Sound name="Rain">
+<Wave file="Rain" />
+<Distance min="2500" max="40000" />
+</Sound>
+<Sound name="Door">
+<Wave file="Door" />
+<Distance min="1000" max="30000" />
+</Sound>
+<Sound name="Lift">
+<Wave file="Lift" />
+<Distance min="1000" max="30000" />
+</Sound>
+<Sound name="Car Engine">
+<Wave file="Car Engine" />
+<Distance min="2500" max="40000" />
+</Sound>
+<Sound name="Car Door">
+<Wave file="Car Door" />
+<Distance min="5000" max="10000" />
+</Sound>
+<Sound name="Car Horn">
+<Wave file="Car Horn" />
+<Distance min="2500" max="40000" />
+</Sound>
+<Sound name="Teleport">
+<Wave file="Teleport" />
+<Distance min="1500" max="30000" />
+</Sound>
+<Sound name="Scream">
+<Wave file="Scream" />
+<Distance min="10" max="10000" />
+</Sound>
+<Sound name="Point">
+<Wave file="Point" />
+<Distance min="10" max="10000" />
+</Sound>
+</Sounds>

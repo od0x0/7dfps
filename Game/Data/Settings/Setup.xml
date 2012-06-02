@@ -1,0 +1,85 @@
+<Setup>
+<Screen_Width value="-1" />
+<Screen_Height value="-1" />
+<Lock_FPS_Refresh />
+<Gamma value="0.0" />
+<Texture_Compression />
+<Anisotropic_Mode value="3" />
+<Texture_Quality_Mode value="1" />
+<Mipmap_Mode value="2" />
+<Mipmap_Card_Generated value="true" />
+<Bump_Mode value="2" />
+<Specular_Mapping value="true" />
+<Glow_Mapping value="true" />
+<Halo value="true" />
+<Diffuse_Lighting value="true" />
+<FSAA_Mode value="0" />
+<Light_Mode value="2" />
+<Curve_Mode value="2" />
+<Fog_Mode value="1" />
+<Mark value="true" />
+<Shadow_Mode value="2" />
+<Sound_Volume value="0.5" />
+<Music_On value="true" />
+<Music_Volume value="0.45" />
+<Always_Run value="true" />
+<Toggle_Run />
+<Invert_Look />
+<Mouse_X_Speed value="0.03" />
+<Mouse_Y_Speed value="0.03" />
+<Mouse_X_Acceleration value="0.6" />
+<Mouse_Y_Acceleration value="0.6" />
+<Mouse_Smooth value="true" />
+<Network_Name value="Player" />
+<Network_Team value="1" />
+<Network_Timeout_Mode value="1" />
+<Debug_Console value="true" />
+<Window value="true" />
+<Window_Editor value="true" />
+<Actions>
+<Action name="move_forward" attach_0="upArrow" attach_1="W" attach_2="Keypad8" attach_3="MouseRight" />
+<Action name="move_backward" attach_0="DownArrow" attach_1="S" attach_2="Keypad5" />
+<Action name="turn_left" attach_0="LeftArrow" attach_1="Keypad4" />
+<Action name="turn_right" attach_1="RightArrow" />
+<Action name="sidestep_left" attach_0="A" />
+<Action name="sidestep_right" attach_0="D" />
+<Action name="run" attach_0="CapsLock" />
+<Action name="jump" attach_0="Space" />
+<Action name="duck" attach_0="C" attach_1="Y" />
+<Action name="next_weapon" attach_0="E" attach_1="MouseMiddle" attach_2="MouseWheelDown" />
+<Action name="previous_weapon" attach_0="Q" attach_1="MouseWheelUp" />
+<Action name="weapon_0" attach_0="1" />
+<Action name="weapon_1" attach_0="2" />
+<Action name="weapon_2" attach_0="3" />
+<Action name="weapon_3" attach_0="4" />
+<Action name="weapon_4" attach_0="5" />
+<Action name="weapon_5" attach_0="6" />
+<Action name="fire_0" attach_0="Command" attach_1="MouseLeft" />
+<Action name="fire_1" attach_0="LeftOption" />
+<Action name="fire_2" attach_0="LeftControl" />
+<Action name="console" attach_0="`" />
+<Action name="menu" attach_0="Escape" />
+<Action name="player_0" attach_0="X" />
+<Action name="game_0" attach_0="Delete" />
+<Action name="debug_status" attach_0="F1" />
+<Action name="debug_light" attach_0="F2" />
+<Action name="debug_screenshot" attach_0="F4" />
+<Action name="quick_save" attach_0="F5" />
+<Action name="save_load" attach_0="F6" />
+<Action name="up" attach_0="O" />
+<Action name="down" attach_0="L" />
+<Action name="message" attach_0="T" />
+<Action name="game_3" attach_0="F9" />
+<Action name="enter-exit" attach_0="Return" />
+<Action name="player_1" attach_0="Space" />
+<Action name="weapon_zoom" attach_0="Z" />
+<Action name="zoom" attach_0="Z" />
+<Action name="zoom_increase" attach_0="MouseWheelUp" />
+<Action name="zoom_decrease" attach_0="MouseWheelDown" />
+<Action name="player_2" attach_0="F9" />
+<Action name="player_3" attach_0="F10" />
+</Actions>
+<Hosts>
+<Host name="Local" ip="127.0.0.1" port="11800" />
+</Hosts>
+</Setup>

@@ -1,0 +1,13 @@
+Coding/Management: Brian Barnes
+Additional Code and Porting Help: Keith Bauer, Cyst, Rocco Bowling
+win32 JSC Compile: Brent Fulgham
+
+Demo Castle Playground/Dungeon Maps: Alexander Sasha
+Demo Simple Map: Brian Barnes
+Demo Models: Jay Broodle, Alexander Smith, dim/wit, joelw1lson
+Demo Skybox: Alexander Smith
+Demo Driving Map: Grefuntor
+
+Website: `teh1 (Ryan)
+
+

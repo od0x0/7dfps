@@ -1,0 +1,12 @@
+<Marks>
+<Mark name="mark_normal">
+<Setting time="20000" fade_in="500" fade_out="1000" />
+<Image file="mark_normal" count="1" time="200" />
+<Color color="FFFFFF" />
+</Mark>
+<Mark name="mark_ray">
+<Setting time="10000" fade_in="10" fade_out="500" highlight="true" additive="true" />
+<Image file="mark_purple" count="4" time="100" loop="true" loop_back="true" />
+<Color color="FFFFFF" team="true" />
+</Mark>
+</Marks>

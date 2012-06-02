@@ -1,0 +1,244 @@
+<Interface>
+<Scale x="1000" y="750" />
+<Bitmaps>
+<Bitmap name="Clips">
+<Image file="clips" count="1" time="0" rot="0" />
+<Position x="940" y="660" />
+<Size width="20" height="20" />
+<Settings alpha="1" />
+<Repeat count="0" x="0" y="0" col="0" row="0" />
+<Fade fade_in_msec="100" life_msec="100" fade_out_msec="100" />
+</Bitmap>
+<Bitmap name="Grenades">
+<Image file="grenades" count="1" time="0" rot="0" />
+<Position x="940" y="720" />
+<Size width="20" height="20" />
+<Settings alpha="1" />
+<Repeat count="0" x="0" y="0" col="0" row="0" />
+<Fade fade_in_msec="100" life_msec="100" fade_out_msec="100" />
+</Bitmap>
+<Bitmap name="Bullets">
+<Image file="bullets" count="1" time="0" rot="0" />
+<Position x="940" y="690" />
+<Size width="20" height="20" />
+<Settings alpha="1" />
+<Repeat count="0" x="0" y="0" col="0" row="0" />
+<Fade fade_in_msec="100" life_msec="100" fade_out_msec="100" />
+</Bitmap>
+<Bitmap name="Blue Flag Icon">
+<Image file="icon_blue_flag" count="1" time="0" rot="0" />
+<Position x="945" y="80" />
+<Size width="50" height="50" />
+<Settings alpha="1" hide="true" />
+<Repeat count="0" x="0" y="0" col="0" row="0" />
+<Fade fade_in_msec="100" life_msec="100" fade_out_msec="100" />
+</Bitmap>
+<Bitmap name="Red Flag Icon">
+<Image file="icon_red_flag" count="1" time="0" rot="0" />
+<Position x="945" y="140" />
+<Size width="50" height="50" />
+<Settings alpha="1" hide="true" />
+<Repeat count="0" x="0" y="0" col="0" row="0" />
+<Fade fade_in_msec="100" life_msec="100" fade_out_msec="100" />
+</Bitmap>
+<Bitmap name="Net Score Background">
+<Image file="net_score_background" count="1" time="0" rot="0" />
+<Position x="905" y="3" />
+<Size width="92" height="62" />
+<Settings alpha="0.2" hide="true" />
+<Repeat count="0" x="0" y="0" col="0" row="0" />
+<Fade fade_in_msec="100" life_msec="100" fade_out_msec="100" />
+</Bitmap>
+<Bitmap name="Timer Background">
+<Image file="timer_empty" count="1" time="0" rot="0" />
+<Position x="380" y="5" />
+<Size width="10" height="20" />
+<Settings alpha="1" hide="true" />
+<Repeat on="true" count="20" x="12" y="0" col="0" row="0" />
+<Fade fade_in_msec="0" life_msec="0" fade_out_msec="0" />
+</Bitmap>
+<Bitmap name="Timer">
+<Image file="timer_full" count="1" time="0" rot="0" />
+<Position x="380" y="5" />
+<Size width="10" height="20" />
+<Settings alpha="1" hide="true" />
+<Repeat on="true" count="20" x="12" y="0" col="0" row="0" />
+<Fade fade_in_msec="0" life_msec="0" fade_out_msec="0" />
+</Bitmap>
+</Bitmaps>
+<Texts>
+<Text name="Clip Ammo">
+<Position x="930" y="682" />
+<Settings alpha="1" size="20" color="E6E6E6" just="right" special="none" />
+<Fade fade_in_msec="100" life_msec="100" fade_out_msec="100" />
+</Text>
+<Text name="Grenade Ammo">
+<Position x="930" y="742" />
+<Settings alpha="1" size="20" color="E6E6E6" just="right" special="none" />
+<Fade fade_in_msec="100" life_msec="100" fade_out_msec="100" />
+</Text>
+<Text name="Dead">
+<Position x="500" y="25" />
+<Settings alpha="1" data="[ Press FIRE to Continue ]" size="20" color="FFFFFF" just="center" hide="true" special="none" />
+<Fade fade_in_msec="100" life_msec="100" fade_out_msec="100" />
+</Text>
+<Text name="Remote">
+<Position x="500" y="30" />
+<Settings alpha="1" size="20" color="FFFFFF" just="center" hide="true" special="none" />
+<Fade fade_in_msec="500" life_msec="5000" fade_out_msec="500" />
+</Text>
+<Text name="Scored">
+<Position x="500" y="650" />
+<Settings alpha="1" size="35" color="FFFFFF" just="center" hide="true" special="none" />
+<Fade fade_in_msec="500" life_msec="8000" fade_out_msec="500" />
+</Text>
+<Text name="Net Score">
+<Position x="950" y="65" />
+<Settings alpha="1" size="48" color="3333FF" just="right" hide="true" special="score" />
+<Fade fade_in_msec="100" life_msec="100" fade_out_msec="100" />
+</Text>
+<Text name="Net Place">
+<Position x="990" y="35" />
+<Settings alpha="1" size="24" color="3333FF" just="right" hide="true" special="place" />
+<Fade fade_in_msec="100" life_msec="100" fade_out_msec="100" />
+</Text>
+<Text name="Net Spread">
+<Position x="990" y="65" />
+<Settings alpha="1" size="24" color="3333FF" just="right" hide="true" special="spread" />
+<Fade fade_in_msec="100" life_msec="100" fade_out_msec="100" />
+</Text>
+<Text name="Bullet Ammo">
+<Position x="930" y="712" />
+<Settings alpha="1" size="20" color="E6E6E6" just="right" special="none" />
+<Fade fade_in_msec="0" life_msec="0" fade_out_msec="0" />
+</Text>
+<Text name="Weapon Name">
+<Position x="500" y="740" />
+<Settings alpha="1" size="40" color="FF0000" just="center" hide="true" special="none" />
+<Fade on="true" fade_in_msec="100" life_msec="1000" fade_out_msec="200" />
+</Text>
+</Texts>
+<Bars>
+<Bar name="Health" type="vertical">
+<Position x="970" y="445" />
+<Size width="10" height="300" />
+<Outline alpha="1" color="000000" />
+<Background alpha="1" color="000000" />
+<Fill alpha="0.5" start_color="AA0000" end_color="FF3333" />
+<Settings />
+</Bar>
+<Bar name="Armor" type="vertical">
+<Position x="985" y="445" />
+<Size width="10" height="300" />
+<Outline alpha="1" color="000000" />
+<Background alpha="1" color="000000" />
+<Fill alpha="0.5" start_color="008000" end_color="00FF00" />
+<Settings />
+</Bar>
+</Bars>
+<Virtual_Control>
+<Sticks>
+<Stick on="true" use_bitmap="true" x="10" y="540" x_size="200" y_size="200" outer_bitmap="stick_outer" inner_bitmap="stick_inner" color="00FF00" />
+<Stick on="true" use_bitmap="true" x="790" y="540" x_size="200" y_size="200" outer_bitmap="stick_outer" inner_bitmap="stick_inner" color="00FF00" />
+</Sticks>
+<Buttons>
+<Button on="true" use_bitmap="true" control="84" x="10" y="10" x_size="80" y_size="80" up_bitmap="button_menu_up" down_bitmap="button_menu_down" color="0080FF" />
+<Button on="true" use_bitmap="true" control="7" x="10" y="450" x_size="80" y_size="80" up_bitmap="button_jump_up" down_bitmap="button_jump_down" color="FFFF66" />
+<Button on="true" use_bitmap="true" control="14" x="910" y="450" x_size="80" y_size="80" up_bitmap="button_fire_up" down_bitmap="button_fire_down" color="FF0000" />
+<Button control="0" x="0" y="0" x_size="0" y_size="0" color="FFFFFF" />
+<Button control="0" x="0" y="0" x_size="0" y_size="0" color="FFFFFF" />
+<Button control="0" x="0" y="0" x_size="0" y_size="0" color="FFFFFF" />
+<Button control="0" x="0" y="0" x_size="0" y_size="0" color="FFFFFF" />
+<Button control="0" x="0" y="0" x_size="0" y_size="0" color="FFFFFF" />
+</Buttons>
+</Virtual_Control>
+<Radar>
+<Setting team_tint="true" no_motion_fade="1000" />
+<Position x="85" y="85" radius="80" />
+<View radius="100000" />
+<Background file="background" />
+<Icons>
+<Icon name="player" file="player" size="6" />
+<Icon name="red flag" file="red_flag" size="5" />
+<Icon name="blue flag" file="blue_flag" size="5" />
+<Icon name="ammo" file="ammo" size="4" />
+<Icon name="weapon" file="weapon" size="4" />
+<Icon name="health" file="health" size="4" />
+</Icons>
+</Radar>
+<Menus>
+<Menu name="MainMenu">
+<Items>
+<Item id="0" data="Continue" />
+<Item id="1" data="Setup" multiplayer_disable="true" />
+<Item id="2" data="Save Game" multiplayer_disable="true" />
+<Item id="3" data="Load Game" multiplayer_disable="true" />
+<Item id="4" data="Interface Examples" sub_menu="InterfaceMenu" multiplayer_disable="true" />
+<Item id="5" data="Quit" quit="true" />
+</Items>
+</Menu>
+<Menu name="InterfaceMenu">
+<Items>
+<Item id="10" data="Title" />
+<Item id="11" data="Chooser" />
+<Item id="12" data="Cinema" />
+<Item id="13" data="Main Menu" sub_menu="MainMenu" />
+</Items>
+</Menu>
+</Menus>
+<Color background="000000" menu_text="FFFFFF" menu_mouse_over="7F007F" menu_background="7F7F7F" menu_outline="000000" dialog_background="999999" dialog_header="0080FF" dialog_outline="FFFFFF" dialog_title="CCCCCC" tab_background="999999" tab_dimmed="666666" tab_outline="FFFFFF" tab_text="E6E6E6" tab_text_mouse_over="FFFFFF" tab_text_dimmed="4C4C4C" control_label="000000" control_text="000000" control_fill="888899" control_header="FF3FFF" control_outline="000000" control_mouse_over="FFFFFF" control_hilite="AA00AA" control_disabled="3F3F3F" button_fill="AAAAAA" button_text="2F2F2F" button_outline="000000" system_metric="FFFFFF" default_tint="33FF33" />
+<Font name="Arial" hud_name="Impact" name_1="Helvetica" hud_name_1="Verdana" name_2="Courier New" hud_name_2="Arial" />
+<Progress left_x="20" right_x="980" top_y="720" bottom_y="735" outline="true" background_color="004080" hilite_color="400080" outline_color="FFFFFF" />
+<Chat x="950" y="630" last_add_life_sec="15" next_life_sec="5" />
+<Fade title_msec="1000" map_msec="300" />
+<Intro>
+<Title life_msec="2000" />
+<Models>
+</Models>
+<Simple_Save desc_text_size="20" progress_max_point="100" progress_max_bitmap="5" progress_wid="-1" progress_high="-1" progress_bitmap_add="16" progress_horizontal="true" progress_wrap_count="-1" />
+<Score x="0" y="0" width="150" height="200" text_size="20" format="Number" color="FFFFFF" />
+<Buttons>
+<Game_New x="80" y="100" width="200" height="50" on="true" />
+<Game_Load x="80" y="200" width="200" height="50" on="true" />
+<Game_Setup x="80" y="300" width="200" height="50" on="true" />
+<Multiplayer_Host x="700" y="100" width="200" height="50" on="true" />
+<Multiplayer_Join x="700" y="200" width="200" height="50" on="true" />
+<Credit x="200" y="670" width="200" height="50" on="true" />
+<Quit x="600" y="670" width="200" height="50" on="true" />
+<Simple_Start_0 x="0" y="0" desc_x="0" desc_y="0" progress_x="0" progress_y="0" />
+<Simple_Erase_0 x="0" y="0" />
+<Simple_Start_1 x="0" y="0" desc_x="0" desc_y="0" progress_x="0" progress_y="0" />
+<Simple_Erase_1 x="0" y="0" />
+<Simple_Start_2 x="0" y="0" desc_x="0" desc_y="0" progress_x="0" progress_y="0" />
+<Simple_Erase_2 x="0" y="0" />
+<Simple_Start_3 x="0" y="0" desc_x="0" desc_y="0" progress_x="0" progress_y="0" />
+<Simple_Erase_3 x="0" y="0" />
+<Simple_Start_4 x="0" y="0" desc_x="0" desc_y="0" progress_x="0" progress_y="0" />
+<Simple_Erase_4 x="0" y="0" />
+</Buttons>
+<Confirm x="0" y="0" />
+</Intro>
+<Setup game_video="true" game_audio="true" game_control="true" game_action="true" game_debug="true" />
+<Sound click="Click" />
+<Preload>
+<Models>
+<Model />
+<Model />
+<Model />
+<Model />
+<Model />
+<Model />
+<Model />
+<Model />
+<Model />
+<Model />
+<Model />
+<Model />
+<Model />
+<Model />
+<Model />
+<Model />
+</Models>
+</Preload>
+<Project name="dim3 Demo" modernize="true" />
+</Interface>
