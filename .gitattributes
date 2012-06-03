@@ -1,2 +1,3 @@
 *.ai -crlf -diff
 *.psd -crlf -diff
+*.xml -crlf -diff
