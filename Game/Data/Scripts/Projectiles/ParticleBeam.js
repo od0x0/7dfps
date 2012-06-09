@@ -31,12 +31,12 @@ function projectileConstruct(proj,subEvent,id,tick)
 	
 		// the projectile push
 		
-	proj.push.on=true;
-	proj.push.force=80;
+	//proj.push.on=true;
+	//proj.push.force=80;
 
 	proj.melee.radius = 1000;
 	proj.melee.damage = 100;
-	proj.melee.force = 1;
+	proj.melee.force = -200;
 
 		// hit decal
 		/*
@@ -56,7 +56,7 @@ function projectileHit(proj,subEvent,id,tick)
 	spawn.ringLine(proj.origin,proj.position,20,'Ray Ring');
 	spawn.particle(proj.position,'Ray Globe');
 
-	//proj.melee.spawnFromPosition(proj.position);
+	if(utility.random.getInteger(0, 3) == 0) proj.melee.spawnFromPosition(proj.position);
 	
 	proj.action.destroy();
 }
