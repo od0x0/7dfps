@@ -44,7 +44,7 @@
 <Static follow="true" />
 </Camera>
 <Editor_Views>
-<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="509993,520768,536479" ang="313.200073,339.399811,0" uv_layer="0" />
+<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="508211,510021,505401" ang="270,0,0" uv_layer="0" clip="true" no_rot="true" />
 </Editor_Views>
 <Meshes>
 <Mesh never_obscure="true" never_cull="true" no_halo_obscure="true">
@@ -87,8 +87,49 @@
 <Particles>
 </Particles>
 <Nodes>
+<Node id="0" c3="523958,549559,490382" angle="0,0,0" alpha="1" event_id="0">
+<Link node="1" />
+<Hint node="-1,1,1,1,1,1,1,1,1,1" />
+</Node>
+<Node id="1" c3="523958,549496,490382" angle="0,0,0" alpha="1" event_id="0">
+<Link node="0,2,6" />
+<Hint node="0,-1,2,2,2,2,6,6,2,6" />
+</Node>
+<Node id="2" c3="518774,549496,490382" angle="0,0,0" alpha="1" event_id="0">
+<Link node="1,3" />
+<Hint node="1,1,-1,3,3,3,1,1,3,1" />
+</Node>
+<Node id="3" c3="513014,549496,494414" angle="0,0,0" alpha="1" event_id="0">
+<Link node="2,4" />
+<Hint node="2,2,2,-1,4,4,2,2,4,2" />
+</Node>
+<Node id="4" c3="503798,549496,490958" angle="0,0,0" alpha="1" event_id="0">
+<Link node="3,5" />
+<Hint node="3,3,3,3,-1,5,3,3,5,3" />
+</Node>
+<Node id="5" c3="487670,549496,494990" angle="0,0,0" alpha="1" event_id="0">
+<Link node="4,8" />
+<Hint node="4,4,4,4,4,-1,4,4,8,4" />
+</Node>
+<Node id="6" c3="523958,549496,490382" angle="0,0,0" alpha="1" event_id="0">
+<Link node="1,7" />
+<Hint node="1,1,1,1,1,1,-1,7,1,7" />
+</Node>
+<Node id="7" c3="523958,549496,490382" angle="0,0,0" alpha="1" name="start" event_id="0">
+<Link node="6,9" />
+<Hint node="6,6,6,6,6,6,6,-1,6,9" />
+</Node>
+<Node id="8" c3="487670,549496,494990" angle="0,0,0" alpha="1" name="end" event_id="0">
+<Link node="5" />
+<Hint node="5,5,5,5,5,5,5,5,-1,5" />
+</Node>
+<Node id="9" c3="523958,549496,490382" angle="0,0,0" alpha="1" name="start" event_id="0">
+<Link node="7" />
+<Hint node="7,7,7,7,7,7,7,7,7,-1" />
+</Node>
 </Nodes>
 <Spots>
-<Spot id="0" c3="500000,547231,500000" name="Start" type="Player" script="player" angle="0" skill="easy" spawn="always" />
+<Spot id="0" c3="500000,550111,500000" name="Start" type="Player" script="player" angle="0" skill="easy" spawn="always" />
+<Spot id="1" c3="523958,549760,495566" name="test_enemy" type="Object" script="test_enemy" params="2|start|end" angle="0" skill="easy" spawn="always" />
 </Spots>
 </Map>
