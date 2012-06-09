@@ -1,0 +1,155 @@
+<Model version="3">
+<Options comulative_rotation="true" diffuse_boost="0" />
+<Center offset="0,0,0" />
+<View_Box size="688,1000,688" offset="0,0,0" />
+<Bones>
+<Bone name="Head" c3="0,-827,0" o3="0,0,0" r3="0,0,0" parent="Body" />
+<Bone name="Null" c3="0,0,0" o3="0,0,0" r3="0,0,0" />
+<Bone name="Body" c3="0,-345,0" o3="0,0,0" r3="0,0,0" parent="Null" />
+</Bones>
+<Lights>
+<Light />
+<Light />
+<Light />
+<Light />
+<Light />
+<Light />
+<Light />
+<Light />
+</Lights>
+<Halos>
+<Halo />
+<Halo />
+<Halo />
+<Halo />
+<Halo />
+<Halo />
+<Halo />
+<Halo />
+</Halos>
+<Name />
+<Hit_Boxes>
+</Hit_Boxes>
+<Rigid_Body y_factor="0.8" y_smooth="0.2" x_max_ang="45" x_factor="0.8" x_smooth="0.2" z_max_ang="45" z_factor="0.8" z_smooth="0.2" />
+<Import factor="3.448276" />
+<UI min_diffuse="0.75" diffuse_vector="0,-1,0" light_intensity="10000" light_exponent="1" light_offset="0,-5000,0" light_color="FFFFFF" />
+<Meshes>
+<Mesh name="Default" diffuse="true" never_cull="true" import_move="0,0,0">
+<Vertexes>
+<v c3="172,-655,-172" t3="-0.894427,0,-0.447214" n3="0.57735,0.57735,-0.57735" major="Head" factor="1" />
+<v c3="172,-1000,-172" t3="-0.894427,0,-0.447214" n3="0.57735,-0.57735,-0.57735" major="Head" factor="1" />
+<v c3="-172,-655,-172" t3="-0.894427,0,0.447214" n3="-0.57735,0.57735,-0.57735" major="Head" factor="1" />
+<v c3="-172,-1000,-172" t3="-0.894427,0,0.447214" n3="-0.57735,-0.57735,-0.57735" major="Head" factor="1" />
+<v c3="-172,-655,172" t3="0,0,1" n3="-0.57735,0.57735,0.57735" major="Head" factor="1" />
+<v c3="-172,-1000,172" t3="0,0,1" n3="-0.57735,-0.57735,0.57735" major="Head" factor="1" />
+<v c3="172,-655,172" t3="0,0,-1" n3="0.57735,0.57735,0.57735" major="Head" factor="1" />
+<v c3="172,-1000,172" t3="0,0,-1" n3="0.57735,-0.57735,0.57735" major="Head" factor="1" />
+<v c3="344,0,-344" t3="-0.894427,0,-0.447214" n3="0.57735,0.57735,-0.57735" major="Body" factor="1" />
+<v c3="344,-690,-344" t3="-0.894427,0,-0.447214" n3="0.57735,-0.57735,-0.57735" major="Body" factor="1" />
+<v c3="-344,0,-344" t3="-0.894427,0,0.447214" n3="-0.57735,0.57735,-0.57735" major="Body" factor="1" />
+<v c3="-344,-690,-344" t3="-0.894427,0,0.447214" n3="-0.57735,-0.57735,-0.57735" major="Body" factor="1" />
+<v c3="-344,0,344" t3="0,0,1" n3="-0.57735,0.57735,0.57735" major="Body" factor="1" />
+<v c3="-344,-690,344" t3="0,0,1" n3="-0.57735,-0.57735,0.57735" major="Body" factor="1" />
+<v c3="344,0,344" t3="0,0,-1" n3="0.57735,0.57735,0.57735" major="Body" factor="1" />
+<v c3="344,-690,344" t3="0,0,-1" n3="0.57735,-0.57735,0.57735" major="Body" factor="1" />
+</Vertexes>
+<Polys>
+<p v="2,3,1,0" txt="0" x="0.811996,0.811996,0.662399,0.662399" y="0.166667,0.013139,0.013139,0.166667" />
+<p v="4,5,3,2" txt="0" x="0.987197,0.987197,0.837601,0.837601" y="0.346472,0.192945,0.192945,0.346472" />
+<p v="6,7,5,4" txt="0" x="0.811996,0.811996,0.662399,0.662399" y="0.653527,0.5,0.5,0.653527" />
+<p v="0,1,7,6" txt="0" x="0.987197,0.987197,0.837601,0.837601" y="0.526278,0.372751,0.372751,0.526278" />
+<p v="3,5,7,1" txt="0" x="0.811996,0.811996,0.662399,0.662399" y="0.986861,0.833333,0.833333,0.986861" />
+<p v="4,2,0,6" txt="0" x="0.987197,0.987197,0.837601,0.837601" y="0.166667,0.013139,0.013139,0.166667" />
+<p v="10,11,9,8" txt="0" x="0.636794,0.636794,0.337601,0.337601" y="0.320194,0.013139,0.013139,0.320194" />
+<p v="12,13,11,10" txt="0" x="0.311995,0.311995,0.012803,0.012803" y="0.320194,0.013139,0.013139,0.320194" />
+<p v="14,15,13,12" txt="0" x="0.636794,0.636794,0.337601,0.337601" y="0.653527,0.346472,0.346472,0.653527" />
+<p v="8,9,15,14" txt="0" x="0.311995,0.311995,0.012803,0.012803" y="0.653527,0.346472,0.346472,0.653527" />
+<p v="11,13,15,9" txt="0" x="0.311995,0.311995,0.012803,0.012803" y="0.986861,0.679806,0.679806,0.986861" />
+<p v="12,10,8,14" txt="0" x="0.636794,0.636794,0.337601,0.337601" y="0.986861,0.679806,0.679806,0.986861" />
+</Polys>
+</Mesh>
+</Meshes>
+<Fills>
+<Fill shine_factor="10" glow_rate="100" glow_min="0" glow_max="1" shader="Default" material_name="Cube">
+<Images>
+<Image wait="100" bitmap="TestenemySurface_Color" />
+</Images>
+</Fill>
+</Fills>
+<Poses>
+<Pose name="Idle1">
+<Bones>
+<Bone name="Body" rot="0,0,0" move="1,1.25,1" acceleration="0" constraint_offset="0,0,0" />
+</Bones>
+</Pose>
+<Pose name="Idle2">
+<Bones>
+<Bone name="Body" rot="0,0,0" move="1,1.45,1" acceleration="0" constraint_offset="0,0,0" />
+</Bones>
+</Pose>
+<Pose name="Move1">
+<Bones>
+<Bone name="Head" rot="8,0,0" move="1,1,1" acceleration="0" constraint_offset="0,0,0" />
+<Bone name="Body" rot="-6,0,0" move="1,1.25,1" acceleration="0" constraint_offset="0,0,0" />
+</Bones>
+</Pose>
+<Pose name="Move2">
+<Bones>
+<Bone name="Head" rot="8,0,0" move="1,1,1" acceleration="0" constraint_offset="0,0,0" />
+<Bone name="Body" rot="-6,0,0" move="1,1.5,1" acceleration="0" constraint_offset="0,0,0" />
+</Bones>
+</Pose>
+</Poses>
+<Animations>
+<Animation name="Idle">
+<Loop repeat="true" start="-1" end="-1" />
+<Poses>
+<Pose name="Idle1" time="500" sway="0,0,0" move="0,0,0" acceleration="0">
+<Sound pitch="1" />
+<Fade in_time="0" life_time="0" out_time="0" />
+<Flash intensity="0" time="0" fade_time="0" exponent="1" color="FFFFFF" />
+<Shake distance="0" size="0" time="0" />
+<Particles>
+</Particles>
+<Rings>
+</Rings>
+</Pose>
+<Pose name="Idle2" time="500" sway="0,0,0" move="0,0,0" acceleration="0">
+<Sound pitch="1" />
+<Fade in_time="0" life_time="0" out_time="0" />
+<Flash intensity="0" time="0" fade_time="0" exponent="1" color="FFFFFF" />
+<Shake distance="0" size="0" time="0" />
+<Particles>
+</Particles>
+<Rings>
+</Rings>
+</Pose>
+</Poses>
+</Animation>
+<Animation name="Move">
+<Loop repeat="true" start="-1" end="-1" />
+<Poses>
+<Pose name="Move1" time="600" sway="0,0,0" move="0,0,0" acceleration="0">
+<Sound pitch="1" />
+<Fade in_time="0" life_time="0" out_time="0" />
+<Flash intensity="0" time="0" fade_time="0" exponent="1" color="FFFFFF" />
+<Shake distance="0" size="0" time="0" />
+<Particles>
+</Particles>
+<Rings>
+</Rings>
+</Pose>
+<Pose name="Move2" time="700" sway="0,0,0" move="0,0,0" acceleration="0">
+<Sound pitch="1" />
+<Fade in_time="0" life_time="0" out_time="0" />
+<Flash intensity="0" time="0" fade_time="0" exponent="1" color="FFFFFF" />
+<Shake distance="0" size="0" time="0" />
+<Particles>
+</Particles>
+<Rings>
+</Rings>
+</Pose>
+</Poses>
+</Animation>
+</Animations>
+</Model>
