@@ -167,13 +167,13 @@ function EndCharging(weap)
 	}
 	else
 	{
-		weap.recoil.minX=-20.0;
+		/*weap.recoil.minX=-20.0;
 		weap.recoil.maxX=4.0;
 		weap.recoil.resetX=0.01;
 	
 		weap.recoil.minY=-20.0;
 		weap.recoil.maxY=20.0;
-		weap.recoil.resetY=0.01;
+		weap.recoil.resetY=0.01;*/
 
 		weap.kickback.size = 200;
 
