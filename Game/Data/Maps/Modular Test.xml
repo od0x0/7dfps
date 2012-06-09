@@ -86,7 +86,7 @@
 <Static follow="true" />
 </Camera>
 <Editor_Views>
-<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="503075,498843,491589" ang="5.800195,184.400009,0" uv_layer="1" cull="true" />
+<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="503313,499563,491607" ang="5.800195,184.400009,0" uv_layer="1" cull="true" />
 </Editor_Views>
 <Meshes>
 <Mesh lock_uv="true" never_cull="true">

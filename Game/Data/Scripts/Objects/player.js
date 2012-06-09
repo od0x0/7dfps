@@ -46,8 +46,8 @@ function OnConstruct(object, subevent, id, tick)
 	object.turnSpeed.facingAir=3;
 	object.turnSpeed.motionAir=3;
 	
-	object.forwardSpeed.walk=120;
-	object.forwardSpeed.run=75;
+	object.forwardSpeed.walk=70;
+	object.forwardSpeed.run=90;
 	object.forwardSpeed.crawl=50;
 	object.forwardSpeed.air=80;
 	object.forwardSpeed.acceleration=4;
