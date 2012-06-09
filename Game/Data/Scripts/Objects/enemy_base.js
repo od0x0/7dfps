@@ -39,6 +39,7 @@ script.attachEvent(DIM3_EVENT_CONSTRUCT,'enemyConstruct');
 script.attachEvent(DIM3_EVENT_SPAWN,'enemySpawn');
 script.attachEvent(DIM3_EVENT_PATH,'enemyPathDone');
 script.attachEvent(DIM3_EVENT_COLLIDE,'enemyCollide');
+script.attachEvent(DIM3_EVENT_WATCH,'enemyWatch');
 
 //
 // constants
@@ -59,7 +60,8 @@ const DODGE_CHANCE = 10;
 
 
 // misc constans
-const WATCH_DISTANCE = 20000;
+const WATCH_DISTANCE = 50000;
+const ATTACK_DISTANCE = 15000;
 
 
 //
@@ -73,6 +75,8 @@ var end_node_name = "";
 
 // Status variables
 var chasing_player = false;
+var searching_player = false;
+var player_last_position = 0;
 var node_reverse = false;
 
 // How often the enemy was targeted. Resets to 0 after dodging.
@@ -87,6 +91,8 @@ var targettedCount = 0;
 function enemyConstruct(obj,subEvent,id,tick) {
     obj.model.on = true;
     obj.model.name = "TestEnemy";
+    
+    obj.watch.setRestrictSight(90,true);
 }
 
 // spawn
@@ -123,6 +129,8 @@ function enemyBehaviorReset(obj) {
             break;
     }
     
+    obj.watch.start(WATCH_DISTANCE);
+    
 }
 
 // patroling nodes
@@ -149,6 +157,7 @@ function enemyRandomWalk(obj) {
     var walk_time = utility.random.getInteger(30,100);
     obj.motionAngle.turnToAngle(obj.angle.y+turn_angle,0);
     obj.motionVector.go();
+    obj.model.animation.start("Move");
     obj.event.chain(walk_time,"enemyRandomWalk");
 }
 
@@ -161,6 +170,76 @@ function enemyCollide(obj,subEvent,id,tick) {
     //map.polygon.getNormal(map.polygon.findFacedByObject(obj.setting.id));
     obj.motionAngle.turnToAngle(obj.angle.y+180,0);
     obj.event.chain(30,"enemyRandomWalk");
+}
+
+// watch
+
+function enemyWatch(obj,subEvent,id,tick) {
+    if(!obj.watch.objectIsPlayer) return;
+    switch (subEvent) {
+        case DIM3_EVENT_WATCH_OBJECT_NEAR:
+            enemyStartChase(obj);
+            break;
+        case DIM3_EVENT_WATCH_OBJECT_FAR:
+            enemyStopChase(obj);
+            break;
+        default:
+            break;
+    }
+}
+
+// chasing
+
+function enemyStartChase(obj) {
+    chasing_player = true;
+    searching_player = false;
+    enemyChaseLoop(obj);
+}
+
+function enemyStopChase(obj) {
+    chasing_player = false;
+    searching_player = true;
+}
+
+function enemyChaseLoop(obj) {
+    if(chasing_player) { // Chasing
+        // Prepare everything to attack
+        // then fire
+        if(obj.position.distanceToPlayer() <= ATTACK_DISTANCE) {
+            enemyAttack(obj);
+        } else {
+            // Walk towards the player if youre far away
+            obj.motionVector.walkToPlayer();
+            obj.model.animation.start("Move");
+        }
+        // Also remember the players position to look for him later
+        player_last_position = map.object.getPosition(map.object.findPlayer());
+    } else if (searching_player) { // Searching
+        // Move towards the players last known position
+        if (utility.point.distanceTo(obj.position,player_last_position) > 100) { 
+            obj.motionVector.walkToPosition(player_last_position);
+            obj.model.animation.start("Move");
+        } else {
+            // When you're there, turn towards the player.
+            // If you can see him, the watch should fire again and reset everything.
+            searching_player = false;
+            obj.motionAngle.turnToPlayer();
+            obj.model.animation.start("Idle");
+        }
+    } else {
+        // If not searching or chasing, go back to whatever.
+        enemyBehaviorReset(obj);
+        return;
+    }
+    
+    // Do all of the above every second.
+    obj.event.chain(10,"enemyChaseLoop");
+}
+
+// attacking
+
+function enemyAttack(obj) {
+    iface.console.write("ATTACK!");
 }
 
 // being targetted
