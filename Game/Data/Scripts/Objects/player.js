@@ -55,14 +55,14 @@ function OnConstruct(object, subevent, id, tick)
 	object.forwardSpeed.accelerationAir=1.0;
 	object.forwardSpeed.decelerationAir=0.5;
 	
-	object.sideSpeed.walk=115;
-	object.sideSpeed.run=75;
-	object.sideSpeed.crawl=60;
-	object.sideSpeed.air=50;
-	object.sideSpeed.acceleration=4;
-	object.sideSpeed.deceleration=8;
-	object.sideSpeed.accelerationAir=1.0;
-	object.sideSpeed.decelerationAir=0.5;
+	object.sideSpeed.walk=object.forwardSpeed.walk;
+	object.sideSpeed.run=object.forwardSpeed.run;
+	object.sideSpeed.crawl=object.forwardSpeed.crawl;
+	object.sideSpeed.air=object.forwardSpeed.air;
+	object.sideSpeed.acceleration=object.forwardSpeed.acceleration;
+	object.sideSpeed.deceleration=object.forwardSpeed.deceleration;
+	object.sideSpeed.accelerationAir=object.forwardSpeed.accelerationAir;
+	object.sideSpeed.decelerationAir=object.forwardSpeed.decelerationAir;
 
 	object.verticalSpeed.normal=70;
 	object.verticalSpeed.acceleration=20;
