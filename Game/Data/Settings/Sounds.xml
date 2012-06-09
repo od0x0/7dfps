@@ -31,6 +31,26 @@
 <Wave file="Gun Fire" />
 <Distance min="1500" max="30000" />
 </Sound>
+<Sound name="Laser Charge Intro">
+<Wave file="Laser Charge Intro" />
+<Distance min="1500" max="30000" />
+</Sound>
+<Sound name="Laser Charge Hold">
+<Wave file="Laser Charge Hold" />
+<Distance min="1500" max="30000" />
+</Sound>
+<Sound name="Laser Fire">
+<Wave file="Laser Fire" />
+<Distance min="1500" max="30000" />
+</Sound>
+<Sound name="Robot Bark Attack">
+<Wave file="Robot Bark Attack" />
+<Distance min="1500" max="30000" />
+</Sound>
+<Sound name="Robot Bark Out of Ammo">
+<Wave file="Robot Bark Out of Ammo" />
+<Distance min="1500" max="30000" />
+</Sound>
 <Sound name="Shock">
 <Wave file="Shock" />
 <Distance min="1500" max="30000" />
