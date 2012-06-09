@@ -34,6 +34,10 @@ function projectileConstruct(proj,subEvent,id,tick)
 	proj.push.on=true;
 	proj.push.force=80;
 
+	proj.melee.radius = 1000;
+	proj.melee.damage = 100;
+	proj.melee.force = 1;
+
 		// hit decal
 		/*
 	proj.mark.on=false;
@@ -48,18 +52,12 @@ function projectileConstruct(proj,subEvent,id,tick)
 
 function projectileHit(proj,subEvent,id,tick)
 {
-	var		sx,sz,sy,ex,ez,ey;
-	
-		// lightning, ray, particles, and globe
-		
-	spawn.rayTeamColor(proj.origin,proj.position,15,500);
+	spawn.rayTeamColor(proj.origin, proj.position, 15, 500);
 	spawn.ringLine(proj.origin,proj.position,20,'Ray Ring');
 	spawn.particle(proj.position,'Ray Globe');
-			
-		// end projectile
-	
-	var distance = 1000000;//dim3.utility.distanceTo({sx, sy, sz}, {ex, ey, ez});
 
-	if(distance > 50000) proj.action.destroy();
+	//proj.melee.spawnFromPosition(proj.position);
+	
+	proj.action.destroy();
 }
 

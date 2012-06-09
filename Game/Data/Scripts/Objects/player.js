@@ -4,6 +4,9 @@ script.attachEvent(DIM3_EVENT_DAMAGE, 'OnDamage');
 script.attachEvent(DIM3_EVENT_HEALTH, 'OnHealthUpdate');
 script.attachEvent(DIM3_EVENT_DIE, 'OnDeath');
 script.attachEvent(DIM3_EVENT_PICKUP, 'OnPickup');
+script.attachEvent(DIM3_EVENT_TIMER, "OnTimer")
+
+const LineOfSightTimerID = 1;
 
 function Weapon(name)
 {
@@ -22,10 +25,10 @@ function OnConstruct(object, subevent, id, tick)
 	//object.model.name="Player";
 	object.model.shadow.on=false;
 	
-	object.size.x=2000;
-	object.size.z=3000;	
-	object.size.y=2500;
-	object.size.eyeOffset=-2000;
+	object.size.x=1800;
+	object.size.z=1800;	
+	object.size.y=1800;
+	object.size.eyeOffset=-1600;
 	object.size.weight=180;
 	
 	object.setting.bumpUp=true;
@@ -75,8 +78,8 @@ function OnConstruct(object, subevent, id, tick)
 	
 	object.health.maximum=100;
 	object.health.start=100;
-	object.health.recoverTick=10;
-	object.health.recoverAmount=10;
+	object.health.recoverTick=0;
+	object.health.recoverAmount=0;
 	
 	object.setting.ignorePickUpItems=false;
 	object.setting.damage=true;
@@ -88,6 +91,9 @@ function OnConstruct(object, subevent, id, tick)
 		object.weapon.add(Weapons[i].name);
 		//object.weapon.hideSingle(Weapons[i].name, true);
 	}
+
+	object.weapon.add("LineOfSight");
+	object.weapon.hideSingle("LineOfSight", true);
 	
 	object.model.light.index=0;
 	object.model.light.on=false;
@@ -101,7 +107,7 @@ function OnConstruct(object, subevent, id, tick)
 
 function OnSpawn(object, subevent, id, tick)
 {
-	object.size.eyeOffset=-2000;
+	object.size.eyeOffset=-1600;
 	object.setting.contact=true;
 	object.setting.suspend=false;
 	object.health.reset();
@@ -113,12 +119,14 @@ function OnSpawn(object, subevent, id, tick)
 	object.weapon.setSelect(Weapons[2].name);
 	//iface.bitmap.setAlpha("Blood", 1-(object.health.current/object.health.maximum));
 	//iface.text.setText("AmmoTextbox"," ");
+
+	//object.event.startTimer(10, LineOfSightTimerID);
 }
 
 function OnDamage(object, subevent, id, tick)
 {
-	object.status.tintView(1,0,0,0.5,500,300,1000);
-	OnHealthUpdate()
+	object.status.tintView(new Color(1, 0, 0), 0.5, 500, 300, 1000);
+	OnHealthUpdate();
 }
 
 function OnHealthUpdate(object, subevent, id, tick)
@@ -128,6 +136,7 @@ function OnHealthUpdate(object, subevent, id, tick)
 
 function OnDeath(object, subevent, id, tick)
 {
+	object.event.clearTimer();
 	map.action.restartMap();
 }
 
@@ -135,4 +144,13 @@ function OnPickup(object, subevent, id, tick)
 {
 	//if(!object.pickup.itemName) return;
 	object.weapon.setSelect(object.pickup.itemName);
+}
+
+function OnTimer(object, subevent, id, tick)
+{
+	if(id == LineOfSightTimerID) 
+	{
+		object.weapon.fire("LineOfSight", 0);
+		iface.console.write("Timer Fired After " + tick + " Ticks");
+	}
 }

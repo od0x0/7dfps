@@ -97,13 +97,11 @@ function OnAnimation(weap,subEvent,id,tick)
 // machine gun fire
 //
 
-var TimeCharged = 0;
-var DateObject = new Date();
 var TimeStartedCharging = 0;
 
 function BeginCharging(weap)
 {
-	TimeStartedCharging = DateObject.valueOf();
+	TimeStartedCharging = (new Date()).valueOf();
 }
 
 function EndCharging(weap)
@@ -139,12 +137,38 @@ function EndCharging(weap)
 
 	weap.projectile.spawnFromCenter('ParticleBeam');
 	
-	var chargeInterval = 10;
-	var timeCharged = DateObject.valueOf() - TimeStartedCharging;
+	var chargeInterval = 500;
+	var timeCharged = (new Date()).valueOf() - TimeStartedCharging;
 	var power = Math.round((timeCharged - chargeInterval) / chargeInterval);
 
-	for (var i = 0; i < power; i++)
-		weap.projectile.spawnFromCenterSlop('ParticleBeam',10);
+	iface.console.write("Power: " + power);
+	if(power < 1)
+	{
+		weap.recoil.minX=-10.0;
+		weap.recoil.maxX=10.0;
+		weap.recoil.resetX=0.01;
+	
+		weap.recoil.minY=-10.0;
+		weap.recoil.maxY=10.0;
+		weap.recoil.resetY=0.01;
+
+		weap.kickback.size = 50;
+	}
+	else
+	{
+		weap.recoil.minX=-20.0;
+		weap.recoil.maxX=20.0;
+		weap.recoil.resetX=0.01;
+	
+		weap.recoil.minY=-20.0;
+		weap.recoil.maxY=20.0;
+		weap.recoil.resetY=0.01;
+
+		weap.kickback.size = 200;
+
+		for (var i = 0; i < power; i++)
+			if(weap.ammo.useAmmo(1)) weap.projectile.spawnFromCenterSlop('ParticleBeam',4);
+	}
 
 	//weap.projectile.spawnFromCenterSlop('Bullet',1.5);
 		// run recoil
@@ -185,13 +209,14 @@ function OnFire(weap,subEvent,id,tick)
 	}
 	else
 	{
-		EndCharging(weap)
+		EndCharging(weap);
 	}
 
+	iface.text.setText("WeaponInfo", "Beam Cannon " + weap.ammo.count + "x" + weap.ammo.clipCount + "Charging: " + TimeStartedCharging)
 
 		// cancel all other firings
 
-	weap.fire.cancel();
+	//weap.fire.cancel();
 }
 
 function OnManualReload(weapon)

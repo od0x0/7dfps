@@ -71,9 +71,7 @@ function OnConstruct(weap,subEvent,id,tick)
 	weap.projectile.add('AssaultRifleBullet');
 }
 
-//
-// machine gun animation
-//
+
 
 function OnAnimation(weap,subEvent,id,tick)
 {
@@ -90,10 +88,6 @@ function OnAnimation(weap,subEvent,id,tick)
 			return;
 	}
 }
-
-//
-// machine gun fire
-//
 
 function machineGunFirePlayer(weap)
 {
@@ -134,31 +128,8 @@ function machineGunFirePlayer(weap)
 		// run recoil
 		
 	weap.recoil.go();
-}
 
-function machineGunFireBot(weap)
-{
-		// reset reload wait after every reload
-		// in case it was a clip reload
-		
-		// out of ammo?
-		
-	if (!weap.ammo.useAmmo(1)) {
-	
-			// attempt to change clips
-			
-		if (!weap.ammo.changeClip()) {
-			weap.fire.cancel();
-			return;
-		}
-		
-		weap.fire.cancel();
-		return;
-	}
-	
-		// spawn projectile
-
-	weap.projectile.spawnFromObjectBoneSlop('AssaultRifleBullet',1.5);
+	iface.text.setText("WeaponInfo", "Assault Rifle " + weap.ammo.count + "x" + weap.ammo.clipCount)
 }
 
 function OnFire(weap,subEvent,id,tick)
@@ -191,13 +162,6 @@ function OnFire(weap,subEvent,id,tick)
 		
 	if ((subEvent==DIM3_EVENT_WEAPON_FIRE_DOWN) || (subEvent==DIM3_EVENT_WEAPON_FIRE_REPEAT)) {
 		machineGunFirePlayer(weap);
-		return;
-	}
-
-		// single fires are from bots
-
-	if (subEvent==DIM3_EVENT_WEAPON_FIRE_SINGLE) {
-		machineGunFireBot(weap);
 		return;
 	}
 

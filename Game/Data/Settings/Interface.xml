@@ -1,121 +1,12 @@
 <Interface>
 <Scale x="1000" y="750" />
 <Bitmaps>
-<Bitmap name="Clips">
-<Image file="clips" count="1" time="0" rot="0" />
-<Position x="940" y="660" />
-<Size width="20" height="20" />
-<Settings alpha="1" />
-<Repeat count="0" x="0" y="0" col="0" row="0" />
-<Fade fade_in_msec="100" life_msec="100" fade_out_msec="100" />
-</Bitmap>
-<Bitmap name="Grenades">
-<Image file="grenades" count="1" time="0" rot="0" />
-<Position x="940" y="720" />
-<Size width="20" height="20" />
-<Settings alpha="1" />
-<Repeat count="0" x="0" y="0" col="0" row="0" />
-<Fade fade_in_msec="100" life_msec="100" fade_out_msec="100" />
-</Bitmap>
-<Bitmap name="Bullets">
-<Image file="bullets" count="1" time="0" rot="0" />
-<Position x="940" y="690" />
-<Size width="20" height="20" />
-<Settings alpha="1" />
-<Repeat count="0" x="0" y="0" col="0" row="0" />
-<Fade fade_in_msec="100" life_msec="100" fade_out_msec="100" />
-</Bitmap>
-<Bitmap name="Blue Flag Icon">
-<Image file="icon_blue_flag" count="1" time="0" rot="0" />
-<Position x="945" y="80" />
-<Size width="50" height="50" />
-<Settings alpha="1" hide="true" />
-<Repeat count="0" x="0" y="0" col="0" row="0" />
-<Fade fade_in_msec="100" life_msec="100" fade_out_msec="100" />
-</Bitmap>
-<Bitmap name="Red Flag Icon">
-<Image file="icon_red_flag" count="1" time="0" rot="0" />
-<Position x="945" y="140" />
-<Size width="50" height="50" />
-<Settings alpha="1" hide="true" />
-<Repeat count="0" x="0" y="0" col="0" row="0" />
-<Fade fade_in_msec="100" life_msec="100" fade_out_msec="100" />
-</Bitmap>
-<Bitmap name="Net Score Background">
-<Image file="net_score_background" count="1" time="0" rot="0" />
-<Position x="905" y="3" />
-<Size width="92" height="62" />
-<Settings alpha="0.2" hide="true" />
-<Repeat count="0" x="0" y="0" col="0" row="0" />
-<Fade fade_in_msec="100" life_msec="100" fade_out_msec="100" />
-</Bitmap>
-<Bitmap name="Timer Background">
-<Image file="timer_empty" count="1" time="0" rot="0" />
-<Position x="380" y="5" />
-<Size width="10" height="20" />
-<Settings alpha="1" hide="true" />
-<Repeat on="true" count="20" x="12" y="0" col="0" row="0" />
-<Fade fade_in_msec="0" life_msec="0" fade_out_msec="0" />
-</Bitmap>
-<Bitmap name="Timer">
-<Image file="timer_full" count="1" time="0" rot="0" />
-<Position x="380" y="5" />
-<Size width="10" height="20" />
-<Settings alpha="1" hide="true" />
-<Repeat on="true" count="20" x="12" y="0" col="0" row="0" />
-<Fade fade_in_msec="0" life_msec="0" fade_out_msec="0" />
-</Bitmap>
 </Bitmaps>
 <Texts>
-<Text name="Clip Ammo">
-<Position x="930" y="682" />
-<Settings alpha="1" size="20" color="E6E6E6" just="right" special="none" />
-<Fade fade_in_msec="100" life_msec="100" fade_out_msec="100" />
-</Text>
-<Text name="Grenade Ammo">
-<Position x="930" y="742" />
-<Settings alpha="1" size="20" color="E6E6E6" just="right" special="none" />
-<Fade fade_in_msec="100" life_msec="100" fade_out_msec="100" />
-</Text>
-<Text name="Dead">
-<Position x="500" y="25" />
-<Settings alpha="1" data="[ Press FIRE to Continue ]" size="20" color="FFFFFF" just="center" hide="true" special="none" />
-<Fade fade_in_msec="100" life_msec="100" fade_out_msec="100" />
-</Text>
-<Text name="Remote">
-<Position x="500" y="30" />
-<Settings alpha="1" size="20" color="FFFFFF" just="center" hide="true" special="none" />
-<Fade fade_in_msec="500" life_msec="5000" fade_out_msec="500" />
-</Text>
-<Text name="Scored">
-<Position x="500" y="650" />
-<Settings alpha="1" size="35" color="FFFFFF" just="center" hide="true" special="none" />
-<Fade fade_in_msec="500" life_msec="8000" fade_out_msec="500" />
-</Text>
-<Text name="Net Score">
-<Position x="950" y="65" />
-<Settings alpha="1" size="48" color="3333FF" just="right" hide="true" special="score" />
-<Fade fade_in_msec="100" life_msec="100" fade_out_msec="100" />
-</Text>
-<Text name="Net Place">
-<Position x="990" y="35" />
-<Settings alpha="1" size="24" color="3333FF" just="right" hide="true" special="place" />
-<Fade fade_in_msec="100" life_msec="100" fade_out_msec="100" />
-</Text>
-<Text name="Net Spread">
-<Position x="990" y="65" />
-<Settings alpha="1" size="24" color="3333FF" just="right" hide="true" special="spread" />
-<Fade fade_in_msec="100" life_msec="100" fade_out_msec="100" />
-</Text>
-<Text name="Bullet Ammo">
-<Position x="930" y="712" />
-<Settings alpha="1" size="20" color="E6E6E6" just="right" special="none" />
+<Text name="WeaponInfo">
+<Position x="0" y="0" />
+<Settings alpha="1" size="20" color="FFFFFF" just="left" special="none" />
 <Fade fade_in_msec="0" life_msec="0" fade_out_msec="0" />
-</Text>
-<Text name="Weapon Name">
-<Position x="500" y="740" />
-<Settings alpha="1" size="40" color="FF0000" just="center" hide="true" special="none" />
-<Fade on="true" fade_in_msec="100" life_msec="1000" fade_out_msec="200" />
 </Text>
 </Texts>
 <Bars>
