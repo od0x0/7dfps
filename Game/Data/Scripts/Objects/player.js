@@ -1,146 +1,138 @@
-script.attachEvent(DIM3_EVENT_CONSTRUCT,'playerConstruct');
-script.attachEvent(DIM3_EVENT_SPAWN,'playerSpawn');
-script.attachEvent(DIM3_EVENT_MESSAGE,'playerMessage');
+script.attachEvent(DIM3_EVENT_CONSTRUCT, 'OnConstruct');
+script.attachEvent(DIM3_EVENT_SPAWN, 'OnSpawn');
+script.attachEvent(DIM3_EVENT_DAMAGE, 'OnDamage');
+script.attachEvent(DIM3_EVENT_HEALTH, 'OnHealthUpdate');
+script.attachEvent(DIM3_EVENT_DIE, 'OnDeath');
+script.attachEvent(DIM3_EVENT_PICKUP, 'OnPickup');
 
-///////////////////////////
-// Player Constructor   //
-//////////////////////////
-
-function playerConstruct(obj,subEvent,id,tick){
-	
-	// player model not ready yet
-	//obj.model.on=true;
-	//obj.model.name=Player;
-	
-	obj.setting.damage=true;
-	obj.setting.crushable=true;
-	obj.setting.bumpUp=true; 
-	obj.setting.jump=true;
-	obj.setting.duck=true;
-	obj.setting.floating=true;
-	
-	// player speed
-	
-	obj.forwardSpeed.walk=55;
-	obj.forwardSpeed.run=100;
-	obj.forwardSpeed.crawl=35;
-	obj.forwardSpeed.air=50;
-	obj.forwardSpeed.acceleration=4;
-	obj.forwardSpeed.deceleration=8;
-	obj.forwardSpeed.accelerationAir=1.0;
-	obj.forwardSpeed.decelerationAir=0.5;
-	
-	obj.turnSpeed.facingWalk=4;
-	obj.turnSpeed.motionWalk=4;
-	obj.turnSpeed.facingRun=4.2;
-	obj.turnSpeed.motionRun=4.2;
-	obj.turnSpeed.facingCrawl=3;
-	obj.turnSpeed.motionCrawl=3;
-	obj.turnSpeed.facingAir=3;
-	obj.turnSpeed.motionAir=3;
-	
-	obj.sideSpeed.walk=50;
-	obj.sideSpeed.run=90;
-	obj.sideSpeed.crawl=30;
-	obj.sideSpeed.air=50;
-	obj.sideSpeed.acceleration=4;
-	obj.sideSpeed.deceleration=8;
-	obj.sideSpeed.accelerationAir=1.0;
-	obj.sideSpeed.decelerationAir=0.5;
-
-	obj.verticalSpeed.normal=50;
-	obj.verticalSpeed.acceleration=20;
-	obj.verticalSpeed.deceleration=40;
-
-	obj.objectSpeed.jumpHeight=44;
-	obj.objectSpeed.bumpHeight=1000;
-	obj.objectSpeed.duckAdd=32;
-	obj.objectSpeed.duckChange=800;
-	
-	// Player look up/down angles
-	
-	obj.look.upAngle=90;
-	obj.look.downAngle=90;
-	
-	// Player health
-	
-	obj.health.maximum=100;
-	obj.health.start=100;
-	
-	obj.health.fallDamageMinimumHeight=15000;
-	obj.health.fallDamageFactor=0;
-	
-	obj.click.crosshairUp='interact';
-
+function Weapon(name)
+{
+	this.name=name;
 }
 
-///////////////////////
-// Player Spawning   //
-///////////////////////
+var Weapons=new Array(2);
+Weapons[1]=new Weapon("AssaultRifle"); //"This is my rifle!"
+Weapons[2]=new Weapon("Shotgun"); //"This is my gun!"
+Weapons[3]=new Weapon("ParticleBeamCannon"); //"This is for shooting!"
+Weapons[0]=new Weapon("Nothing"); //"This is for fun!"
 
-function playerSpawn(obj,subEvent,id,tick){
+function OnConstruct(object, subevent, id, tick)
+{
+	object.model.on=false;
+	//object.model.name="Player";
+	object.model.shadow.on=false;
 	
-	if ((subEvent==DIM3_EVENT_SPAWN_INIT) || (subEvent==DIM3_EVENT_SPAWN_REBORN) || (subEvent==DIM3_EVENT_SPAWN_GAME_RESET)) {
-		
-		obj.status.freezeInput(false);
-		obj.weapon.hide(false);
-		
-		obj.setting.damage=true;
-		obj.model.shadow.on=true;
-		
-		iface.bar.show('Health');
+	object.size.x=2000;
+	object.size.z=3000;	
+	object.size.y=2500;
+	object.size.eyeOffset=-2000;
+	object.size.weight=180;
+	
+	object.setting.bumpUp=true;
+	object.objectSpeed.bumpHeight=3000;
+	
+	object.click.crosshairUp="Use";
+	object.click.crosshairDown="Use";
+	
+	object.turnSpeed.facingWalk=4;
+	object.turnSpeed.motionWalk=4;
+	object.turnSpeed.facingRun=4.2;
+	object.turnSpeed.motionRun=4.2;
+	object.turnSpeed.facingCrawl=3;
+	object.turnSpeed.motionCrawl=3;
+	object.turnSpeed.facingAir=3;
+	object.turnSpeed.motionAir=3;
+	
+	object.forwardSpeed.walk=120;
+	object.forwardSpeed.run=75;
+	object.forwardSpeed.crawl=50;
+	object.forwardSpeed.air=80;
+	object.forwardSpeed.acceleration=4;
+	object.forwardSpeed.deceleration=8;
+	object.forwardSpeed.accelerationAir=1.0;
+	object.forwardSpeed.decelerationAir=0.5;
+	
+	object.sideSpeed.walk=115;
+	object.sideSpeed.run=75;
+	object.sideSpeed.crawl=60;
+	object.sideSpeed.air=50;
+	object.sideSpeed.acceleration=4;
+	object.sideSpeed.deceleration=8;
+	object.sideSpeed.accelerationAir=1.0;
+	object.sideSpeed.decelerationAir=0.5;
+
+	object.verticalSpeed.normal=70;
+	object.verticalSpeed.acceleration=20;
+	object.verticalSpeed.deceleration=20;
+	
+	object.objectSpeed.jumpHeight=45;
+	object.objectSpeed.bumpHeight=800;
+	object.objectSpeed.duckAdd=32;
+	object.objectSpeed.duckChange=1000;
+	
+	object.look.upAngle=90;
+	object.look.downAngle=90;
+	
+	object.health.maximum=100;
+	object.health.start=100;
+	object.health.recoverTick=10;
+	object.health.recoverAmount=10;
+	
+	object.setting.ignorePickUpItems=false;
+	object.setting.damage=true;
+	object.setting.invincible=false;
+	
+	
+	for(var i = 0; i < Weapons.length; i++)
+	{
+		object.weapon.add(Weapons[i].name);
+		//object.weapon.hideSingle(Weapons[i].name, true);
 	}
 	
+	object.model.light.index=0;
+	object.model.light.on=false;
+	object.model.light.intensity=5000;
+	object.model.lightColor.red=1;
+	object.model.lightColor.green=0.3;
+	object.model.lightColor.blue=0.3;
+	
+   // object.setting.contactProjectile=false;
 }
 
-///////////////////////////////
-// Player Message Handler   //
-//////////////////////////////
-
-function playerMessage(obj,subEvent,id,tick){
-	
-	// key press messages
-	
-	if(subEvent==DIM3_EVENT_MESSAGE_FROM_KEY_DOWN) {
-		
-		switch (id) {
-			
-			// debug fly mode/third person toggles
-			
-			case 2:		// flying mode is player_2
-				if (!obj.setting.fly) {
-					obj.setting.fly=true;
-					obj.setting.inputMode=DIM3_INPUT_MODE_FLY;
-					obj.motionVector.alterGravity(0);	// reset gravity because now in flying
-					iface.console.write('Fly Mode On');
-				}
-				else {
-					obj.setting.fly=false;
-					obj.setting.inputMode=DIM3_INPUT_MODE_FPP;
-					iface.console.write('Fly Mode Off');
-				}
-				return;
-			
-			case 3:		// camera mode is player_3
-				if (camera.setting.type!=DIM3_CAMERA_TYPE_FPP) {
-					camera.setting.type=DIM3_CAMERA_TYPE_FPP;
-					obj.look.upAngle=80;
-					obj.look.downAngle=35;
-					obj.look.effectWeapons=true;
-					iface.console.write('Camera Mode FPP');
-				}
-				else {
-				//	camera.setting.type=DIM3_CAMERA_TYPE_CHASE_STATIC;
-				//	camera.chase.trackAngle.y=180;
-					camera.setting.type=DIM3_CAMERA_TYPE_CHASE;
-					camera.chase.distance=12000;
-					obj.look.upAngle=10;
-					obj.look.downAngle=30;
-					obj.look.effectWeapons=false;
-					iface.console.write('Camera Mode Chase');
-				}
-				return;
-		}
-		
+function OnSpawn(object, subevent, id, tick)
+{
+	object.size.eyeOffset=-2000;
+	object.setting.contact=true;
+	object.setting.suspend=false;
+	object.health.reset();
+	object.position.reset();
+	for(var i = 0; i < Weapons.length; i++)
+	{
+		//object.weapon.hideSingle(Weapons[i].name, true);
 	}
+	object.weapon.setSelect(Weapons[2].name);
+	//iface.bitmap.setAlpha("Blood", 1-(object.health.current/object.health.maximum));
+	//iface.text.setText("AmmoTextbox"," ");
+}
+
+function OnDamage(object, subevent, id, tick)
+{
+	object.status.tintView(1,0,0,0.5,500,300,1000);
+	OnHealthUpdate()
+}
+
+function OnHealthUpdate(object, subevent, id, tick)
+{
+	//iface.bitmap.setAlpha("Blood", 1-(object.health.current/object.health.maximum));
+}
+
+function OnDeath(object, subevent, id, tick)
+{
+	map.action.restartMap();
+}
+
+function OnPickup(object, subevent, id, tick)
+{
+	//if(!object.pickup.itemName) return;
+	object.weapon.setSelect(object.pickup.itemName);
 }

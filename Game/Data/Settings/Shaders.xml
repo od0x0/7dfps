@@ -1,11 +1,2 @@
 <Shaders>
-<Shader name="FSOverSaturate">
-<Code vert="FullScreen/FSOverSaturate" frag="FullScreen/FSOverSaturate" />
-</Shader>
-<Shader name="FSBlackWhiteNoise">
-<Code vert="FullScreen/FSBlackWhiteNoise" frag="FullScreen/FSBlackWhiteNoise" />
-</Shader>
-<Shader name="MapGrayScale">
-<Code vert="Map/GrayScale" frag="Map/GrayScale" />
-</Shader>
 </Shaders>

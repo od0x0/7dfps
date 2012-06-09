@@ -201,9 +201,9 @@
 <Game_New x="80" y="100" width="200" height="50" on="true" />
 <Game_Load x="80" y="200" width="200" height="50" on="true" />
 <Game_Setup x="80" y="300" width="200" height="50" on="true" />
-<Multiplayer_Host x="700" y="100" width="200" height="50" on="true" />
-<Multiplayer_Join x="700" y="200" width="200" height="50" on="true" />
-<Credit x="200" y="670" width="200" height="50" on="true" />
+<Multiplayer_Host x="700" y="100" width="200" height="50" />
+<Multiplayer_Join x="700" y="200" width="200" height="50" />
+<Credit x="200" y="670" width="200" height="50" />
 <Quit x="600" y="670" width="200" height="50" on="true" />
 <Simple_Start_0 x="0" y="0" desc_x="0" desc_y="0" progress_x="0" progress_y="0" />
 <Simple_Erase_0 x="0" y="0" />
@@ -219,7 +219,7 @@
 <Confirm x="0" y="0" />
 </Intro>
 <Setup game_video="true" game_audio="true" game_control="true" game_action="true" game_debug="true" />
-<Sound click="Click" />
+<Sound />
 <Preload>
 <Models>
 <Model />
@@ -240,5 +240,5 @@
 <Model />
 </Models>
 </Preload>
-<Project name="dim3 Demo" modernize="true" />
+<Project name="7dfps" modernize="true" no_shaders="true" />
 </Interface>

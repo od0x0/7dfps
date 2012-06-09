@@ -1,0 +1,57 @@
+<Model>
+<Creator name="dim3 Animator" version="1.0" />
+<Animations>
+<Animation name="Idle">
+<Loop repeat="true" start="0" end="0" />
+<Poses>
+<Pose name="Idle1" time="1000" sway="0,0,0" move="0,0,0" acceleration="0" sound="" sound_bone="Gun " sound_pitch="1" mesh_fade="" mesh_fade_in_time="0" mesh_fade_life_time="0" mesh_fade_out_time="0" flash_bone="Gun " flash_intensity="0" flash_time="0" flash_fade_time="0" flash_color="FFFFFF" shake_distance="0" shake_size="0" shake_time="0">
+<Particles>
+</Particles>
+<Rings>
+</Rings>
+</Pose>
+</Poses>
+</Animation>
+<Animation name="Fire">
+<Loop start="0" end="0" />
+<Poses>
+<Pose name="Fire" time="25" sway="10,0,0" move="0,0,0" acceleration="0" sound="Gun Fire" sound_bone="Gun " sound_pitch="0.9" mesh_fade="" mesh_fade_in_time="0" mesh_fade_life_time="0" mesh_fade_out_time="0" flash_bone="Gun " flash_intensity="0" flash_time="0" flash_fade_time="0" flash_color="FFFFFF" shake_distance="0" shake_size="0" shake_time="0">
+<Particles>
+<Particle bone="Barr" particle="Fire" particle_rotate="true" particle_motion="true" particle_motion_factor="1" particle_stick="true" particle_slop="0,0,0" />
+</Particles>
+<Rings>
+</Rings>
+</Pose>
+</Poses>
+</Animation>
+<Animation name="Reload">
+<Loop repeat="true" start="0" end="3" />
+<Poses>
+<Pose name="Reload4" time="100" sway="0,0,0" move="0,0,0" acceleration="0" sound="" sound_bone="Gun " sound_pitch="0.8" mesh_fade="" mesh_fade_in_time="0" mesh_fade_life_time="0" mesh_fade_out_time="0" flash_bone="Gun " flash_intensity="0" flash_time="0" flash_fade_time="0" flash_color="FFFFFF" shake_distance="0" shake_size="0" shake_time="0">
+<Particles>
+</Particles>
+<Rings>
+</Rings>
+</Pose>
+<Pose name="Reload1" time="80" sway="0,0,0" move="0,0,0" acceleration="0" sound="Click" sound_bone="Gun " sound_pitch="0.8" mesh_fade="" mesh_fade_in_time="0" mesh_fade_life_time="0" mesh_fade_out_time="0" flash_bone="Gun " flash_intensity="0" flash_time="0" flash_fade_time="0" flash_color="FFFFFF" shake_distance="0" shake_size="0" shake_time="0">
+<Particles>
+</Particles>
+<Rings>
+</Rings>
+</Pose>
+<Pose name="Reload3" time="80" sway="0,0,0" move="0,0,0" acceleration="0" sound="" sound_bone="Gun " sound_pitch="1" mesh_fade="" mesh_fade_in_time="0" mesh_fade_life_time="0" mesh_fade_out_time="0" flash_bone="Gun " flash_intensity="0" flash_time="0" flash_fade_time="0" flash_color="FFFFFF" shake_distance="0" shake_size="0" shake_time="0">
+<Particles>
+</Particles>
+<Rings>
+</Rings>
+</Pose>
+<Pose name="Idle1" time="200" sway="0,0,0" move="0,0,0" acceleration="0" sound="" sound_bone="Gun " sound_pitch="1" mesh_fade="" mesh_fade_in_time="0" mesh_fade_life_time="0" mesh_fade_out_time="0" flash_bone="Gun " flash_intensity="0" flash_time="0" flash_fade_time="0" flash_color="FFFFFF" shake_distance="0" shake_size="0" shake_time="0">
+<Particles>
+</Particles>
+<Rings>
+</Rings>
+</Pose>
+</Poses>
+</Animation>
+</Animations>
+</Model>

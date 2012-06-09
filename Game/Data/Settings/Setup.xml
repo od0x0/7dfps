@@ -78,6 +78,7 @@
 <Action name="zoom_decrease" attach_0="MouseWheelDown" />
 <Action name="player_2" attach_0="F9" />
 <Action name="player_3" attach_0="F10" />
+<Action name="player_4" attach_0="R" />
 </Actions>
 <Hosts>
 <Host name="Local" ip="127.0.0.1" port="11800" />

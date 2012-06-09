@@ -1,0 +1,21 @@
+<Model version="2">
+<Creator name="dim3 Animator" version="1.0" />
+<Options deform="comulative_rotate" />
+<Center offset="0,0,0" />
+<View_Box size="100,100,100" offset="0,0,0" />
+<Light />
+<Hit_Boxes>
+</Hit_Boxes>
+<Bones>
+</Bones>
+<Meshes>
+<Mesh name="Default">
+<Vertexes>
+</Vertexes>
+<Materials>
+</Materials>
+</Mesh>
+</Meshes>
+<Fills>
+</Fills>
+</Model>

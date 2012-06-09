@@ -1,0 +1,94 @@
+<Map>
+<Creator name="dim3 Map Editor" version="3" />
+<Info />
+<Settings gravity="1" gravity_max_power="32" gravity_max_speed="400" resistance="1" slope_min_ang="25" slope_max_ang="45" slope_max_speed="250" slope_min_gravity="200" />
+<Optimize cull_angle="0" model_obscure_distance="0" shadow_obscure_distance="0" effect_obscure_distance="0" shadow_poly_min_area="0" />
+<Singleplayer map_picker="true" />
+<Network />
+<LightMap quality="2" size="1" diffuse_boost="0" />
+<Editor txt_uv_scale_x="0.25" txt_uv_scale_y="0.25" view_near_dist="400" view_far_dist="300000" link_always_start="true" />
+<Media type="none" event_id="-1" />
+<Music fade_msec="0" />
+<Ambient_Light rgb="505050" light_map_boost="0" />
+<Ambient_Sound pitch="1" />
+<Background front_fill="-1" front_stamp="1,1" front_scroll="0,0" middle_fill="-1" middle_stamp="1,1" middle_scroll="0,0" back_fill="-1" back_stamp="1,1" back_scroll="0,0" />
+<Sky>
+<Settings type="cube" radius="43000" dome_y="0" />
+<Fill index="-1" bottom_index="-1" north_index="-1" south_index="-1" east_index="-1" west_index="-1" factor="1" shift="0,0" />
+</Sky>
+<Fog count="30" inner_radius="75000" outer_radius="150000" high="22000" drop="7500" texture_index="0" speed="0.001" txt_x_fact="8" txt_y_fact="1" rgb="7F7F7F" alpha="0.05" use_solid_color="true" />
+<Rain density="200" radius="40000" height="15000" speed="35" line_width="1" line_length="1500" slant_add="20" slant_time_msec="8000" slant_change_msec="1000" alpha="0.3" start_rgb="FFFFFF" end_rgb="3333FF" />
+<Groups>
+</Groups>
+<Fills>
+<Fill id="0" shine_factor="10" glow_rate="100" glow_min="0" glow_max="1" shader="Default">
+<Scale x="0.2776" y="0.2416" />
+<Images>
+<Image wait="100" bitmap="Tile" />
+</Images>
+</Fill>
+<Fill id="192" shine_factor="10" glow_rate="100" glow_min="0" glow_max="1" material_name="Light Map 000">
+<Scale x="0.2776" y="0.2416" />
+<Images>
+<Image wait="100" bitmap="LightMaps/ScriptTesting/lm000" />
+</Images>
+</Fill>
+</Fills>
+<Movements>
+</Movements>
+<Cinemas>
+</Cinemas>
+<Camera mode="fpp" ang="0,0,0" pnt="0,0,0">
+<Plane fov="60" aspectRatio="1" near="400" far="300000" nearOffset="-400" />
+<Chase distance="8000" track_speed="1" track_ang="0,0,0" slop="0,0,0" />
+<Static follow="true" />
+</Camera>
+<Editor_Views>
+<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="526353,545280,499130" ang="0,265.599945,0" uv_layer="0" />
+</Editor_Views>
+<Meshes>
+<Mesh never_obscure="true" never_cull="true" no_halo_obscure="true">
+<Import obj="Cube" group="cube1" />
+<Vertexes>
+<v c3="449280,550080,548928" />
+<v c3="549280,550080,548928" />
+<v c3="449280,450080,548928" />
+<v c3="449280,550080,448928" />
+<v c3="549280,450080,548928" />
+<v c3="549280,450080,448928" />
+<v c3="449280,450080,448928" />
+<v c3="549280,550080,448928" />
+</Vertexes>
+<Polys>
+<p v="0,1,2" txt="0" lmp="192" t3="1,0,0" n3="-0.301511,-0.301511,0.904534" x="0.55,25.549999,0.55" y="25.52,25.52,0.52" x_1="0.007812,0.257812,0.007812" y_1="0.257812,0.257812,0.007812" />
+<p v="0,3,1" txt="0" lmp="192" t3="1,0,0" n3="-0.301511,-0.904534,0.301511" x="0.32,0.32,25.32" y="25.23,0.23,25.23" x_1="0.273438,0.273438,0.523438" y_1="0.257812,0.007812,0.257812" />
+<p v="2,1,4" txt="0" lmp="192" t3="1,0,0" n3="0.301511,0.301511,0.904534" x="0.55,25.549999,25.549999" y="0.52,25.52,0.52" x_1="0.539062,0.539062,0.539062" y_1="0.007812,0.007812,0.007812" />
+<p v="2,3,0" txt="0" lmp="192" t3="0,0.382684,0.92388" n3="-0.904534,-0.301511,0.301511" x="25.549999,0.55,25.549999" y="0.52,25.52,25.52" x_1="0.539062,0.539062,0.539062" y_1="0.007812,0.007812,0.007812" />
+<p v="2,5,6" txt="0" lmp="192" t3="0.92388,0,0.382684" n3="-0.301511,0.904534,-0.301511" x="0.32,25.32,0.32" y="25.23,0.23,0.23" x_1="0.539062,0.539062,0.539062" y_1="0.007812,0.007812,0.007812" />
+<p v="4,5,2" txt="0" lmp="192" t3="1,0,0" n3="0.301511,0.904534,0.301511" x="25.32,25.32,0.32" y="25.23,0.23,25.23" x_1="0.539062,0.539062,0.539062" y_1="0.007812,0.007812,0.007812" />
+<p v="1,3,7" txt="0" lmp="192" t3="0.92388,0,-0.382684" n3="0.301511,-0.904534,-0.301511" x="25.32,0.32,25.32" y="25.23,0.23,0.23" x_1="0.804688,0.554688,0.804688" y_1="0.257812,0.007812,0.007812" />
+<p v="1,5,4" txt="0" lmp="192" t3="0,0.382684,-0.92388" n3="0.904534,0.301511,0.301511" x="25.549999,0.55,25.549999" y="25.52,0.52,0.52" x_1="0.539062,0.539062,0.539062" y_1="0.007812,0.007812,0.007812" />
+<p v="3,5,7" txt="0" lmp="192" t3="-1,0,0" n3="0.301511,-0.301511,-0.904534" x="0.55,25.549999,25.549999" y="25.52,0.52,25.52" x_1="0.539062,0.539062,0.539062" y_1="0.007812,0.007812,0.007812" />
+<p v="6,3,2" txt="0" lmp="192" t3="0,0,1" n3="-0.904534,0.301511,-0.301511" x="0.55,0.55,25.549999" y="0.52,25.52,0.52" x_1="0.539062,0.539062,0.539062" y_1="0.007812,0.007812,0.007812" />
+<p v="6,5,3" txt="0" lmp="192" t3="-1,0,0" n3="-0.301511,0.301511,-0.904534" x="0.55,25.549999,0.55" y="0.52,0.52,25.52" x_1="0.539062,0.539062,0.539062" y_1="0.007812,0.007812,0.007812" />
+<p v="7,5,1" txt="0" lmp="192" t3="0,0,-1" n3="0.904534,-0.301511,-0.301511" x="0.55,0.55,25.549999" y="25.52,0.52,25.52" x_1="0.007812,0.007812,0.257812" y_1="0.523438,0.273438,0.523438" />
+</Polys>
+</Mesh>
+</Meshes>
+<Liquids>
+</Liquids>
+<Sceneries>
+</Sceneries>
+<Lights>
+<Light c3="500000,542047,500000" type="normal" light_map="true" direction="all" intensity="50000" exponent="1" rgb="FFFFFF" />
+</Lights>
+<Sounds>
+</Sounds>
+<Particles>
+</Particles>
+<Nodes>
+</Nodes>
+<Spots>
+<Spot id="0" c3="500000,547231,500000" name="Start" type="Player" script="player" angle="0" skill="easy" spawn="always" />
+</Spots>
+</Map>

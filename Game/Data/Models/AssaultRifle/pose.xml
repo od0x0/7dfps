@@ -1,0 +1,50 @@
+<Model>
+<Creator name="dim3 Animator" version="1.0" />
+<Poses>
+<Pose name="Idle1">
+<Bones>
+</Bones>
+</Pose>
+<Pose name="Fire">
+<Bones>
+<Bone tag="Cock" rot="0,0,0" move="1,1,-0.35" acceleration="0" />
+</Bones>
+</Pose>
+<Pose name="Reload1">
+<Bones>
+<Bone tag="Fin1" rot="0,31.5,0" move="1,1,1" acceleration="0" />
+<Bone tag="Trig" rot="42,0,0" move="1,1,1" acceleration="0" />
+<Bone tag="Arm " rot="59.5,-27.5,24.5" move="0.45,1,0.7" acceleration="0" />
+</Bones>
+</Pose>
+<Pose name="Reload2">
+<Bones>
+<Bone tag="Fin1" rot="0,31.5,0" move="1,1,1" acceleration="0" />
+<Bone tag="Trig" rot="42,0,0" move="1,1,1" acceleration="0" />
+<Bone tag="Arm " rot="59.5,-27.5,24.5" move="0.45,-0.95,1.2" acceleration="0" />
+<Bone tag="Null" rot="0,0,27.5" move="1,1,1" acceleration="0" />
+<Bone tag="Cock" rot="0,0,0" move="1,1,-0.3" acceleration="0" />
+</Bones>
+</Pose>
+<Pose name="Reload3">
+<Bones>
+<Bone tag="Fin1" rot="0,31.5,0" move="1,1,1" acceleration="0" />
+<Bone tag="Trig" rot="42,0,0" move="1,1,1" acceleration="0" />
+<Bone tag="Arm " rot="59.5,-27.5,24.5" move="0.45,-0.95,1.2" acceleration="0" />
+<Bone tag="Null" rot="0,0,-16.5" move="1,1,1" acceleration="0" />
+<Bone tag="Cock" rot="0,0,0" move="1,1,-0.3" acceleration="0" />
+</Bones>
+</Pose>
+<Pose name="Reload4">
+<Bones>
+<Bone tag="Thum" rot="0,0,0" move="1,1,3.8" acceleration="0" />
+<Bone tag="Fin1" rot="0,3.5,0" move="1.3,1.1,1" acceleration="0" />
+<Bone tag="Clip" rot="0,0,0" move="1,1.35,1" acceleration="0" />
+<Bone tag="Trig" rot="42,0,0" move="1,1,1" acceleration="0" />
+<Bone tag="Arm " rot="59.5,-27.5,24.5" move="0.3,-2.9,0.3" acceleration="0" />
+<Bone tag="Null" rot="-25,0,-16.5" move="1,1,1" acceleration="0" />
+<Bone tag="Cock" rot="0,0,0" move="1,1,-0.3" acceleration="0" />
+</Bones>
+</Pose>
+</Poses>
+</Model>
