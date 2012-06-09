@@ -4,7 +4,7 @@
 </Bitmaps>
 <Texts>
 <Text name="WeaponInfo">
-<Position x="0" y="0" />
+<Position x="0" y="750" />
 <Settings alpha="1" size="20" color="FFFFFF" just="left" special="none" />
 <Fade fade_in_msec="0" life_msec="0" fade_out_msec="0" />
 </Text>

@@ -45,8 +45,8 @@ function OnConstruct(weap,subEvent,id,tick)
 	
 		// recoil
 		
-	weap.recoil.minX=-1.0;
-	weap.recoil.maxX=1.0;
+	weap.recoil.minX=-2.5;
+	weap.recoil.maxX=0.5;
 	weap.recoil.resetX=0.1;
 	
 	weap.recoil.minY=-1.0;
@@ -100,12 +100,15 @@ function machineGunFirePlayer(weap)
 			
 		if (!weap.ammo.changeClip()) {
 			weap.fire.cancel();
+			iface.text.setText("WeaponInfo", "Assault Rifle " + weap.ammo.count + "x" + weap.ammo.clipCount);
 			return;
 		}
 		
 			// run change animation
 			
 		weap.model.animation.startThenChange('Reload','Idle');
+
+		iface.text.setText("WeaponInfo", "Assault Rifle " + weap.ammo.count + "x" + weap.ammo.clipCount);
 		
 			// reload makes next fire wait longer
 		
@@ -129,7 +132,7 @@ function machineGunFirePlayer(weap)
 		
 	weap.recoil.go();
 
-	iface.text.setText("WeaponInfo", "Assault Rifle " + weap.ammo.count + "x" + weap.ammo.clipCount)
+	iface.text.setText("WeaponInfo", "Assault Rifle " + weap.ammo.count + "x" + weap.ammo.clipCount);
 }
 
 function OnFire(weap,subEvent,id,tick)

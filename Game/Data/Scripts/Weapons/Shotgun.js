@@ -36,8 +36,8 @@ function OnConstruct(weap,subEvent,id,tick)
 	
 		// ammo and clips
 		
-	weap.ammo.initCount=50;
-	weap.ammo.maxCount=50;
+	weap.ammo.initCount=10;
+	weap.ammo.maxCount=10;
 	
 	weap.ammo.clip=true;
 	weap.ammo.initClipCount=5;
@@ -45,9 +45,9 @@ function OnConstruct(weap,subEvent,id,tick)
 	
 		// recoil
 		
-	weap.recoil.minX=-5.0;
-	weap.recoil.maxX=5.0;
-	weap.recoil.resetX=0.1;
+	weap.recoil.minX=-9.0;
+	weap.recoil.maxX=1.0;
+	weap.recoil.resetX=0.05;
 	
 	weap.recoil.minY=-5.0;
 	weap.recoil.maxY=5.0;
@@ -108,8 +108,11 @@ function machineGunFirePlayer(weap)
 			
 		if (!weap.ammo.changeClip()) {
 			weap.fire.cancel();
+			iface.text.setText("WeaponInfo", "Shotgun " + weap.ammo.count + "x" + weap.ammo.clipCount)
 			return;
 		}
+
+		iface.text.setText("WeaponInfo", "Shotgun " + weap.ammo.count + "x" + weap.ammo.clipCount)
 		
 			// run change animation
 			

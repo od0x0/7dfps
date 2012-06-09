@@ -39,14 +39,14 @@ function OnConstruct(weap,subEvent,id,tick)
 	weap.ammo.initCount=50;
 	weap.ammo.maxCount=50;
 	
-	weap.ammo.clip=true;
+	weap.ammo.clip=false;
 	weap.ammo.initClipCount=5;
 	weap.ammo.maxClipCount=5;
 	
 		// recoil
 		
 	weap.recoil.minX=-10.0;
-	weap.recoil.maxX=10.0;
+	weap.recoil.maxX=4.0;
 	weap.recoil.resetX=0.01;
 	
 	weap.recoil.minY=-10.0;
@@ -67,7 +67,18 @@ function OnConstruct(weap,subEvent,id,tick)
 
 	weap.projectile.objectFireBoneName='Fire';
 	weap.projectile.objectFirePoseName='Idle1';
-		
+	
+	weap.zoom.on=true;
+	weap.zoom.fovMinimum=10;
+	weap.zoom.fovMaximum=30;
+	weap.zoom.fovSteps=5;
+	weap.zoom.turnFactor=0.8;
+	weap.zoom.crawlTurnFactor=0.7;
+	weap.zoom.swayFactor=0.1;
+	weap.zoom.crawlSwayFactor=0.1;
+	//weap.zoom.maskName='xcross';
+	weap.zoom.showWeapon=false;
+
 	weap.projectile.add('ParticleBeam');
 
 	weap.kickback.size = 50;
@@ -141,11 +152,11 @@ function EndCharging(weap)
 	var timeCharged = (new Date()).valueOf() - TimeStartedCharging;
 	var power = Math.round((timeCharged - chargeInterval) / chargeInterval);
 
-	iface.console.write("Power: " + power);
+	//iface.console.write("Power: " + power);
 	if(power < 1)
 	{
 		weap.recoil.minX=-10.0;
-		weap.recoil.maxX=10.0;
+		weap.recoil.maxX=4.0;
 		weap.recoil.resetX=0.01;
 	
 		weap.recoil.minY=-10.0;
@@ -157,7 +168,7 @@ function EndCharging(weap)
 	else
 	{
 		weap.recoil.minX=-20.0;
-		weap.recoil.maxX=20.0;
+		weap.recoil.maxX=4.0;
 		weap.recoil.resetX=0.01;
 	
 		weap.recoil.minY=-20.0;
@@ -167,7 +178,7 @@ function EndCharging(weap)
 		weap.kickback.size = 200;
 
 		for (var i = 0; i < power; i++)
-			if(weap.ammo.useAmmo(1)) weap.projectile.spawnFromCenterSlop('ParticleBeam',4);
+			if(weap.ammo.useAmmo(1)) weap.projectile.spawnFromCenterSlop('ParticleBeam',1.5);
 	}
 
 	//weap.projectile.spawnFromCenterSlop('Bullet',1.5);
@@ -185,6 +196,14 @@ function OnFire(weap,subEvent,id,tick)
 		weap.fire.cancel();
 		return;
 	}*/
+
+	if (subEvent==DIM3_EVENT_WEAPON_FIRE_ZOOM_ENTER) {
+		return;
+	}
+
+	if (subEvent==DIM3_EVENT_WEAPON_FIRE_ZOOM_EXIT) {
+		return;
+	}
 
 	if(weap.model.animation.currentAnimationName == "Shoot") {
 		weap.fire.cancel();
@@ -212,7 +231,7 @@ function OnFire(weap,subEvent,id,tick)
 		EndCharging(weap);
 	}
 
-	iface.text.setText("WeaponInfo", "Beam Cannon " + weap.ammo.count + "x" + weap.ammo.clipCount + "Charging: " + TimeStartedCharging)
+	iface.text.setText("WeaponInfo", "Beam Cannon " + weap.ammo.count);
 
 		// cancel all other firings
 
