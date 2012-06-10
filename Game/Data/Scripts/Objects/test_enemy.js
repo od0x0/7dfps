@@ -8,4 +8,13 @@ script.attachEvent(DIM3_EVENT_CONSTRUCT,"enemyConstruct");
 
 function enemyConstruct(obj,subEvent,id,tick) {
     script.callParent();
+    obj.weapon.add("SecurityBot_Weapon");
+}
+
+function enemyAttack(obj) {
+    iface.console.write("Derp");
+    obj.model.animation.start("Attack");
+    obj.motionAngle.facePlayer();
+    obj.motionVector.stop();
+    obj.weapon.fire("SecurityBot_Weapon",1);
 }

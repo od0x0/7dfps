@@ -261,10 +261,11 @@ function enemyChaseLoop(obj) {
 // attacking
 
 function enemyAttack(obj) {
-    iface.console.write("ATTACK!");
+    /*iface.console.write("ATTACK!");
     obj.model.animation.startThenChange("Attack","Idle");
     obj.motionAngle.facePlayer();
-    obj.motionVector.stop();
+    obj.motionVector.stop();*/
+    script.callChildFunction('enemyAttack',obj);
 }
 
 // being damaged

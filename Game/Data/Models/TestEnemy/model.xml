@@ -6,6 +6,8 @@
 <Bone name="Head" c3="0,-827,0" o3="0,0,0" r3="0,0,0" parent="Body" />
 <Bone name="Null" c3="0,0,0" o3="0,0,0" r3="0,0,0" />
 <Bone name="Body" c3="0,-345,0" o3="0,0,0" r3="0,0,0" parent="Null" />
+<Bone name="Fire_Origin" c3="0,-827,-200" o3="0,0,0" r3="0,0,0" parent="Head" />
+<Bone name="Fire_Direction" c3="0,-827,-300" o3="0,0,0" r3="0,0,0" parent="Fire_Origin" />
 </Bones>
 <Lights>
 <Light />
@@ -101,7 +103,14 @@
 </Pose>
 <Pose name="Attack1">
 <Bones>
-<Bone name="Body" rot="0,0,0" move="1,2.5,1" acceleration="0" constraint_offset="0,0,0" />
+<Bone name="Head" rot="0,40,0" move="1,1,1" acceleration="0" constraint_offset="0,0,0" />
+<Bone name="Body" rot="0,0,0" move="1,1.25,1" acceleration="0" constraint_offset="0,0,0" />
+</Bones>
+</Pose>
+<Pose name="Attack2">
+<Bones>
+<Bone name="Head" rot="0,-40,0" move="1,1,1" acceleration="0" constraint_offset="0,0,0" />
+<Bone name="Body" rot="0,0,0" move="1,1.25,1" acceleration="0" constraint_offset="0,0,0" />
 </Bones>
 </Pose>
 </Poses>
@@ -157,9 +166,9 @@
 </Poses>
 </Animation>
 <Animation name="Attack">
-<Loop repeat="true" start="-1" end="-1" />
+<Loop repeat="true" start="0" end="1" />
 <Poses>
-<Pose name="Idle1" time="200" sway="0,0,0" move="0,0,0" acceleration="0">
+<Pose name="Attack1" time="1000" sway="0,0,0" move="0,0,0" acceleration="0">
 <Sound pitch="1" />
 <Fade in_time="0" life_time="0" out_time="0" />
 <Flash intensity="0" time="0" fade_time="0" exponent="1" color="FFFFFF" />
@@ -169,7 +178,7 @@
 <Rings>
 </Rings>
 </Pose>
-<Pose name="Attack1" time="100" sway="0,0,0" move="0,0,0" acceleration="0">
+<Pose name="Attack2" time="1000" sway="0,0,0" move="0,0,0" acceleration="0">
 <Sound pitch="1" />
 <Fade in_time="0" life_time="0" out_time="0" />
 <Flash intensity="0" time="0" fade_time="0" exponent="1" color="FFFFFF" />

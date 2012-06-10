@@ -131,7 +131,7 @@ function OnDamage(object, subevent, id, tick)
 
 function OnHealthUpdate(object, subevent, id, tick)
 {
-	iface.bar.setValue("Health", object.health.current / object.health.maximum);
+	//iface.bar.setValue("Health", object.health.current / object.health.maximum);
 	//iface.bitmap.setAlpha("Blood", 1-(object.health.current/object.health.maximum));
 }
 
