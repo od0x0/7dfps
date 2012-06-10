@@ -138,6 +138,8 @@ function enemyBehaviorReset(obj) {
 
     iface.console.write("Reset behavior.");
     
+    obj.event.clearChain();
+    
     switch (behavior_mode) {
         case ENEMY_MODE_NODE_PATROL: // Node walk
             enemyNodePatrol(obj);
@@ -275,7 +277,9 @@ function enemyAttack(obj) {
 // being damaged
 
 function enemyDamage(obj,subEvent,id,tick) {
-    
+    if(chasing_player) return; // youre fighting so you expected this attack
+    obj.motionVector.turnToPlayer();
+    // voice: Being attacked
 }
 
 // death
