@@ -1,0 +1,67 @@
+# Blender MTL File: 'GameplayTestMap.blend'
+# Material Count: 6
+newmtl None_untitled.001_corridor_floorBase_tex.png
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.800000 0.800000 0.800000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /Users/Oliver/github/local/7dfps/Source Content/Modular Packs/Corridor/corridor_floorBase/corridor_floorBase_tex.png
+
+
+newmtl None_untitled.002_corridor_wallCornerOutside_tex.png
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.800000 0.800000 0.800000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /Users/Oliver/github/local/7dfps/Source Content/Modular Packs/Corridor/corridor_wallCornerOutside/corridor_wallCornerOutside_tex.png
+
+
+newmtl None_untitled.004_corridor_floorCorner_tex.png
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.800000 0.800000 0.800000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /Users/Oliver/github/local/7dfps/Source Content/Modular Packs/Corridor/corridor_floorCorner/corridor_floorCorner_tex.png
+
+
+newmtl None_untitled.005_corridor_wallCornerInside_tex.png
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.800000 0.800000 0.800000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /Users/Oliver/github/local/7dfps/Source Content/Modular Packs/Corridor/corridor_wallCornerInside/corridor_wallCornerInside_tex.png
+
+
+newmtl None_untitled_corridor_wallBase_tex.png
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.800000 0.800000 0.800000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /Users/Oliver/github/local/7dfps/Source Content/Modular Packs/Corridor/corridor_wallBase/corridor_wallBase_tex.png
+
+
+newmtl _corridor_grate.png
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd /Users/Oliver/github/local/7dfps/Game/Data/Bitmaps/Textures/corridor_grate.png
+
+
