@@ -16,7 +16,7 @@ function OnFire(weap,subEvent,id,tick)
 
 	if(subEvent==DIM3_EVENT_WEAPON_FIRE_SINGLE) 
 	{
-		//if(weap.target.start() && (weap.target.objectId != -1)) weap.event.callObjectByID(weap.target.objectId, "beingTargetted");
+		//if(weap.target.start() && (weap.target.objectId != -1)) weap.event.callObjectById(weap.target.objectId, "enemyBeingTargetted");
 		//weap.target.end();
 	}
 	else weap.fire.cancel();

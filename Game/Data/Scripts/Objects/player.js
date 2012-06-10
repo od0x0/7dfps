@@ -5,6 +5,7 @@ script.attachEvent(DIM3_EVENT_HEALTH, 'OnHealthUpdate');
 script.attachEvent(DIM3_EVENT_DIE, 'OnDeath');
 script.attachEvent(DIM3_EVENT_PICKUP, 'OnPickup');
 script.attachEvent(DIM3_EVENT_TIMER, "OnTimer")
+script.attachEvent(DIM3_EVENT_MESSAGE, "OnMessage");
 
 const LineOfSightTimerID = 1;
 
@@ -13,11 +14,11 @@ function Weapon(name)
 	this.name=name;
 }
 
-var Weapons=new Array(2);
-Weapons[1]=new Weapon("AssaultRifle"); //"This is my rifle!"
-Weapons[2]=new Weapon("Shotgun"); //"This is my gun!"
-Weapons[3]=new Weapon("ParticleBeamCannon"); //"This is for shooting!"
-Weapons[0]=new Weapon("Nothing"); //"This is for fun!"
+var Weapons=new Array(3);
+Weapons[0]=new Weapon("AssaultRifle"); //"This is my rifle!"
+Weapons[1]=new Weapon("Shotgun"); //"This is my gun!"
+Weapons[2]=new Weapon("ParticleBeamCannon"); //"This is for shooting!"
+Weapons[3]=new Weapon("Nothing"); //"This is for fun!"
 
 function OnConstruct(object, subevent, id, tick)
 {
@@ -36,6 +37,8 @@ function OnConstruct(object, subevent, id, tick)
 	
 	object.click.crosshairUp="Use";
 	object.click.crosshairDown="Use";
+
+	object.setting.singleSpeed = true;
 	
 	object.turnSpeed.facingWalk=4;
 	object.turnSpeed.motionWalk=4;
@@ -46,10 +49,10 @@ function OnConstruct(object, subevent, id, tick)
 	object.turnSpeed.facingAir=3;
 	object.turnSpeed.motionAir=3;
 	
-	object.forwardSpeed.walk=50;
-	object.forwardSpeed.run=70;
-	object.forwardSpeed.crawl=50;
-	object.forwardSpeed.air=80;
+	object.forwardSpeed.walk=75;
+	object.forwardSpeed.run=75;
+	object.forwardSpeed.crawl=25;
+	object.forwardSpeed.air=50;
 	object.forwardSpeed.acceleration=4;
 	object.forwardSpeed.deceleration=8;
 	object.forwardSpeed.accelerationAir=1.0;
@@ -92,8 +95,8 @@ function OnConstruct(object, subevent, id, tick)
 		//object.weapon.hideSingle(Weapons[i].name, true);
 	}
 
-	object.weapon.add("LineOfSight");
-	object.weapon.hideSingle("LineOfSight", true);
+	//object.weapon.add("LineOfSight");
+	//object.weapon.hideSingle("LineOfSight", true);
 	
 	object.model.light.index=0;
 	object.model.light.on=false;
@@ -116,7 +119,7 @@ function OnSpawn(object, subevent, id, tick)
 	{
 		//object.weapon.hideSingle(Weapons[i].name, true);
 	}
-	object.weapon.setSelect(Weapons[2].name);
+	object.weapon.setSelect(Weapons[0].name);
 	//iface.bitmap.setAlpha("Blood", 1-(object.health.current/object.health.maximum));
 	//iface.text.setText("AmmoTextbox"," ");
 
@@ -152,6 +155,71 @@ function OnTimer(object, subevent, id, tick)
 	if(id == LineOfSightTimerID) 
 	{
 		object.weapon.fire("LineOfSight", 0);
-		iface.console.write("Timer Fired After " + tick + " Ticks");
+		//iface.console.write("Timer Fired After " + tick + " Ticks");
+	}
+}
+
+const ReloadKeyID = 4;
+/*
+const SprintKeyID = 5;
+
+var ForwardSpeedBackup = null;
+var SideSpeedBackup = null;
+var IsSprinting = false;
+
+function StartSprinting(object)
+{
+	if(IsSprinting) return;
+	IsSprinting = true;
+	ForwardSpeedBackup = object.forwardSpeed.walk;
+	SideSpeedBackup = object.sideSpeed.walk;
+	object.forwardSpeed.walk = 100;
+	object.sideSpeed.walk = 100;
+	object.event.chain(50, "EndSprinting");
+}
+
+function EndSprinting(object)
+{
+	if(IsSprinting == false) return;
+	IsSprinting = false;
+	object.forwardSpeed.walk = ForwardSpeedBackup;
+	object.sideSpeed.walk = SideSpeedBackup;
+	SideSpeedBackup = null;
+	ForwardSpeedBackup = null;
+}*/
+
+function OnKeyDown(object, id)
+{
+	switch (id)
+	{
+		case ReloadKeyID://Reload
+			object.event.callHeldWeapon("OnManualReload");
+			break;
+		case SprintKeyID://Sprint
+		//	StartSprinting(object);
+			break;
+	}
+}
+
+function OnKeyUp(object, id)
+{
+	switch (id)
+	{
+		case SprintKeyID://Sprint
+		//	EndSprinting(object);
+			break;
+	}
+}
+
+function OnMessage(object, subevent, id, tick)
+{
+	switch (subevent)
+	{
+		case DIM3_EVENT_MESSAGE_FROM_KEY_DOWN:
+			OnKeyDown(object, id);
+			break
+		case DIM3_EVENT_MESSAGE_FROM_KEY_UP:
+			OnKeyUp(object, id);
+			break;
 	}
 }
