@@ -152,6 +152,6 @@ function OnTimer(object, subevent, id, tick)
 	if(id == LineOfSightTimerID) 
 	{
 		object.weapon.fire("LineOfSight", 0);
-		iface.console.write("Timer Fired After " + tick + " Ticks");
+		//iface.console.write("Timer Fired After " + tick + " Ticks");
 	}
 }
