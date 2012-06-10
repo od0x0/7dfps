@@ -81,6 +81,8 @@ var chasing_player = false;
 var searching_player = false;
 var player_last_position = 0;
 var node_reverse = false;
+var voice_tick = 0;
+var voice_wait = 0;
 
 // How often the enemy was targeted. Resets to 0 after dodging.
 var targettedCount = 0;
@@ -196,10 +198,10 @@ function enemyWatch(obj,subEvent,id,tick) {
     if(!obj.watch.objectIsPlayer) return;
     switch (subEvent) {
         case DIM3_EVENT_WATCH_OBJECT_NEAR:
-            enemyStartChase(obj);
+            enemyStartChase(obj,tick);
             break;
         case DIM3_EVENT_WATCH_OBJECT_FAR:
-            enemyStopChase(obj);
+            enemyStopChase(obj,tick);
             break;
         default:
             break;
@@ -208,14 +210,15 @@ function enemyWatch(obj,subEvent,id,tick) {
 
 // chasing
 
-function enemyStartChase(obj) {
+function enemyStartChase(obj,tick) {
     iface.console.write("Sighted. Start chase.");
     chasing_player = true;
     searching_player = false;
+    robotVoice(obj,"Robot Bark Attack",tick,"10000");
     enemyChaseLoop(obj);
 }
 
-function enemyStopChase(obj) {
+function enemyStopChase(obj,tick) {
     iface.console.write("Lost sight. Stop chase.");
     chasing_player = false;
     searching_player = true;
@@ -290,4 +293,16 @@ function enemyBeingTargetted(obj) {
     if (targettedCount >= DODGE_CHANCE) {
         enemyDodge();
     }
+}
+
+// voice samples
+
+function robotVoice(obj,name,tick,wait) {
+    iface.console.write("Try to play sound "+name);
+    var voice_tick_wait = parseInt(voice_tick) + parseInt(voice_wait);
+    iface.console.write(tick+"/"+(voice_tick_wait));
+    if(tick < voice_tick_wait) return;
+    voice_tick = tick;
+    voice_wait = wait;
+    sound.play(name,obj.position,1.0);
 }
