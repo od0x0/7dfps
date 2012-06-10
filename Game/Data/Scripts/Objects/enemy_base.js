@@ -83,6 +83,7 @@ var player_last_position = 0;
 var node_reverse = false;
 var voice_tick = 0;
 var voice_wait = 0;
+var dead = false;
 
 // How often the enemy was targeted. Resets to 0 after dodging.
 var targettedCount = 0;
@@ -280,8 +281,15 @@ function enemyDamage(obj,subEvent,id,tick) {
 // death
 
 function enemyDie(obj,subEvent,id,tick) {
-    obj.motionVector.stop();
     obj.setting.hidden = true;
+    dead = true;
+    obj.event.clearChain();
+    obj.motionAngle.turnStop();
+    obj.motionAngle.faceStop();
+    obj.motionVector.stop();
+    obj.watch.stop();
+    obj.setting.contact = false;
+    obj.setting.damage = false;
 }
 
 // being targetted
