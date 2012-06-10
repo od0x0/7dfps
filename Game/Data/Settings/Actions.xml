@@ -67,7 +67,7 @@
 <Action name="player_2" display="Fly Mode" show="true" />
 <Action name="player_3" display="Camera Mode" show="true" />
 <Action name="player_4" display="Reload" show="true" />
-<Action name="player_5" />
+<Action name="player_5" display="Sprint" show="true" />
 <Action name="player_6" />
 <Action name="player_7" />
 <Action name="player_8" />
