@@ -1,0 +1,12 @@
+# Blender MTL File: 'corridor_master.blend'
+# Material Count: 1
+newmtl None_untitled.008
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd /Users/aaronsrdoc/7dfps/Source Content/Modular Packs/Room/room_floorBase/room_floorBase_tex.png
+
+
