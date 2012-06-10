@@ -40,6 +40,9 @@ script.attachEvent(DIM3_EVENT_SPAWN,'enemySpawn');
 script.attachEvent(DIM3_EVENT_PATH,'enemyPathDone');
 script.attachEvent(DIM3_EVENT_COLLIDE,'enemyCollide');
 script.attachEvent(DIM3_EVENT_WATCH,'enemyWatch');
+script.attachEvent(DIM3_EVENT_DAMAGE,'enemyDamage');
+script.attachEvent(DIM3_EVENT_DIE,'enemyDie');
+
 
 //
 // constants
@@ -60,7 +63,7 @@ const DODGE_CHANCE = 10;
 
 
 // misc constans
-const WATCH_DISTANCE = 50000;
+const WATCH_DISTANCE = 20000;
 const ATTACK_DISTANCE = 15000;
 
 
@@ -92,7 +95,20 @@ function enemyConstruct(obj,subEvent,id,tick) {
     obj.model.on = true;
     obj.model.name = "TestEnemy";
     
-    obj.watch.setRestrictSight(90,true);
+    obj.setting.damage=true;
+    obj.setting.bumpUp=true;
+    
+    obj.health.maximum = 100;
+    obj.health.start = 100;
+    
+    obj.size.x = 600;
+    obj.size.z = 600;
+    obj.size.y = 2000;
+    obj.size.eyeOffset = -1000;
+    
+    obj.objectSpeed.bumpHeight = 300;
+    
+    obj.watch.setRestrictSight(120,true);
 }
 
 // spawn
@@ -116,6 +132,8 @@ function enemySpawn(obj,subEvent,id,tick) {
 // return to normal behavior
 
 function enemyBehaviorReset(obj) {
+
+    iface.console.write("Reset behavior.");
     
     switch (behavior_mode) {
         case ENEMY_MODE_NODE_PATROL: // Node walk
@@ -191,14 +209,17 @@ function enemyWatch(obj,subEvent,id,tick) {
 // chasing
 
 function enemyStartChase(obj) {
+    iface.console.write("Sighted. Start chase.");
     chasing_player = true;
     searching_player = false;
     enemyChaseLoop(obj);
 }
 
 function enemyStopChase(obj) {
+    iface.console.write("Lost sight. Stop chase.");
     chasing_player = false;
     searching_player = true;
+    enemyChaseLoop(obj);
 }
 
 function enemyChaseLoop(obj) {
@@ -223,7 +244,8 @@ function enemyChaseLoop(obj) {
             // When you're there, turn towards the player.
             // If you can see him, the watch should fire again and reset everything.
             searching_player = false;
-            obj.motionAngle.turnToPlayer();
+            chasing_player = false;
+            obj.motionAngle.facePlayer();
             obj.model.animation.start("Idle");
         }
     } else {
@@ -240,6 +262,22 @@ function enemyChaseLoop(obj) {
 
 function enemyAttack(obj) {
     iface.console.write("ATTACK!");
+    obj.model.animation.startThenChange("Attack","Idle");
+    obj.motionAngle.facePlayer();
+    obj.motionVector.stop();
+}
+
+// being damaged
+
+function enemyDamage(obj,subEvent,id,tick) {
+    
+}
+
+// death
+
+function enemyDie(obj,subEvent,id,tick) {
+    obj.motionVector.stop();
+    obj.setting.hidden = true;
 }
 
 // being targetted
