@@ -241,7 +241,7 @@ function enemyChaseLoop(obj) {
         player_last_position = map.object.getPosition(map.object.findPlayer());
     } else if (searching_player) { // Searching
         // Move towards the players last known position
-        if (utility.point.distanceTo(obj.position,player_last_position) > 100) { 
+        if (utility.point.distanceTo(obj.position,player_last_position) > 1500) { 
             obj.motionVector.walkToPosition(player_last_position);
             obj.model.animation.start("Move");
         } else {
@@ -249,7 +249,7 @@ function enemyChaseLoop(obj) {
             // If you can see him, the watch should fire again and reset everything.
             searching_player = false;
             chasing_player = false;
-            obj.motionAngle.facePlayer();
+            obj.motionVector.turnToPlayer();
             obj.model.animation.start("Idle");
         }
     } else {
@@ -259,7 +259,7 @@ function enemyChaseLoop(obj) {
     }
     
     // Do all of the above every second.
-    obj.event.chain(10,"enemyChaseLoop");
+    obj.event.chain(5,"enemyChaseLoop");
 }
 
 // attacking
