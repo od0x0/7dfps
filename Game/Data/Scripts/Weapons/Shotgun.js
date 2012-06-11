@@ -132,7 +132,7 @@ function machineGunFirePlayer(weap)
 
 
 	for (var i = 0; i<10; i++)
-		weap.projectile.spawnFromCenterSlop('ShotgunBullet', 7.5);
+		weap.projectile.spawnFromCenterSlop('ShotgunBullet', 5);
 	
 
 	//weap.projectile.spawnFromCenterSlop('Bullet',1.5);

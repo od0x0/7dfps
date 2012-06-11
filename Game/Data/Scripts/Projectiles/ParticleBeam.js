@@ -31,12 +31,12 @@ function projectileConstruct(proj,subEvent,id,tick)
 	
 		// the projectile push
 		
-	//proj.push.on=true;
-	//proj.push.force=80;
+	proj.push.on=true;
+	proj.push.force=1;
 
-	proj.melee.radius = 1000;
-	proj.melee.damage = 100;
-	proj.melee.force = -200;
+	proj.melee.radius = 5000;
+	proj.melee.damage = 50;
+	proj.melee.force = -5;
 
 		// hit decal
 		/*
@@ -50,14 +50,16 @@ function projectileConstruct(proj,subEvent,id,tick)
 // projectile hit
 //
 
+var RemainingHitCount = 3;
+
 function projectileHit(proj,subEvent,id,tick)
 {
+	//if(utility.random.getInteger(0, 3) == 0) 
+	//proj.melee.spawnFromPosition(proj.position);
+
 	spawn.rayTeamColor(proj.origin, proj.position, 15, 500);
 	spawn.ringLine(proj.origin,proj.position,20,'Ray Ring');
 	spawn.particle(proj.position,'Ray Globe');
-
-	if(utility.random.getInteger(0, 3) == 0) proj.melee.spawnFromPosition(proj.position);
-	
 	proj.action.destroy();
 }
 
