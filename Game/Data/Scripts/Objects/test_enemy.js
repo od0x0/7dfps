@@ -9,6 +9,8 @@ script.attachEvent(DIM3_EVENT_CONSTRUCT,"enemyConstruct");
 function enemyConstruct(obj,subEvent,id,tick) {
     script.callParent();
     obj.weapon.add("SecurityBot_Weapon");
+    obj.health.maximum = 50;
+    obj.health.start = 50;
 }
 
 function enemyAttack(obj) {

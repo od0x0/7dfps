@@ -26,8 +26,8 @@ function OnConstruct(object, subevent, id, tick)
 	//object.model.name="Player";
 	object.model.shadow.on=false;
 	
-	object.size.x=1800;
-	object.size.z=1800;	
+	object.size.x=2000;
+	object.size.z=2000;	
 	object.size.y=1800;
 	object.size.eyeOffset=-1600;
 	object.size.weight=180;
@@ -38,7 +38,7 @@ function OnConstruct(object, subevent, id, tick)
 	object.click.crosshairUp="Use";
 	object.click.crosshairDown="Use";
 
-	object.setting.singleSpeed = true;
+	object.setting.singleSpeed = false;
 	
 	object.turnSpeed.facingWalk=4;
 	object.turnSpeed.motionWalk=4;
@@ -73,7 +73,7 @@ function OnConstruct(object, subevent, id, tick)
 	
 	object.objectSpeed.jumpHeight=45;
 	object.objectSpeed.bumpHeight=800;
-	object.objectSpeed.duckAdd=32;
+	object.objectSpeed.duckAdd=100;
 	object.objectSpeed.duckChange=1000;
 	
 	object.look.upAngle=90;
@@ -87,7 +87,6 @@ function OnConstruct(object, subevent, id, tick)
 	object.setting.ignorePickUpItems=false;
 	object.setting.damage=true;
 	object.setting.invincible=false;
-	
 	
 	for(var i = 0; i < Weapons.length; i++)
 	{
@@ -124,18 +123,22 @@ function OnSpawn(object, subevent, id, tick)
 	//iface.text.setText("AmmoTextbox"," ");
 
 	//object.event.startTimer(10, LineOfSightTimerID);
+
+	camera.plane.near = 100;
+	camera.plane.far = 1000000;
 }
 
 function OnDamage(object, subevent, id, tick)
 {
 	object.status.tintView(new Color(1, 0, 0), 0.5, 500, 300, 1000);
-	OnHealthUpdate();
+	OnHealthUpdate(object, subevent, id, tick);
 }
 
 function OnHealthUpdate(object, subevent, id, tick)
 {
-	//iface.bar.setValue("Health", object.health.current / object.health.maximum);
-	//iface.bitmap.setAlpha("Blood", 1-(object.health.current/object.health.maximum));
+	if(object.health.maximum > 0) iface.bar.setValue('Health', (object.health.current/object.health.maximum));
+	if(object.health.armorMaximum > 0) iface.bar.setValue('Armor', (object.health.armorCurrent/object.health.armorMaximum));
+	else iface.bar.setValue('Armor', 0);
 }
 
 function OnDeath(object, subevent, id, tick)
@@ -154,7 +157,7 @@ function OnTimer(object, subevent, id, tick)
 {
 	if(id == LineOfSightTimerID) 
 	{
-		object.weapon.fire("LineOfSight", 0);
+		//object.weapon.fire("LineOfSight", 0);
 		//iface.console.write("Timer Fired After " + tick + " Ticks");
 	}
 }
@@ -195,9 +198,9 @@ function OnKeyDown(object, id)
 		case ReloadKeyID://Reload
 			object.event.callHeldWeapon("OnManualReload");
 			break;
-		case SprintKeyID://Sprint
+		//case SprintKeyID://Sprint
 		//	StartSprinting(object);
-			break;
+		//	break;
 	}
 }
 
@@ -205,9 +208,9 @@ function OnKeyUp(object, id)
 {
 	switch (id)
 	{
-		case SprintKeyID://Sprint
+		//case SprintKeyID://Sprint
 		//	EndSprinting(object);
-			break;
+		//	break;
 	}
 }
 
