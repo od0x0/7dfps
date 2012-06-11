@@ -2583,7 +2583,7 @@
 <Liquids>
 </Liquids>
 <Sceneries>
-<Scenery c3="488632,500579,504763" model_name="Little Guy" animation_name="Head Swivel" angle="0,0,0" contact="true" contact_projectile="true" contact_hit_box="true" frames="0,0,0,0,0,0,0,0" resize="1" />
+<Scenery c3="488632,500579,504763" model_name="Little Guy" animation_name="Head Swivel" angle="0,0,0" contact="true" contact_projectile="true" contact_hit_box="true" shadow="true" frames="0,0,0,0,0,0,0,0" resize="1" />
 </Sceneries>
 <Lights>
 <Light c3="501618,500068,504485" type="normal" light_map="true" direction="all" intensity="10000" exponent="1" rgb="70A5A9" />
