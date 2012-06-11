@@ -100,7 +100,7 @@ function machineGunFirePlayer(weap)
 			
 		if (!weap.ammo.changeClip()) {
 			weap.fire.cancel();
-			iface.text.setText("WeaponInfo", "Assault Rifle " + weap.ammo.count + "x" + weap.ammo.clipCount);
+			//iface.text.setText("WeaponInfo", "Assault Rifle " + weap.ammo.count + "x" + weap.ammo.clipCount);
 			return;
 		}
 		
@@ -108,7 +108,7 @@ function machineGunFirePlayer(weap)
 			
 		weap.model.animation.startThenChange('Reload','Idle');
 
-		iface.text.setText("WeaponInfo", "Assault Rifle " + weap.ammo.count + "x" + weap.ammo.clipCount);
+		//iface.text.setText("WeaponInfo", "Assault Rifle " + weap.ammo.count + "x" + weap.ammo.clipCount);
 		
 			// reload makes next fire wait longer
 		
@@ -132,7 +132,7 @@ function machineGunFirePlayer(weap)
 		
 	weap.recoil.go();
 
-	iface.text.setText("WeaponInfo", "Assault Rifle " + weap.ammo.count + "x" + weap.ammo.clipCount);
+	//iface.text.setText("WeaponInfo", "Assault Rifle " + weap.ammo.count + "x" + weap.ammo.clipCount);
 }
 
 function OnFire(weap,subEvent,id,tick)
@@ -175,6 +175,6 @@ function OnFire(weap,subEvent,id,tick)
 
 function OnManualReload(weapon)
 {
-	iface.console.write("Doing Manual Reload");
+	//iface.console.write("Doing Manual Reload");
 	if(weapon.ammo.changeClip()) weapon.model.animation.startThenChange('Reload','Idle');
 }

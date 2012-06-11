@@ -6,6 +6,8 @@ script.attachEvent(DIM3_EVENT_DIE, 'OnDeath');
 script.attachEvent(DIM3_EVENT_PICKUP, 'OnPickup');
 script.attachEvent(DIM3_EVENT_TIMER, "OnTimer")
 script.attachEvent(DIM3_EVENT_MESSAGE, "OnMessage");
+script.attachEvent(DIM3_EVENT_WEAPON_SELECT, "OnWeaponSelect");
+script.attachEvent(DIM3_EVENT_WEAPON_FIRE, "OnWeaponFire");
 
 const LineOfSightTimerID = 1;
 
@@ -126,6 +128,8 @@ function OnSpawn(object, subevent, id, tick)
 
 	camera.plane.near = 100;
 	camera.plane.far = 1000000;
+
+	UpdateWeaponDisplay(object);
 }
 
 function OnDamage(object, subevent, id, tick)
@@ -151,6 +155,7 @@ function OnPickup(object, subevent, id, tick)
 {
 	//if(!object.pickup.itemName) return;
 	object.weapon.setSelect(object.pickup.itemName);
+	UpdateWeaponDisplay(object);
 }
 
 function OnTimer(object, subevent, id, tick)
@@ -197,6 +202,7 @@ function OnKeyDown(object, id)
 	{
 		case ReloadKeyID://Reload
 			object.event.callHeldWeapon("OnManualReload");
+			UpdateWeaponDisplay(object);
 			break;
 		//case SprintKeyID://Sprint
 		//	StartSprinting(object);
@@ -225,4 +231,30 @@ function OnMessage(object, subevent, id, tick)
 			OnKeyUp(object, id);
 			break;
 	}
+}
+
+function UpdateWeaponDisplay(object)
+{
+	var selectedWeaponName = object.weapon.getSelect();
+	var weaponInfoText = "";
+	if(selectedWeaponName == null) return;
+
+	weaponInfoText += selectedWeaponName;
+	weaponInfoText += " (";
+	weaponInfoText += object.weapon.getAmmoCount(selectedWeaponName);
+	weaponInfoText += " rounds, ";
+	weaponInfoText += object.weapon.getClipCount(selectedWeaponName);
+	weaponInfoText += " clips)";
+
+	iface.text.setText("WeaponInfo", weaponInfoText);
+}
+
+function OnWeaponSelect(object, subevent, id, tick)
+{
+	UpdateWeaponDisplay(object);
+}
+
+function OnWeaponFire(object, subevent, id, tick)
+{
+	UpdateWeaponDisplay(object);
 }

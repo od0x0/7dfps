@@ -108,11 +108,11 @@ function machineGunFirePlayer(weap)
 			
 		if (!weap.ammo.changeClip()) {
 			weap.fire.cancel();
-			iface.text.setText("WeaponInfo", "Shotgun " + weap.ammo.count + "x" + weap.ammo.clipCount)
+			//iface.text.setText("WeaponInfo", "Shotgun " + weap.ammo.count + "x" + weap.ammo.clipCount)
 			return;
 		}
 
-		iface.text.setText("WeaponInfo", "Shotgun " + weap.ammo.count + "x" + weap.ammo.clipCount)
+		//iface.text.setText("WeaponInfo", "Shotgun " + weap.ammo.count + "x" + weap.ammo.clipCount)
 		
 			// run change animation
 			
@@ -138,7 +138,7 @@ function machineGunFirePlayer(weap)
 	//weap.projectile.spawnFromCenterSlop('Bullet',1.5);
 		// run recoil
 	
-	iface.text.setText("WeaponInfo", "Shotgun " + weap.ammo.count + "x" + weap.ammo.clipCount)
+	//iface.text.setText("WeaponInfo", "Shotgun " + weap.ammo.count + "x" + weap.ammo.clipCount)
 
 	weap.recoil.go();
 	weap.kickback.kick();
@@ -184,6 +184,6 @@ function OnFire(weap,subEvent,id,tick)
 
 function OnManualReload(weapon)
 {
-	iface.console.write("Doing Manual Reload");
+	//iface.console.write("Doing Manual Reload");
 	if(weapon.ammo.changeClip()) weapon.model.animation.startThenChange('Reload','Idle');
 }

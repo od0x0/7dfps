@@ -231,7 +231,7 @@ function OnFire(weap,subEvent,id,tick)
 		EndCharging(weap);
 	}
 
-	iface.text.setText("WeaponInfo", "Beam Cannon " + weap.ammo.count);
+	//iface.text.setText("WeaponInfo", "Beam Cannon " + weap.ammo.count);
 
 		// cancel all other firings
 
@@ -240,6 +240,6 @@ function OnFire(weap,subEvent,id,tick)
 
 function OnManualReload(weapon)
 {
-	iface.console.write("Doing Manual Reload");
+	//iface.console.write("Doing Manual Reload");
 	if(weapon.ammo.changeClip()) weapon.model.animation.startThenChange('Reload','Idle');
 }
