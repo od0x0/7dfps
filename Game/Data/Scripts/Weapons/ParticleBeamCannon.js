@@ -1,10 +1,9 @@
 script.attachEvent(DIM3_EVENT_CONSTRUCT,'OnConstruct');
 script.attachEvent(DIM3_EVENT_ANIMATION_WEAPON,'OnAnimation');
 script.attachEvent(DIM3_EVENT_WEAPON_FIRE,'OnFire');
+script.attachEvent(DIM3_EVENT_SPAWN, "OnSpawn")
 
-//
-// machine gun construction
-//
+var TimeStartedCharging = (new Date()).valueOf();
 
 function OnConstruct(weap,subEvent,id,tick)
 {
@@ -39,9 +38,9 @@ function OnConstruct(weap,subEvent,id,tick)
 	weap.ammo.initCount=50;
 	weap.ammo.maxCount=50;
 	
-	weap.ammo.clip=false;
-	weap.ammo.initClipCount=5;
-	weap.ammo.maxClipCount=5;
+	weap.ammo.clip=true;
+	weap.ammo.initClipCount=2;
+	weap.ammo.maxClipCount=2;
 	
 		// recoil
 		
@@ -84,6 +83,11 @@ function OnConstruct(weap,subEvent,id,tick)
 	weap.kickback.size = 50;
 }
 
+function OnSpawn(weapon, subevent, id, tick)
+{
+	TimeStartedCharging = (new Date()).valueOf();
+}
+
 //
 // machine gun animation
 //
@@ -107,8 +111,6 @@ function OnAnimation(weap,subEvent,id,tick)
 //
 // machine gun fire
 //
-
-var TimeStartedCharging = 0;
 
 function BeginCharging(weap)
 {
@@ -226,9 +228,10 @@ function OnFire(weap,subEvent,id,tick)
 	{
 
 	}
-	else
+	else if(subEvent == DIM3_EVENT_WEAPON_FIRE_UP)
 	{
 		EndCharging(weap);
+		return;
 	}
 
 	//iface.text.setText("WeaponInfo", "Beam Cannon " + weap.ammo.count);
