@@ -86,7 +86,7 @@
 <Static follow="true" />
 </Camera>
 <Editor_Views>
-<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="645508,464132,583497" ang="270,357.999939,0" uv_layer="1" no_rot="true" />
+<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="650053,455208,579371" ang="270,1.599918,0" uv_layer="1" no_rot="true" />
 </Editor_Views>
 <Meshes>
 <Mesh lock_uv="true" never_cull="true">
@@ -10580,5 +10580,8 @@
 <Spot id="6" c3="634278,486846,590972" type="Object" script="test_enemy" params="2|start|end" angle="0" skill="easy" spawn="always" />
 <Spot id="7" c3="625638,486846,583484" type="Object" script="test_enemy" params="2|start|end" angle="0" skill="easy" spawn="always" />
 <Spot id="8" c3="626790,486846,562748" type="Object" script="test_enemy" params="2|start|end" angle="0" skill="easy" spawn="always" />
+<Spot id="9" c3="649830,489176,581756" name="AssaultRifle" type="Object" script="PickupWeapon" angle="0" skill="easy" spawn="always" />
+<Spot id="10" c3="642918,489176,581756" name="ParticleBeamCannon" type="Object" script="PickupWeapon" angle="0" skill="easy" spawn="always" />
+<Spot id="11" c3="655590,489176,581756" name="Shotgun" type="Object" script="PickupWeapon" angle="0" skill="easy" spawn="always" />
 </Spots>
 </Map>

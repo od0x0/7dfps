@@ -93,8 +93,9 @@ function OnConstruct(object, subevent, id, tick)
 	for(var i = 0; i < Weapons.length; i++)
 	{
 		object.weapon.add(Weapons[i].name);
-		//object.weapon.hideSingle(Weapons[i].name, true);
+		object.weapon.hideSingle(Weapons[i].name, true);
 	}
+	object.weapon.hideSingle(Weapons[3].name, false);
 
 	//object.weapon.add("LineOfSight");
 	//object.weapon.hideSingle("LineOfSight", true);
@@ -118,9 +119,10 @@ function OnSpawn(object, subevent, id, tick)
 	object.position.reset();
 	for(var i = 0; i < Weapons.length; i++)
 	{
-		//object.weapon.hideSingle(Weapons[i].name, true);
+		object.weapon.hideSingle(Weapons[i].name, true);
 	}
-	object.weapon.setSelect(Weapons[0].name);
+	object.weapon.hideSingle(Weapons[3].name, false);
+	object.weapon.setSelect(Weapons[3].name);
 	//iface.bitmap.setAlpha("Blood", 1-(object.health.current/object.health.maximum));
 	//iface.text.setText("AmmoTextbox"," ");
 
