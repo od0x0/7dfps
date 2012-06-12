@@ -123,4 +123,9 @@
 <Wave file="Point" />
 <Distance min="10" max="10000" />
 </Sound>
+
+<Sound name="MapGeometryBulletHit">
+<Wave file="MapGeometryBulletHit" />
+<Distance min="10" max="30000" />
+</Sound>
 </Sounds>

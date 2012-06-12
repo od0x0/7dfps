@@ -132,6 +132,7 @@ function OnSpawn(object, subevent, id, tick)
 	camera.plane.far = 1000000;
 
 	UpdateWeaponDisplay(object);
+	OnHealthUpdate(object, subevent, id, tick);
 }
 
 function OnDamage(object, subevent, id, tick)

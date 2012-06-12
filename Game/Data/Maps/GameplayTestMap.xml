@@ -86,7 +86,7 @@
 <Static follow="true" />
 </Camera>
 <Editor_Views>
-<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="650053,455208,579371" ang="270,1.599918,0" uv_layer="1" no_rot="true" />
+<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="666281,440155,586094" ang="270,1.599918,0" uv_layer="1" no_rot="true" />
 </Editor_Views>
 <Meshes>
 <Mesh lock_uv="true" never_cull="true">
@@ -10572,16 +10572,20 @@
 </Nodes>
 <Spots>
 <Spot id="0" c3="655590,489176,566780" name="Start" type="Player" script="player" angle="0" skill="easy" spawn="always" />
-<Spot id="1" c3="667686,486846,562748" type="Object" script="test_enemy" params="2|start|end" angle="0" skill="easy" spawn="always" />
-<Spot id="2" c3="665958,486846,563900" type="Object" script="test_enemy" params="2|start|end" angle="0" skill="easy" spawn="always" />
-<Spot id="3" c3="668838,486846,588668" type="Object" script="test_enemy" params="2|start|end" angle="0" skill="easy" spawn="always" />
-<Spot id="4" c3="668838,486846,588668" type="Object" script="test_enemy" params="2|start|end" angle="0" skill="easy" spawn="always" />
-<Spot id="5" c3="650982,486846,590972" type="Object" script="test_enemy" params="2|start|end" angle="0" skill="easy" spawn="always" />
-<Spot id="6" c3="634278,486846,590972" type="Object" script="test_enemy" params="2|start|end" angle="0" skill="easy" spawn="always" />
-<Spot id="7" c3="625638,486846,583484" type="Object" script="test_enemy" params="2|start|end" angle="0" skill="easy" spawn="always" />
-<Spot id="8" c3="626790,486846,562748" type="Object" script="test_enemy" params="2|start|end" angle="0" skill="easy" spawn="always" />
+<Spot id="1" c3="667686,486846,562748" type="Object" script="security_bot" params="2|start|end" angle="0" skill="easy" spawn="always" />
+<Spot id="2" c3="665958,486846,563900" type="Object" script="security_bot" params="2|start|end" angle="0" skill="easy" spawn="always" />
+<Spot id="3" c3="667686,486846,585212" type="Object" script="security_bot" params="2|start|end" angle="0" skill="easy" spawn="always" />
+<Spot id="4" c3="667110,486846,589820" type="Object" script="security_bot" params="2|start|end" angle="0" skill="easy" spawn="always" />
+<Spot id="5" c3="650982,486846,590972" type="Object" script="security_bot" params="2|start|end" angle="0" skill="easy" spawn="always" />
+<Spot id="6" c3="634854,486846,590972" type="Object" script="security_bot" params="2|start|end" angle="0" skill="easy" spawn="always" />
+<Spot id="7" c3="625638,486846,583484" type="Object" script="security_bot" params="2|start|end" angle="0" skill="easy" spawn="always" />
+<Spot id="8" c3="626790,486846,562748" type="Object" script="security_bot" params="2|start|end" angle="0" skill="easy" spawn="always" />
 <Spot id="9" c3="649830,489176,581756" name="AssaultRifle" type="Object" script="PickupWeapon" angle="0" skill="easy" spawn="always" />
 <Spot id="10" c3="642918,489176,581756" name="ParticleBeamCannon" type="Object" script="PickupWeapon" angle="0" skill="easy" spawn="always" />
 <Spot id="11" c3="655590,489176,581756" name="Shotgun" type="Object" script="PickupWeapon" angle="0" skill="easy" spawn="always" />
+<Spot id="12" c3="637734,486846,590972" type="Object" script="security_bot" params="2|start|end" angle="0" skill="easy" spawn="always" />
+<Spot id="13" c3="645798,486846,592700" type="Object" script="security_bot" params="2|start|end" angle="0" skill="easy" spawn="always" />
+<Spot id="14" c3="643494,486846,590972" type="Object" script="security_bot" params="2|start|end" angle="0" skill="easy" spawn="always" />
+<Spot id="15" c3="641190,486846,589244" type="Object" script="security_bot" params="2|start|end" angle="0" skill="easy" spawn="always" />
 </Spots>
 </Map>
