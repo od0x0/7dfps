@@ -152,7 +152,7 @@
 <Static follow="true" />
 </Camera>
 <Editor_Views>
-<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="478422,497912,497635" ang="340.99939,57.000412,0" uv_layer="0" />
+<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="476572,498832,495783" ang="354.7995,92.800415,0" uv_layer="0" />
 </Editor_Views>
 <Meshes>
 <Mesh lock_uv="true" lock_move="true">
