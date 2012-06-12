@@ -180,7 +180,7 @@ function enemyRandomWalk(obj) {
     var walk_time = utility.random.getInteger(30,100);
     obj.motionAngle.turnToAngle(obj.angle.y+turn_angle,0);
     obj.motionVector.go();
-    obj.model.animation.start("Move");
+    obj.model.animation.change("Head Swivel");
     obj.event.chain(walk_time,"enemyRandomWalk");
 }
 
@@ -218,26 +218,26 @@ function enemyStartChase(obj,tick) {
     chasing_player = true;
     searching_player = false;
     robotVoice(obj,"Robot Bark Attack",tick,"10000");
-    enemyChaseLoop(obj);
+    enemyChaseLoop(obj,tick);
 }
 
 function enemyStopChase(obj,tick) {
     iface.console.write("Lost sight. Stop chase.");
     chasing_player = false;
     searching_player = true;
-    enemyChaseLoop(obj);
+    enemyChaseLoop(obj,tick);
 }
 
-function enemyChaseLoop(obj) {
+function enemyChaseLoop(obj,tick) {
     if(chasing_player) { // Chasing
         // Prepare everything to attack
         // then fire
         if(obj.position.distanceToPlayer() <= ATTACK_DISTANCE) {
-            enemyAttack(obj);
+            enemyAttack(obj,tick);
         } else {
             // Walk towards the player if youre far away
             obj.motionVector.walkToPlayer();
-            obj.model.animation.start("Move");
+            obj.model.animation.change("Idle");
         }
         // Also remember the players position to look for him later
         player_last_position = map.object.getPosition(map.object.findPlayer());
@@ -245,14 +245,14 @@ function enemyChaseLoop(obj) {
         // Move towards the players last known position
         if (utility.point.distanceTo(obj.position,player_last_position) > 1500) { 
             obj.motionVector.walkToPosition(player_last_position);
-            obj.model.animation.start("Move");
+            obj.model.animation.change("Idle");
         } else {
             // When you're there, turn towards the player.
             // If you can see him, the watch should fire again and reset everything.
             searching_player = false;
             chasing_player = false;
             obj.motionVector.turnToPlayer();
-            obj.model.animation.start("Idle");
+            obj.model.animation.change("Head Swivel");
         }
     } else {
         // If not searching or chasing, go back to whatever.
@@ -266,12 +266,12 @@ function enemyChaseLoop(obj) {
 
 // attacking
 
-function enemyAttack(obj) {
+function enemyAttack(obj,tick) {
     /*iface.console.write("ATTACK!");
     obj.model.animation.startThenChange("Attack","Idle");
     obj.motionAngle.facePlayer();
     obj.motionVector.stop();*/
-    script.callChildFunction('enemyAttack',obj);
+    script.callChildFunction('enemyAttack',tick);
 }
 
 // being damaged
