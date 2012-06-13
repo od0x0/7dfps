@@ -11,13 +11,13 @@ function OnConstruct(weap,subEvent,id,tick)
 		// weapon model
 		
 	weap.model.on=true;
-	weap.model.name="AssaultRifle";
+	weap.model.name="Assault Rifle";
 
 		// setup how weapon is held in hand
 		
-	weap.handPosition.x=-500;
-	weap.handPosition.y=-1400;
-	weap.handPosition.z=2500;
+	weap.handPosition.x=-250;
+	weap.handPosition.y=-900;
+	weap.handPosition.z=1800;
 	
 	weap.handAngle.x=0;
 	weap.handAngle.y=0;
@@ -49,9 +49,9 @@ function OnConstruct(weap,subEvent,id,tick)
 	weap.recoil.maxX=0.5;
 	weap.recoil.resetX=0.1;
 	
-	weap.recoil.minY=-1.0;
-	weap.recoil.maxY=1.0;
-	weap.recoil.resetY=0.1;
+	weap.recoil.minY=-0;
+	weap.recoil.maxY=0;
+	weap.recoil.resetY=0;
 	
 		// crosshair
 		

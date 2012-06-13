@@ -44,7 +44,7 @@
 <Static follow="true" />
 </Camera>
 <Editor_Views>
-<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="529253,532166,496833" ang="317.400055,270.19989,0" uv_layer="0" />
+<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="501751,547609,489313" ang="353.000244,189.199875,0" uv_layer="0" />
 </Editor_Views>
 <Meshes>
 <Mesh never_obscure="true" never_cull="true" no_halo_obscure="true">
@@ -126,6 +126,11 @@
 </Nodes>
 <Spots>
 <Spot id="0" c3="500000,550111,500000" name="Start" type="Player" script="player" angle="0" skill="easy" spawn="always" />
-<Spot id="1" c3="523958,549760,490382" name="test_enemy" type="Object" script="test_enemy" params="2" angle="0" skill="easy" spawn="always" />
+<Spot id="1" c3="523958,549184,490382" name="test_enemy" type="Object" script="command_bot" params="2|||urmom" angle="0" skill="easy" spawn="always" />
+<Spot id="2" c3="526262,549184,490382" name="urmom" type="Spawn" params="2" angle="0" skill="easy" spawn="always" />
+<Spot id="3" c3="521654,549184,490382" name="urmom" type="Spawn" params="2" angle="0" skill="easy" spawn="always" />
+<Spot id="4" c3="524534,549184,493838" name="urmom" type="Spawn" params="2" angle="0" skill="easy" spawn="always" />
+<Spot id="5" c3="524534,549184,486926" name="urmom" type="Spawn" params="2" angle="0" skill="easy" spawn="always" />
+<Spot id="6" c3="502304,550111,500000" name="AssaultRifle" type="Object" script="PickupWeapon" angle="0" skill="easy" spawn="always" />
 </Spots>
 </Map>
