@@ -158,7 +158,7 @@
 <Static follow="true" />
 </Camera>
 <Editor_Views>
-<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="500974,499473,496377" ang="339.799652,274.200409,0" uv_layer="0" />
+<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="494495,499636,509501" ang="359.199982,265.400299,0" uv_layer="0" />
 </Editor_Views>
 <Meshes>
 <Mesh lock_uv="true" lock_move="true">
@@ -5077,18 +5077,6 @@
 <p v="0,1,2,3" txt="14" lmp="192" t3="1,0,0" n3="0,0,1" x="1,0,0,1" y="0.333333,0.333333,1,1" x_1="0.007812,0.007812,0.007812,0.007812" y_1="0.007812,0.007812,0.007812,0.007812" />
 </Polys>
 </Mesh>
-<Mesh hilite="true" lock_uv="true" never_obscure="true" never_cull="true" skip_light_map_trace="true">
-<Import />
-<Vertexes>
-<v c3="497208,494288,499020" />
-<v c3="505848,494288,499020" />
-<v c3="505848,502928,499014" />
-<v c3="497208,502928,499014" />
-</Vertexes>
-<Polys>
-<p v="0,1,2,3" txt="14" lmp="192" t3="1,0,0" n3="0,0,-1" x="0,1,1,0" y="0,0,1,1" x_1="0.023438,0.023438,0.023438,0.023438" y_1="0.007812,0.007812,0.007812,0.007812" />
-</Polys>
-</Mesh>
 </Meshes>
 <Liquids>
 </Liquids>
@@ -5111,15 +5099,14 @@
 </Nodes>
 <Spots>
 <Spot id="0" c3="485012,500174,495044" name="Start" type="Player" script="player" angle="0" skill="easy" spawn="always" />
-<Spot id="1" c3="496198,501326,496077" name="AssaultRifle" type="Object" script="PickupWeapon" display_model="PickupAssaultRifle" angle="0" skill="easy" spawn="always" />
+<Spot id="1" c3="496198,500750,496077" name="AssaultRifle" type="Object" script="PickupWeapon" display_model="PickupAssaultRifle" angle="0" skill="easy" spawn="always" />
 <Spot id="2" c3="501140,501326,501733" type="Object" script="security_bot" display_model="Little Guy" angle="0" skill="easy" spawn="always" />
 <Spot id="3" c3="501140,501326,504037" type="Object" script="security_bot" display_model="Little Guy" angle="0" skill="easy" spawn="always" />
 <Spot id="4" c3="501140,501326,507493" type="Object" script="security_bot" display_model="Little Guy" angle="0" skill="easy" spawn="always" />
-<Spot id="5" c3="489620,501326,507493" type="Object" script="security_bot" display_model="Little Guy" angle="0" skill="easy" spawn="always" />
-<Spot id="6" c3="490772,501326,507493" type="Object" script="security_bot" display_model="Little Guy" angle="0" skill="easy" spawn="always" />
-<Spot id="7" c3="491924,501326,507493" type="Object" script="security_bot" display_model="Little Guy" angle="0" skill="easy" spawn="always" />
-<Spot id="8" c3="491924,501326,510949" type="Object" script="security_bot" display_model="Little Guy" angle="0" skill="easy" spawn="always" />
-<Spot id="9" c3="490196,501326,512677" type="Object" script="security_bot" display_model="Little Guy" angle="0" skill="easy" spawn="always" />
-<Spot id="10" c3="488468,501326,513253" type="Object" script="security_bot" display_model="Little Guy" angle="0" skill="easy" spawn="always" />
+<Spot id="5" c3="490772,501326,509797" type="Object" script="command_bot" display_model="Little Guy" params="|||butt" angle="91" skill="easy" spawn="always" />
+<Spot id="6" c3="490772,501326,508645" name="butt" type="Spawn" display_model="Little Guy" angle="91" skill="easy" spawn="always" />
+<Spot id="7" c3="490772,501326,507493" name="butt" type="Spawn" display_model="Little Guy" angle="91" skill="easy" spawn="always" />
+<Spot id="8" c3="490772,501326,510949" name="butt" type="Spawn" display_model="Little Guy" angle="91" skill="easy" spawn="always" />
+<Spot id="9" c3="490772,501326,512101" name="butt" type="Spawn" display_model="Little Guy" angle="91" skill="easy" spawn="always" />
 </Spots>
 </Map>

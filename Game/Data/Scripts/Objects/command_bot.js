@@ -75,6 +75,7 @@ function startFire(obj,tick) { // fires for a few seconds? randomly
     
     // Lights and Sounds
     spawn.particle(obj.model.bone.findPosition("Idle","Fire"+fireBone),"Muzzle Flash");
+	spawn.particle(obj.model.bone.findPosition("Idle","Fire"+fireBone),"Explosion White Center");
     sound.playAtObject("Gun Fire",obj.setting.id,1.0);
     
     // move through the fire bones
