@@ -82,7 +82,7 @@
 <Progress left_x="20" right_x="980" top_y="720" bottom_y="735" outline="true" background_color="004080" hilite_color="400080" outline_color="FFFFFF" />
 <Chat x="950" y="630" last_add_life_sec="15" next_life_sec="5" />
 <Fade title_msec="1000" map_msec="300" />
-<Intro>
+<Intro music="Seven Days In Space">
 <Title life_msec="2000" />
 <Models>
 </Models>
