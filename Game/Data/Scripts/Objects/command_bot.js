@@ -47,7 +47,14 @@ function summonEnemies(obj,tick) {
     if (summoned_enemies == true) return false;
     summoned_enemies = true;
     for (var i = 0; i < summon_spots.length; i++) {
-        map.object.spawn(summon_spot_name,"security_bot",null,map.spot.getPosition(summon_spots[i]),map.spot.getAngle(summon_spots[i]));
+        
+        var point = map.spot.getPosition(summon_spots[i]);
+        var angle = map.spot.getAngle(summon_spots[i]);
+        map.object.spawn(summon_spot_name,"security_bot",null,point,angle);
+        spawn.particle(point,"Teleport");
+        var white = Color;
+        spawn.flash(point,new Color(1,1,1),150,250,250);
+        // TODO: Particle and sound
     }
     return true;
 }
