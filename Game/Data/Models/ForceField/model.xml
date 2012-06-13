@@ -1,0 +1,57 @@
+<Model version="3">
+<Options comulative_rotation="true" diffuse_boost="0" />
+<Center offset="0,0,0" />
+<View_Box size="3000,2000,0" offset="0,0,0" />
+<Bones>
+</Bones>
+<Lights>
+<Light />
+<Light />
+<Light />
+<Light />
+<Light />
+<Light />
+<Light />
+<Light />
+</Lights>
+<Halos>
+<Halo />
+<Halo />
+<Halo />
+<Halo />
+<Halo />
+<Halo />
+<Halo />
+<Halo />
+</Halos>
+<Name />
+<Hit_Boxes>
+</Hit_Boxes>
+<Rigid_Body y_factor="0.8" y_smooth="0.2" x_max_ang="45" x_factor="0.8" x_smooth="0.2" z_max_ang="45" z_factor="0.8" z_smooth="0.2" />
+<Import factor="500" />
+<UI min_diffuse="0.75" diffuse_vector="0,-1,0" light_intensity="10000" light_exponent="1" light_offset="0,-5000,0" light_color="FFFFFF" />
+<Meshes>
+<Mesh name="Default" diffuse="true" never_cull="true" import_move="0,0,0">
+<Vertexes>
+<v c3="-1500,-2000,0" t3="-1,0,0" n3="0,0,1" factor="1" />
+<v c3="-1500,0,0" t3="-1,0,0" n3="0,0,1" factor="1" />
+<v c3="1500,0,0" t3="-1,0,0" n3="0,0,1" factor="1" />
+<v c3="1500,-2000,0" t3="-1,0,0" n3="0,0,1" factor="1" />
+</Vertexes>
+<Polys>
+<p v="0,3,2,1" txt="0" x="1,0,0,1" y="0.333333,0.333333,1,1" />
+</Polys>
+</Mesh>
+</Meshes>
+<Fills>
+<Fill shine_factor="10" glow_rate="100" glow_min="0" glow_max="1" shader="Default" material_name="None_forceField_tex.png">
+<Images>
+<Image wait="100" bitmap="forceField_tex" />
+</Images>
+</Fill>
+</Fills>
+<Poses>
+</Poses>
+<Animations>
+</Animations>
+</Model>

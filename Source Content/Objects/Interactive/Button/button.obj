@@ -1,7 +1,7 @@
 # Blender v2.57 (sub 0) OBJ File: 'button.blend'
 # www.blender.org
 mtllib button.mtl
-g Cube_Cube.001
+o Cube_Cube.001
 v -0.653634 0.500000 0.300000
 v -0.653634 0.358579 0.358579
 v -0.653633 0.300000 0.500000
