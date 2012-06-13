@@ -75,7 +75,7 @@ function OnConstruct(weap,subEvent,id,tick)
 	weap.zoom.on=true;
 	weap.zoom.fovMinimum=10;
 	weap.zoom.fovMaximum=30;
-	weap.zoom.fovSteps=5;
+	weap.zoom.fovSteps=2;
 	weap.zoom.turnFactor=0.8;
 	weap.zoom.crawlTurnFactor=0.5;
 	weap.zoom.swayFactor=0;
