@@ -1,5 +1,5 @@
 <Model version="3">
-<Options comulative_rotation="true" diffuse_boost="0" />
+<Options comulative_rotation="true" diffuse_boost="1" />
 <Center offset="0,0,0" />
 <View_Box size="3000,2000,0" offset="0,0,0" />
 <Bones>
@@ -44,7 +44,7 @@
 </Mesh>
 </Meshes>
 <Fills>
-<Fill shine_factor="10" glow_rate="100" glow_min="0" glow_max="1" shader="Default" material_name="None_forceField_tex.png">
+<Fill animate="true" shine_factor="10" glow_rate="100" glow_min="0" glow_max="1" shader="Default" material_name="None_forceField_tex.png">
 <Images>
 <Image wait="100" bitmap="forceField_tex" />
 </Images>

@@ -15,9 +15,9 @@ function OnConstruct(weap,subEvent,id,tick)
 
 		// setup how weapon is held in hand
 		
-	weap.handPosition.x=-350;
+	weap.handPosition.x=-600;
 	weap.handPosition.y=-900;
-	weap.handPosition.z=1600;
+	weap.handPosition.z=1500;
 	
 	weap.handAngle.x=0;
 	weap.handAngle.y=0;
@@ -36,12 +36,12 @@ function OnConstruct(weap,subEvent,id,tick)
 	
 		// ammo and clips
 		
-	weap.ammo.initCount=50;
-	weap.ammo.maxCount=50;
+	weap.ammo.initCount=50 * 5;
+	weap.ammo.maxCount=50 * 5;
 	
-	weap.ammo.clip=true;
-	weap.ammo.initClipCount=5;
-	weap.ammo.maxClipCount=5;
+	weap.ammo.clip=false;
+	weap.ammo.initClipCount=0;
+	weap.ammo.maxClipCount=0;
 	
 		// recoil
 		
@@ -69,6 +69,19 @@ function OnConstruct(weap,subEvent,id,tick)
 	weap.projectile.objectFirePoseName='Idle1';
 		
 	weap.projectile.add('AssaultRifleBullet');
+
+	//zoom
+
+	weap.zoom.on=true;
+	weap.zoom.fovMinimum=10;
+	weap.zoom.fovMaximum=30;
+	weap.zoom.fovSteps=5;
+	weap.zoom.turnFactor=0.8;
+	weap.zoom.crawlTurnFactor=0.5;
+	weap.zoom.swayFactor=0;
+	weap.zoom.crawlSwayFactor=0.2;
+	//weap.zoom.maskName='xcross';
+	weap.zoom.showWeapon=true;
 }
 
 
@@ -127,7 +140,7 @@ function machineGunFirePlayer(weap)
 	//	weap.projectile.spawnFromCenterSlop('Bullet', 10);
 	
 
-	weap.projectile.spawnFromCenterSlop('AssaultRifleBullet', 1.5);
+	weap.projectile.spawnFromCenterSlop('AssaultRifleBullet', 1);
 		// run recoil
 		
 	weap.recoil.go();
@@ -138,6 +151,14 @@ function machineGunFirePlayer(weap)
 function OnFire(weap,subEvent,id,tick)
 {
 		// only handle certain events
+
+	if (subEvent==DIM3_EVENT_WEAPON_FIRE_ZOOM_ENTER) {
+		return;
+	}
+
+	if (subEvent==DIM3_EVENT_WEAPON_FIRE_ZOOM_EXIT) {
+		return;
+	}
 
 	if ((subEvent!=DIM3_EVENT_WEAPON_FIRE_DOWN) && (subEvent!=DIM3_EVENT_WEAPON_FIRE_REPEAT) && (subEvent!=DIM3_EVENT_WEAPON_FIRE_SINGLE)) {
 		weap.fire.cancel();
@@ -173,8 +194,8 @@ function OnFire(weap,subEvent,id,tick)
 	weap.fire.cancel();
 }
 
-function OnManualReload(weapon)
+/*function OnManualReload(weapon)
 {
 	//iface.console.write("Doing Manual Reload");
 	if(weapon.ammo.changeClip()) weapon.model.animation.startThenChange('Reload','Idle');
-}
+}*/

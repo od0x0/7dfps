@@ -204,8 +204,8 @@ function OnKeyDown(object, id)
 	switch (id)
 	{
 		case ReloadKeyID://Reload
-			object.event.callHeldWeapon("OnManualReload");
-			UpdateWeaponDisplay(object);
+			//object.event.callHeldWeapon("OnManualReload");
+			//UpdateWeaponDisplay(object);
 			break;
 		//case SprintKeyID://Sprint
 		//	StartSprinting(object);
@@ -245,9 +245,9 @@ function UpdateWeaponDisplay(object)
 	weaponInfoText += selectedWeaponName;
 	weaponInfoText += " (";
 	weaponInfoText += object.weapon.getAmmoCount(selectedWeaponName);
-	weaponInfoText += " rounds, ";
-	weaponInfoText += object.weapon.getClipCount(selectedWeaponName);
-	weaponInfoText += " clips)";
+	weaponInfoText += " rounds)";
+	//weaponInfoText += object.weapon.getClipCount(selectedWeaponName);
+	//weaponInfoText += " clips)";
 
 	iface.text.setText("WeaponInfo", weaponInfoText);
 }

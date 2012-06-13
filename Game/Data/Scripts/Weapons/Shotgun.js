@@ -36,12 +36,12 @@ function OnConstruct(weap,subEvent,id,tick)
 	
 		// ammo and clips
 		
-	weap.ammo.initCount=10;
-	weap.ammo.maxCount=10;
+	weap.ammo.initCount=10 * 5;
+	weap.ammo.maxCount=10 * 5;
 	
-	weap.ammo.clip=true;
-	weap.ammo.initClipCount=5;
-	weap.ammo.maxClipCount=5;
+	weap.ammo.clip=false;
+	weap.ammo.initClipCount=0;
+	weap.ammo.maxClipCount=0;
 	
 		// recoil
 		
