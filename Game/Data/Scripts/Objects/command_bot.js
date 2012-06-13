@@ -18,7 +18,7 @@ var summon_spots = new Array();
 
 function enemyConstruct(obj,subEvent,id,tick) {
     script.callParent();
-    obj.model.name = "Little Guy";
+    obj.model.name = "Little Guy Red";
     obj.weapon.add("SecurityBot_Weapon");
     obj.health.maximum = 30;
     obj.health.start = 30;
