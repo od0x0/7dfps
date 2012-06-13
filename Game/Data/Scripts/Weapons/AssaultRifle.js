@@ -16,8 +16,8 @@ function OnConstruct(weap,subEvent,id,tick)
 		// setup how weapon is held in hand
 		
 	weap.handPosition.x=0;
-	weap.handPosition.y=-1000;
-	weap.handPosition.z=1400;
+	weap.handPosition.y=-1050;
+	weap.handPosition.z=1800;
 	
 	weap.handAngle.x=0;
 	weap.handAngle.y=0;
