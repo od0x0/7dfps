@@ -1,7 +1,7 @@
 <Model version="3">
 <Options comulative_rotation="true" diffuse_boost="1" />
 <Center offset="0,0,0" />
-<View_Box size="3000,2000,0" offset="0,0,0" />
+<View_Box size="6000,4000,0" offset="0,0,0" />
 <Bones>
 </Bones>
 <Lights>
@@ -33,10 +33,10 @@
 <Meshes>
 <Mesh name="Default" diffuse="true" never_cull="true" import_move="0,0,0">
 <Vertexes>
-<v c3="-1500,-2000,0" t3="-1,0,0" n3="0,0,1" factor="1" />
-<v c3="-1500,0,0" t3="-1,0,0" n3="0,0,1" factor="1" />
-<v c3="1500,0,0" t3="-1,0,0" n3="0,0,1" factor="1" />
-<v c3="1500,-2000,0" t3="-1,0,0" n3="0,0,1" factor="1" />
+<v c3="-3000,-4000,0" t3="-1,0,0" n3="0,0,1" factor="1" />
+<v c3="-3000,0,0" t3="-1,0,0" n3="0,0,1" factor="1" />
+<v c3="3000,0,0" t3="-1,0,0" n3="0,0,1" factor="1" />
+<v c3="3000,-4000,0" t3="-1,0,0" n3="0,0,1" factor="1" />
 </Vertexes>
 <Polys>
 <p v="0,3,2,1" txt="0" x="1,0,0,1" y="0.333333,0.333333,1,1" />
