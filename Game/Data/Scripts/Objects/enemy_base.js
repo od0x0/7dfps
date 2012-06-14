@@ -294,7 +294,7 @@ function enemyListenSound(sound) {
 }
 
 function enemyCheckSound(obj,tick,sound) {
-    iface.console.write(sound);
+    if(chasing_player || searching_player) return;
     if(enemyListenSound(sound)) {
         enemySoundReact(obj,tick);
     }
