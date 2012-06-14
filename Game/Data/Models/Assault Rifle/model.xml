@@ -941,7 +941,7 @@
 <Flash bone="Barrel" intensity="10000" time="15" fade_time="5" exponent="1" color="FFFFFF" />
 <Shake distance="0" size="0" time="0" />
 <Particles>
-<Particle particle="Muzzle Flash" bone="Barrel" particle_rotate="true" particle_motion="true" particle_motion_factor="1" particle_stick="true" particle_slop="0,0,0" />
+<Particle particle="Assault Muzzle Flash" bone="Barrel" particle_rotate="true" particle_motion="true" particle_motion_factor="1" particle_stick="true" particle_slop="0,0,0" />
 </Particles>
 <Rings>
 </Rings>
