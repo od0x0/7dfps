@@ -218,7 +218,7 @@
 <Static follow="true" />
 </Camera>
 <Editor_Views>
-<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="487888,499928,483537" ang="349.602203,355,0" uv_layer="1" />
+<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="498100,474632,492414" ang="284.602081,0.799879,0" uv_layer="1" />
 </Editor_Views>
 <Meshes>
 <Mesh lock_uv="true">
@@ -25294,7 +25294,7 @@
 <Spot id="6" c3="506837,502123,487268" type="Object" script="ForceField" display_model="ForceField" angle="0" skill="easy" spawn="always" />
 <Spot id="7" c3="502366,501270,528491" type="Object" script="PickupHealth" display_model="HealthCrate" angle="0" skill="easy" spawn="always" />
 <Spot id="8" c3="499527,502123,528914" type="Object" script="ForceField" display_model="ForceField" angle="90" skill="easy" spawn="always" />
-<Spot id="9" c3="483758,501306,493206" type="Object" script="command_bot" display_model="Little Guy Red" angle="90" skill="easy" spawn="always" />
+<Spot id="9" c3="483758,501306,493206" type="Object" script="command_bot" display_model="Little Guy Red" params="|||ohnobackup" angle="90" skill="easy" spawn="always" />
 <Spot id="10" c3="486635,501306,495952" type="Object" script="security_bot" display_model="Little Guy" angle="90" skill="easy" spawn="always" />
 <Spot id="11" c3="486660,501146,490895" type="Object" script="security_bot" display_model="Little Guy" angle="90" skill="easy" spawn="always" />
 <Spot id="12" c3="488418,501306,491926" type="Object" script="security_bot" display_model="Little Guy" angle="90" skill="easy" spawn="always" />
@@ -25303,5 +25303,7 @@
 <Spot id="15" c3="486323,501324,513862" type="Object" script="security_bot" display_model="Little Guy" params="1" angle="249" skill="easy" spawn="always" />
 <Spot id="16" c3="506783,501408,464479" type="Object" script="security_bot" display_model="Little Guy" angle="39" skill="easy" spawn="always" />
 <Spot id="17" c3="506657,502201,467820" type="Object" script="ForceField" display_model="ForceField" angle="0" skill="easy" spawn="always" />
+<Spot id="18" c3="492984,501254,500446" name="ohnobackup" type="Object" script="Trigger" angle="0" skill="easy" spawn="always" />
+<Spot id="19" c3="495167,501294,501274" name="ohnobackup" type="Object" script="Trigger" angle="0" skill="easy" spawn="always" />
 </Spots>
 </Map>

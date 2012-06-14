@@ -31,6 +31,10 @@
 <Wave file="Gun Fire" />
 <Distance min="1500" max="30000" />
 </Sound>
+<Sound name="Enemy Fire">
+<Wave file="Enemy Fire" />
+<Distance min="1500" max="30000" />
+</Sound>
 <Sound name="Laser Charge Intro">
 <Wave file="Laser Charge Intro" />
 <Distance min="1500" max="30000" />
