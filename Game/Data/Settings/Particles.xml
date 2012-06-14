@@ -361,8 +361,8 @@
 			<Alpha start="0.5" end="0.01" />
 		</Particle>
 		<Particle name="Teleport">
-			<Settings count="128" time="2000" ambient="1" additive="true" />
-			<Image file="particle_gradient" count="1" time="200" loop="true" />
+			<Settings count="256" time="2000" ambient="1" additive="true" />
+			<Image file="sparkle" count="4" time="200" loop="true" />
 			<Trail count="10" step="16" reduce="0.1" />
 			<Gravity start="0" add="-0.1" />
 			<Size start="40" end="40" />
@@ -371,6 +371,18 @@
 			<Z offset="0" move="10" rot="0" rot_accel="0" />
 			<Color start="DDDDFF" end="FFFFFF" />
 			<Alpha start="0.7" end="0" />
+		</Particle>
+		<Particle name="sparks">
+			<Settings count="5" time="1000" reverse="false" />
+			<Image file="spark" count="4" time="500" loop="true" />
+			<Trail count="20" step="1.5" reduce="0.7" />
+			<Gravity start="-10" add="0.6" />
+			<Size start="20" end="10" />
+			<X offset="0" move="10" />
+			<Y offset="0" move="20" />
+			<Z offset="0" move="10" />
+			<Color start="FFFFDD" end="AAAAFF" />
+			<Alpha start="1" end="0.0" />
 		</Particle>
 	</Particles>
 	<Particle_Groups>
