@@ -1,0 +1,77 @@
+<Model version="3">
+<Options comulative_rotation="true" diffuse_boost="1" />
+<Center offset="0,0,0" />
+<View_Box size="6000,4000,0" offset="0,0,0" />
+<Bones>
+<Bone name="light" c3="0,-2000,0" o3="0,0,0" r3="0,0,0" />
+</Bones>
+<Lights>
+<Light />
+<Light />
+<Light />
+<Light />
+<Light />
+<Light />
+<Light />
+<Light />
+</Lights>
+<Halos>
+<Halo />
+<Halo />
+<Halo />
+<Halo />
+<Halo />
+<Halo />
+<Halo />
+<Halo />
+</Halos>
+<Name />
+<Hit_Boxes>
+</Hit_Boxes>
+<Rigid_Body y_factor="0.8" y_smooth="0.2" x_max_ang="45" x_factor="0.8" x_smooth="0.2" z_max_ang="45" z_factor="0.8" z_smooth="0.2" />
+<Import factor="500" />
+<UI min_diffuse="0.75" diffuse_vector="0,-1,0" light_intensity="10000" light_exponent="1" light_offset="0,-5000,0" light_color="FFFFFF" />
+<Meshes>
+<Mesh name="Default" diffuse="true" never_cull="true" import_move="0,0,0">
+<Vertexes>
+<v c3="937,-500,0" t3="-1,0,0" n3="0,0,1" factor="1" />
+<v c3="937,0,0" t3="-1,0,0" n3="0,0,1" factor="1" />
+<v c3="-937,0,0" t3="-1,0,0" n3="0,0,1" factor="1" />
+<v c3="-937,-500,0" t3="-1,0,0" n3="0,0,1" factor="1" />
+</Vertexes>
+<Polys>
+<p v="0,3,2,1" txt="0" x="1,0,0,1" y="0.333333,0.333333,1,1" />
+</Polys>
+</Mesh>
+</Meshes>
+<Fills>
+<Fill shine_factor="10" glow_rate="100" glow_min="0" glow_max="1" shader="Default" material_name="None_forceField_tex.png">
+<Images>
+<Image wait="100" bitmap="PickupAssaultRifleText" />
+</Images>
+</Fill>
+</Fills>
+<Poses>
+<Pose name="Idle">
+<Bones>
+</Bones>
+</Pose>
+</Poses>
+<Animations>
+<Animation name="Idle">
+<Loop repeat="true" start="0" end="0" />
+<Poses>
+<Pose name="Idle" time="100" sway="0,0,0" move="0,0,0" acceleration="0">
+<Sound pitch="1" />
+<Fade in_time="0" life_time="0" out_time="0" />
+<Flash bone="light" intensity="0" time="100000" fade_time="100000" exponent="1" color="55FF00" />
+<Shake distance="0" size="0" time="0" />
+<Particles>
+</Particles>
+<Rings>
+</Rings>
+</Pose>
+</Poses>
+</Animation>
+</Animations>
+</Model>
