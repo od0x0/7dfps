@@ -3,6 +3,10 @@
 <Wave file="Splash" />
 <Distance min="1500" max="30000" />
 </Sound>
+<Sound name="Robot Explosion 1">
+<Wave file="Robot Explosion 1" />
+<Distance min="1500" max="30000" />
+</Sound>
 <Sound name="JoeFoe Growl">
 <Wave file="Bear Growl" />
 <Distance min="1500" max="30000" />
