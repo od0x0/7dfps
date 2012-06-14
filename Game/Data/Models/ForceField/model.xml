@@ -3,6 +3,7 @@
 <Center offset="0,0,0" />
 <View_Box size="6000,4000,0" offset="0,0,0" />
 <Bones>
+<Bone name="light" c3="0,-2000,0" o3="0,0,0" r3="0,0,0" />
 </Bones>
 <Lights>
 <Light />
@@ -51,7 +52,26 @@
 </Fill>
 </Fills>
 <Poses>
+<Pose name="Idle">
+<Bones>
+</Bones>
+</Pose>
 </Poses>
 <Animations>
+<Animation name="Idle">
+<Loop repeat="true" start="-1" end="-1" />
+<Poses>
+<Pose name="Idle" time="100" sway="0,0,0" move="0,0,0" acceleration="0">
+<Sound pitch="1" />
+<Fade in_time="0" life_time="0" out_time="0" />
+<Flash bone="light" intensity="0" time="100000" fade_time="100000" exponent="1" color="55FF00" />
+<Shake distance="0" size="0" time="0" />
+<Particles>
+</Particles>
+<Rings>
+</Rings>
+</Pose>
+</Poses>
+</Animation>
 </Animations>
 </Model>
