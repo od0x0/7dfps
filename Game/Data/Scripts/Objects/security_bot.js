@@ -41,8 +41,8 @@ function startFire(obj,tick) { // fires for a few seconds? randomly
     obj.weapon.fire("SecurityBot_Weapon",1); // BAM
     
     // Lights and Sounds
-    spawn.particle(obj.model.bone.findPosition("Idle","Fire"+fireBone),"Muzzle Flash");
-	spawn.particle(obj.model.bone.findPosition("Idle","Fire"+fireBone),"Explosion White Center");
+    spawn.particle(obj.model.bone.findPosition("Idle","Fire"+fireBone),"Bot Muzzle Flash");
+	//spawn.particle(obj.model.bone.findPosition("Idle","Fire"+fireBone),"Explosion White Center");
     sound.playAtObject("Gun Fire",obj.setting.id,1.0);
     
     // move through the fire bones

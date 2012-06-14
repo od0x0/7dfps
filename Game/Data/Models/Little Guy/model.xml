@@ -7,9 +7,9 @@
 <Bone name="Head Top" c3="0,-938,-75" o3="0,0,0" r3="0,0,0" parent="Head Base" />
 <Bone name="Body" c3="0,-360,-33" o3="0,-800,0" r3="0,0,0" parent="Null" />
 <Bone name="Null" c3="0,0,0" o3="0,0,0" r3="0,0,0" />
-<Bone name="Fire1" c3="0,-200,-220" o3="0,0,0" r3="0,0,0" parent="Body" />
-<Bone name="Fire2" c3="-30,-150,-220" o3="0,0,0" r3="0,0,0" parent="Body" />
-<Bone name="Fire3" c3="30,-150,-220" o3="0,0,0" r3="0,0,0" parent="Body" />
+<Bone name="Fire1" c3="0,-200,-280" o3="0,0,0" r3="0,0,0" parent="Body" />
+<Bone name="Fire2" c3="-30,-150,-280" o3="0,0,0" r3="0,0,0" parent="Body" />
+<Bone name="Fire3" c3="30,-150,-280" o3="0,0,0" r3="0,0,0" parent="Body" />
 </Bones>
 <Lights>
 <Light />

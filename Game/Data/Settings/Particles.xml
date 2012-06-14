@@ -1,377 +1,401 @@
 <Particle_Data>
-<Particles>
-<Particle name="Explosion White Center">
-<Settings count="1" time="200" ambient="1" additive="true" />
-<Image file="particle_blob" count="4" time="200" loop="true" />
-<Trail count="0" step="0" reduce="1" />
-<Gravity start="0" add="0" />
-<Size start="100" end="200" />
-<X offset="0" move="0" rot="0" rot_accel="0" />
-<Y offset="0" move="0" rot="0" rot_accel="0" />
-<Z offset="0" move="0" rot="0" rot_accel="0" />
-<Color start="EF8800" end="EF8800" />
-<Alpha start="0.7" end="0.1" />
-</Particle>
-<Particle name="Explosion Yellow Middle">
-<Settings count="2" time="1300" ambient="1" additive="true" />
-<Image file="particle_blob" count="4" time="200" loop="true" />
-<Trail count="0" step="0" reduce="1" />
-<Gravity start="0" add="0" />
-<Size start="100" end="1000" />
-<X offset="250" move="12" rot="0.01" rot_accel="0.1" />
-<Y offset="250" move="12" rot="0.01" rot_accel="0.1" />
-<Z offset="250" move="12" rot="0.01" rot_accel="0.1" />
-<Color start="FFFF00" end="EF8800" />
-<Alpha start="0.9" end="0" />
-</Particle>
-<Particle name="Explosion Orange Outer">
-<Settings count="50" time="1600" ambient="1" additive="true" />
-<Image file="particle_blob" count="4" time="200" loop="true" />
-<Trail count="0" step="0" reduce="1" />
-<Gravity start="0" add="0" />
-<Size start="200" end="1500" />
-<X offset="300" move="18" rot="0.02" rot_accel="0.2" />
-<Y offset="300" move="18" rot="0.02" rot_accel="0.2" />
-<Z offset="300" move="18" rot="0.02" rot_accel="0.2" />
-<Color start="FFA300" end="D45400" />
-<Alpha start="0.8" end="0" />
-</Particle>
-<Particle name="Explosion Red Outer">
-<Settings count="20" time="2000" ambient="1" additive="true" />
-<Image file="particle_blob" count="4" time="200" loop="true" />
-<Trail count="0" step="0" reduce="1" />
-<Gravity start="0" add="0" />
-<Size start="300" end="2000" />
-<X offset="350" move="24" rot="0.03" rot_accel="0.3" />
-<Y offset="350" move="24" rot="0.03" rot_accel="0.3" />
-<Z offset="350" move="24" rot="0.03" rot_accel="0.3" />
-<Color start="CC0000" end="990000" />
-<Alpha start="0.7" end="0" />
-</Particle>
-<Particle name="Debris Explode 1">
-<Settings count="32" time="2000" ambient="0.5" />
-<Image file="particle_drum_1" count="1" time="200" loop="true" />
-<Trail count="0" step="0" reduce="1" />
-<Gravity start="-7" add="0.2" />
-<Size start="30" end="30" />
-<X offset="100" move="25" rot="0" rot_accel="0" />
-<Y offset="100" move="25" rot="0" rot_accel="0" />
-<Z offset="100" move="25" rot="0" rot_accel="0" />
-<Color start="CCCCCC" end="333333" />
-<Alpha start="0.9" end="0.2" />
-</Particle>
-<Particle name="Debris Explode 2">
-<Settings count="32" time="2000" ambient="0.5" />
-<Image file="particle_drum_2" count="1" time="200" loop="true" />
-<Trail count="0" step="0" reduce="1" />
-<Gravity start="-8" add="0.22" />
-<Size start="20" end="20" />
-<X offset="100" move="25" rot="0" rot_accel="0" />
-<Y offset="100" move="25" rot="0" rot_accel="0" />
-<Z offset="100" move="25" rot="0" rot_accel="0" />
-<Color start="CCCCCC" end="333333" />
-<Alpha start="0.9" end="0.2" />
-</Particle>
-<Particle name="Gun Hit">
-<Settings count="32" time="600" ambient="1" />
-<Image file="particle_gradient" count="1" time="200" loop="true" />
-<Trail count="0" step="0" reduce="1" />
-<Gravity start="0" add="0.04" />
-<Size start="50" end="20" />
-<X offset="0" move="5" rot="0" rot_accel="0" />
-<Y offset="0" move="5" rot="0.2" rot_accel="0" />
-<Z offset="0" move="5" rot="0" rot_accel="0" />
-<Color start="AAAA55" end="555533" />
-<Alpha start="0.9" end="0.01" />
-</Particle>
-<Particle name="Shell Spark">
-<Settings count="32" time="800" ambient="1" />
-<Image file="particle_gradient" count="1" time="200" loop="true" />
-<Trail count="3" step="3" reduce="0.9" />
-<Gravity start="-6" add="0.1" />
-<Size start="24" end="16" />
-<X offset="0" move="5" rot="0" rot_accel="0" />
-<Y offset="0" move="5" rot="0.5" rot_accel="0" />
-<Z offset="0" move="5" rot="0" rot_accel="0" />
-<Color start="CCCC00" end="7F7F7F" />
-<Alpha start="0.7" end="0.1" />
-</Particle>
-<Particle name="Shell Smoke">
-<Settings count="1" time="1500" ambient="1" />
-<Image file="particle_smokecurl" count="16" time="40" loop="true" />
-<Trail count="0" step="0" reduce="0" />
-<Gravity start="0" add="-0.001" />
-<Size start="1500" end="3000" />
-<X offset="0" move="0" rot="0" rot_accel="0" />
-<Y offset="0" move="0" rot="0" rot_accel="0" />
-<Z offset="0" move="0" rot="0" rot_accel="0" />
-<Color start="FFFFFF" end="FFFFFF" team="true" />
-<Alpha start="1" end="0" />
-</Particle>
-<Particle name="Ray Smoke">
-<Settings count="1" time="1500" ambient="1" />
-<Image file="particle_smoke" count="4" time="200" loop="true" />
-<Trail count="0" step="0" reduce="1" />
-<Gravity start="0" add="-0.045" />
-<Size start="50" end="450" />
-<X offset="0" move="0" rot="0" rot_accel="0" />
-<Y offset="0" move="0" rot="0" rot_accel="0" />
-<Z offset="0" move="0" rot="0" rot_accel="0" />
-<Color start="FFFFFF" end="FFFFFF" team="true" />
-<Alpha start="0.5" end="0.05" />
-</Particle>
-<Particle name="Explosion Smoke">
-<Settings count="10" time="4000" ambient="1" />
-<Image file="particle_smoke" count="4" time="200" loop="true" />
-<Trail count="0" step="0" reduce="1" />
-<Gravity start="0" add="0" />
-<Size start="600" end="5000" />
-<X offset="800" move="2" rot="0.1" rot_accel="0" />
-<Y offset="800" move="2" rot="0.1" rot_accel="0" />
-<Z offset="800" move="2" rot="0.1" rot_accel="0" />
-<Color start="000000" end="666666" />
-<Alpha start="0.3" end="0" />
-</Particle>
-<Particle name="Car Smoke">
-<Settings count="1" time="1000" ambient="1" />
-<Image file="particle_smoke" count="4" time="200" loop="true" />
-<Trail count="0" step="0" reduce="1" />
-<Gravity start="0" add="-0.01" />
-<Size start="1000" end="1500" />
-<X offset="0" move="0" rot="0" rot_accel="0" />
-<Y offset="0" move="0" rot="0" rot_accel="0" />
-<Z offset="0" move="0" rot="0" rot_accel="0" />
-<Color start="7F3F00" end="3F1F00" />
-<Alpha start="0.3" end="0" />
-</Particle>
-<Particle name="Cinema Smoke">
-<Settings count="5" time="1500" ambient="1" />
-<Image file="particle_smoke" count="4" time="200" loop="true" />
-<Trail count="0" step="0" reduce="1" />
-<Gravity start="0" add="-0.02" />
-<Size start="2000" end="4000" />
-<X offset="1500" move="1" rot="0" rot_accel="0" />
-<Y offset="1500" move="1" rot="0" rot_accel="0" />
-<Z offset="1500" move="1" rot="0" rot_accel="0" />
-<Color start="AAAAAA" end="555555" />
-<Alpha start="0.7" end="0" />
-</Particle>
-<Particle name="Water Spray">
-<Settings count="50" time="900" ambient="1" additive="true" />
-<Image file="particle_gradient" count="1" time="200" loop="true" />
-<Trail count="5" step="1" reduce="1" />
-<Gravity start="-7" add="0.02" />
-<Size start="100" end="10" />
-<X offset="1800" move="5" rot="0" rot_accel="0" />
-<Y offset="1000" move="0" rot="0" rot_accel="0" />
-<Z offset="1800" move="5" rot="0" rot_accel="0" />
-<Color start="00337F" end="0055FF" />
-<Alpha start="0.7" end="0" />
-</Particle>
-<Particle name="Muzzle Flash">
-<Settings count="1" time="200" ambient="1" />
-<Image file="assault_muzzle" count="1" time="100" loop="true" />
-<Trail count="0" step="0" reduce="1" />
-<Gravity start="0" add="0" />
-<Size start="1000" end="1000" />
-<X offset="0" move="0" rot="0" rot_accel="0" />
-<Y offset="0" move="0" rot="0" rot_accel="0" />
-<Z offset="0" move="0" rot="0" rot_accel="0" />
-<Color start="FFFFFF" end="FFFFFF" />
-<Alpha start="1" end="0.1" />
-</Particle>
-<Particle name="Telefrag Blood">
-<Settings count="100" time="3000" ambient="1" />
-<Image file="particle_gradient" count="1" time="200" loop="true" />
-<Trail count="3" step="3" reduce="0.8" />
-<Gravity start="-3" add="0.01" />
-<Size start="500" end="800" />
-<X offset="0" move="20" rot="0" rot_accel="0" />
-<Y offset="0" move="20" rot="0" rot_accel="0" />
-<Z offset="0" move="20" rot="0" rot_accel="0" />
-<Color start="FF0033" end="003300" />
-<Alpha start="0.8" end="0" />
-</Particle>
-<Particle name="JoeFoe Smoke">
-<Settings count="5" time="1800" ambient="1" />
-<Image file="particle_smoke" count="4" time="200" loop="true" />
-<Trail count="0" step="0" reduce="1" />
-<Gravity start="0" add="-0.1" />
-<Size start="50" end="850" />
-<X offset="150" move="2" rot="0" rot_accel="0" />
-<Y offset="150" move="2" rot="0" rot_accel="0" />
-<Z offset="150" move="2" rot="0" rot_accel="0" />
-<Color start="00FF00" end="00CC00" />
-<Alpha start="0.6" end="0" />
-</Particle>
-<Particle name="JoeFoe Blood">
-<Settings count="14" time="1500" ambient="1" />
-<Image file="particle_solid" count="1" time="200" loop="true" />
-<Trail count="15" step="4" reduce="0.5" />
-<Gravity start="0" add="0.3" />
-<Size start="20" end="20" />
-<X offset="5" move="10" rot="0" rot_accel="0" />
-<Y offset="5" move="10" rot="0" rot_accel="0" />
-<Z offset="5" move="10" rot="0" rot_accel="0" />
-<Color start="660000" end="330000" />
-<Alpha start="1" end="0.3" />
-</Particle>
-<Particle name="JoeFoe Fireball Form">
-<Settings count="48" time="500" reverse="true" ambient="1" />
-<Image file="particle_gradient" count="1" time="200" loop="true" />
-<Trail count="4" step="3" reduce="0.8" />
-<Gravity start="0" add="0" />
-<Size start="30" end="100" />
-<X offset="150" move="10" rot="0" rot_accel="0" />
-<Y offset="150" move="10" rot="0" rot_accel="0" />
-<Z offset="150" move="10" rot="0" rot_accel="0" />
-<Color start="33FF00" end="CCFFCC" />
-<Alpha start="0.8" end="0.1" />
-</Particle>
-<Particle name="JoeFoe Fireball Dots">
-<Settings count="1" time="1500" ambient="1" additive="true" />
-<Image file="particle_dots" count="1" time="200" loop="true" />
-<Trail count="0" step="0" reduce="1" />
-<Gravity start="0" add="0.1" />
-<Size start="150" end="700" />
-<X offset="0" move="0" rot="0" rot_accel="0" />
-<Y offset="0" move="0" rot="0" rot_accel="0" />
-<Z offset="0" move="0" rot="0" rot_accel="0" />
-<Color start="00FF00" end="33FF33" />
-<Alpha start="0.4" end="0.05" />
-</Particle>
-<Particle name="JoeFoe Explode Top">
-<Settings count="256" time="5000" ambient="1" />
-<Image file="particle_gradient" count="1" time="200" loop="true" />
-<Trail count="0" step="0" reduce="1" />
-<Gravity start="-20" add="0.1" />
-<Size start="200" end="40" />
-<X offset="30" move="20" rot="0" rot_accel="0" />
-<Y offset="30" move="10" rot="0" rot_accel="0" />
-<Z offset="30" move="20" rot="0" rot_accel="0" />
-<Color start="00FF00" end="333333" />
-<Alpha start="0.7" end="0.1" />
-</Particle>
-<Particle name="JoeFoe Explode Bottom">
-<Settings count="256" time="2500" ambient="1" />
-<Image file="particle_gradient" count="1" time="200" loop="true" />
-<Trail count="0" step="0" reduce="1" />
-<Gravity start="-5" add="0.1" />
-<Size start="200" end="40" />
-<X offset="30" move="20" rot="0" rot_accel="0" />
-<Y offset="30" move="10" rot="0" rot_accel="0" />
-<Z offset="30" move="20" rot="0" rot_accel="0" />
-<Color start="00FF00" end="003300" />
-<Alpha start="0.7" end="0.1" />
-</Particle>
-<Particle name="Fire 1">
-<Settings count="10" time="1000" ambient="1" additive="true" chain="Fire 1 Reverse" />
-<Image file="particle_blob" count="4" time="100" loop="true" />
-<Trail count="0" step="0" reduce="1" />
-<Gravity start="-1.5" add="0" />
-<Size start="450" end="420" />
-<X offset="60" move="1" rot="0" rot_accel="0" />
-<Y offset="60" move="1" rot="0" rot_accel="0" />
-<Z offset="60" move="1" rot="0" rot_accel="0" />
-<Color start="FF0000" end="FF0000" />
-<Alpha start="0.8" end="0.8" />
-</Particle>
-<Particle name="Fire 1 Reverse">
-<Settings count="10" time="1000" reverse="true" ambient="1" additive="true" chain="Fire 1" />
-<Image file="particle_blob" count="4" time="100" loop="true" />
-<Trail count="0" step="0" reduce="1" />
-<Gravity start="-1.5" add="0" />
-<Size start="450" end="420" />
-<X offset="60" move="1" rot="0" rot_accel="0" />
-<Y offset="60" move="1" rot="0" rot_accel="0" />
-<Z offset="60" move="1" rot="0" rot_accel="0" />
-<Color start="FF0000" end="FF0000" />
-<Alpha start="0.8" end="0.8" />
-</Particle>
-<Particle name="Fire 2">
-<Settings count="10" time="1000" ambient="1" additive="true" chain="Fire 2 Reverse" />
-<Image file="particle_blob" count="4" time="100" loop="true" />
-<Trail count="0" step="0" reduce="1" />
-<Gravity start="-1.5" add="0" />
-<Size start="250" end="220" />
-<X offset="30" move="1" rot="0" rot_accel="0" />
-<Y offset="30" move="1" rot="0" rot_accel="0" />
-<Z offset="30" move="1" rot="0" rot_accel="0" />
-<Color start="FF7F00" end="FF7F00" />
-<Alpha start="0.4" end="0.4" />
-</Particle>
-<Particle name="Fire 2 Reverse">
-<Settings count="10" time="1000" reverse="true" ambient="1" additive="true" chain="Fire 2" />
-<Image file="particle_blob" count="4" time="100" loop="true" />
-<Trail count="0" step="0" reduce="1" />
-<Gravity start="-1.5" add="0" />
-<Size start="250" end="220" />
-<X offset="30" move="1" rot="0" rot_accel="0" />
-<Y offset="30" move="1" rot="0" rot_accel="0" />
-<Z offset="30" move="1" rot="0" rot_accel="0" />
-<Color start="FF7F00" end="FF7F00" />
-<Alpha start="0.4" end="0.4" />
-</Particle>
-<Particle name="Water Drop">
-<Settings count="1" time="2000" ambient="1" additive="true" />
-<Image file="particle_gradient" count="1" time="200" />
-<Trail count="15" step="1" reduce="0.5" />
-<Gravity start="30" add="0.2" />
-<Size start="150" end="100" />
-<X offset="0" move="0" rot="0" rot_accel="0" />
-<Y offset="0" move="0" rot="0" rot_accel="0" />
-<Z offset="0" move="0" rot="0" rot_accel="0" />
-<Color start="00337F" end="0055FF" />
-<Alpha start="0.2" end="0.2" />
-</Particle>
-<Particle name="Ray Globe">
-<Settings count="200" time="1000" ambient="1" additive="true" globe="true" />
-<Image file="particle_gradient" count="1" time="200" loop="true" />
-<Trail count="0" step="0" reduce="0" />
-<Gravity start="0" add="0" />
-<Size start="200" end="1000" />
-<X offset="100" move="20" rot="0.05" rot_accel="0.3" />
-<Y offset="100" move="20" rot="0.05" rot_accel="0.3" />
-<Z offset="100" move="20" rot="0.05" rot_accel="0.3" />
-<Color start="FFFFFF" end="555555" team="true" />
-<Alpha start="0.5" end="0.01" />
-</Particle>
-<Particle name="Teleport">
-<Settings count="128" time="2000" ambient="1" additive="true" />
-<Image file="particle_gradient" count="1" time="200" loop="true" />
-<Trail count="10" step="16" reduce="0.1" />
-<Gravity start="0" add="-0.1" />
-<Size start="40" end="40" />
-<X offset="0" move="10" rot="0" rot_accel="0" />
-<Y offset="0" move="-20" rot="0" rot_accel="0" />
-<Z offset="0" move="10" rot="0" rot_accel="0" />
-<Color start="DDDDFF" end="FFFFFF" />
-<Alpha start="0.7" end="0" />
-</Particle>
-</Particles>
-<Particle_Groups>
-<Particle_Group name="Missile Explosion">
-<Particles>
-<Particle name="Explosion Smoke" offset="0" />
-<Particle name="Explosion Orange Outer" offset="0" />
-<Particle name="Explosion Red Outer" offset="0" />
-<Particle name="Explosion Yellow Middle" offset="0" />
-<Particle name="Explosion White Center" offset="0" />
-<Particle name="Debris Explode 1" offset="0" />
-<Particle name="Debris Explode 2" offset="0" />
-</Particles>
-</Particle_Group>
-<Particle_Group name="Debris">
-<Particles>
-<Particle name="Debris Explode 1" offset="0" />
-<Particle name="Debris Explode 2" offset="0" />
-</Particles>
-</Particle_Group>
-<Particle_Group name="Fire">
-<Particles>
-<Particle name="Fire 1" offset="0" />
-<Particle name="Fire 2" offset="0" />
-</Particles>
-</Particle_Group>
-</Particle_Groups>
+	<Particles>
+		<Particle name="Explosion White Center">
+			<Settings count="1" time="200" ambient="1" additive="true" />
+			<Image file="particle_blob" count="4" time="200" loop="true" />
+			<Trail count="0" step="0" reduce="1" />
+			<Gravity start="0" add="0" />
+			<Size start="100" end="200" />
+			<X offset="0" move="0" rot="0" rot_accel="0" />
+			<Y offset="0" move="0" rot="0" rot_accel="0" />
+			<Z offset="0" move="0" rot="0" rot_accel="0" />
+			<Color start="EF8800" end="EF8800" />
+			<Alpha start="0.7" end="0.1" />
+		</Particle>
+		<Particle name="Explosion Yellow Middle">
+			<Settings count="2" time="1300" ambient="1" additive="true" />
+			<Image file="particle_blob" count="4" time="200" loop="true" />
+			<Trail count="0" step="0" reduce="1" />
+			<Gravity start="0" add="0" />
+			<Size start="100" end="1000" />
+			<X offset="250" move="12" rot="0.01" rot_accel="0.1" />
+			<Y offset="250" move="12" rot="0.01" rot_accel="0.1" />
+			<Z offset="250" move="12" rot="0.01" rot_accel="0.1" />
+			<Color start="FFFF00" end="EF8800" />
+			<Alpha start="0.9" end="0" />
+		</Particle>
+		<Particle name="Explosion Orange Outer">
+			<Settings count="50" time="1600" ambient="1" additive="true" />
+			<Image file="particle_blob" count="4" time="200" loop="true" />
+			<Trail count="0" step="0" reduce="1" />
+			<Gravity start="0" add="0" />
+			<Size start="200" end="1500" />
+			<X offset="300" move="18" rot="0.02" rot_accel="0.2" />
+			<Y offset="300" move="18" rot="0.02" rot_accel="0.2" />
+			<Z offset="300" move="18" rot="0.02" rot_accel="0.2" />
+			<Color start="FFA300" end="D45400" />
+			<Alpha start="0.8" end="0" />
+		</Particle>
+		<Particle name="Explosion Red Outer">
+			<Settings count="20" time="2000" ambient="1" additive="true" />
+			<Image file="particle_blob" count="4" time="200" loop="true" />
+			<Trail count="0" step="0" reduce="1" />
+			<Gravity start="0" add="0" />
+			<Size start="300" end="2000" />
+			<X offset="350" move="24" rot="0.03" rot_accel="0.3" />
+			<Y offset="350" move="24" rot="0.03" rot_accel="0.3" />
+			<Z offset="350" move="24" rot="0.03" rot_accel="0.3" />
+			<Color start="CC0000" end="990000" />
+			<Alpha start="0.7" end="0" />
+		</Particle>
+		<Particle name="Debris Explode 1">
+			<Settings count="32" time="2000" ambient="0.5" />
+			<Image file="particle_drum_1" count="1" time="200" loop="true" />
+			<Trail count="0" step="0" reduce="1" />
+			<Gravity start="-7" add="0.2" />
+			<Size start="30" end="30" />
+			<X offset="100" move="25" rot="0" rot_accel="0" />
+			<Y offset="100" move="25" rot="0" rot_accel="0" />
+			<Z offset="100" move="25" rot="0" rot_accel="0" />
+			<Color start="CCCCCC" end="333333" />
+			<Alpha start="0.9" end="0.2" />
+		</Particle>
+		<Particle name="Debris Explode 2">
+			<Settings count="32" time="2000" ambient="0.5" />
+			<Image file="particle_drum_2" count="1" time="200" loop="true" />
+			<Trail count="0" step="0" reduce="1" />
+			<Gravity start="-8" add="0.22" />
+			<Size start="20" end="20" />
+			<X offset="100" move="25" rot="0" rot_accel="0" />
+			<Y offset="100" move="25" rot="0" rot_accel="0" />
+			<Z offset="100" move="25" rot="0" rot_accel="0" />
+			<Color start="CCCCCC" end="333333" />
+			<Alpha start="0.9" end="0.2" />
+		</Particle>
+		<Particle name="Gun Hit">
+			<Settings count="32" time="600" ambient="1" />
+			<Image file="particle_gradient" count="1" time="200" loop="true" />
+			<Trail count="0" step="0" reduce="1" />
+			<Gravity start="0" add="0.04" />
+			<Size start="50" end="20" />
+			<X offset="0" move="5" rot="0" rot_accel="0" />
+			<Y offset="0" move="5" rot="0.2" rot_accel="0" />
+			<Z offset="0" move="5" rot="0" rot_accel="0" />
+			<Color start="AAAA55" end="555533" />
+			<Alpha start="0.9" end="0.01" />
+		</Particle>
+		<Particle name="Shell Spark">
+			<Settings count="32" time="800" ambient="1" />
+			<Image file="particle_gradient" count="1" time="200" loop="true" />
+			<Trail count="3" step="3" reduce="0.9" />
+			<Gravity start="-6" add="0.1" />
+			<Size start="24" end="16" />
+			<X offset="0" move="5" rot="0" rot_accel="0" />
+			<Y offset="0" move="5" rot="0.5" rot_accel="0" />
+			<Z offset="0" move="5" rot="0" rot_accel="0" />
+			<Color start="CCCC00" end="7F7F7F" />
+			<Alpha start="0.7" end="0.1" />
+		</Particle>
+		<Particle name="Shell Smoke">
+			<Settings count="1" time="1500" ambient="1" />
+			<Image file="particle_smokecurl" count="16" time="40" loop="true" />
+			<Trail count="0" step="0" reduce="0" />
+			<Gravity start="0" add="-0.001" />
+			<Size start="1500" end="3000" />
+			<X offset="0" move="0" rot="0" rot_accel="0" />
+			<Y offset="0" move="0" rot="0" rot_accel="0" />
+			<Z offset="0" move="0" rot="0" rot_accel="0" />
+			<Color start="FFFFFF" end="FFFFFF" team="true" />
+			<Alpha start="1" end="0" />
+		</Particle>
+		<Particle name="Ray Smoke">
+			<Settings count="1" time="1500" ambient="1" />
+			<Image file="particle_smoke" count="4" time="200" loop="true" />
+			<Trail count="0" step="0" reduce="1" />
+			<Gravity start="0" add="-0.045" />
+			<Size start="50" end="450" />
+			<X offset="0" move="0" rot="0" rot_accel="0" />
+			<Y offset="0" move="0" rot="0" rot_accel="0" />
+			<Z offset="0" move="0" rot="0" rot_accel="0" />
+			<Color start="FFFFFF" end="FFFFFF" team="true" />
+			<Alpha start="0.5" end="0.05" />
+		</Particle>
+		<Particle name="Explosion Smoke">
+			<Settings count="10" time="4000" ambient="1" />
+			<Image file="particle_smoke" count="4" time="200" loop="true" />
+			<Trail count="0" step="0" reduce="1" />
+			<Gravity start="0" add="0" />
+			<Size start="600" end="5000" />
+			<X offset="800" move="2" rot="0.1" rot_accel="0" />
+			<Y offset="800" move="2" rot="0.1" rot_accel="0" />
+			<Z offset="800" move="2" rot="0.1" rot_accel="0" />
+			<Color start="000000" end="666666" />
+			<Alpha start="0.3" end="0" />
+		</Particle>
+		<Particle name="Car Smoke">
+			<Settings count="1" time="1000" ambient="1" />
+			<Image file="particle_smoke" count="4" time="200" loop="true" />
+			<Trail count="0" step="0" reduce="1" />
+			<Gravity start="0" add="-0.01" />
+			<Size start="1000" end="1500" />
+			<X offset="0" move="0" rot="0" rot_accel="0" />
+			<Y offset="0" move="0" rot="0" rot_accel="0" />
+			<Z offset="0" move="0" rot="0" rot_accel="0" />
+			<Color start="7F3F00" end="3F1F00" />
+			<Alpha start="0.3" end="0" />
+		</Particle>
+		<Particle name="Cinema Smoke">
+			<Settings count="5" time="1500" ambient="1" />
+			<Image file="particle_smoke" count="4" time="200" loop="true" />
+			<Trail count="0" step="0" reduce="1" />
+			<Gravity start="0" add="-0.02" />
+			<Size start="2000" end="4000" />
+			<X offset="1500" move="1" rot="0" rot_accel="0" />
+			<Y offset="1500" move="1" rot="0" rot_accel="0" />
+			<Z offset="1500" move="1" rot="0" rot_accel="0" />
+			<Color start="AAAAAA" end="555555" />
+			<Alpha start="0.7" end="0" />
+		</Particle>
+		<Particle name="Water Spray">
+			<Settings count="50" time="900" ambient="1" additive="true" />
+			<Image file="particle_gradient" count="1" time="200" loop="true" />
+			<Trail count="5" step="1" reduce="1" />
+			<Gravity start="-7" add="0.02" />
+			<Size start="100" end="10" />
+			<X offset="1800" move="5" rot="0" rot_accel="0" />
+			<Y offset="1000" move="0" rot="0" rot_accel="0" />
+			<Z offset="1800" move="5" rot="0" rot_accel="0" />
+			<Color start="00337F" end="0055FF" />
+			<Alpha start="0.7" end="0" />
+		</Particle>
+		<Particle name="Assault Muzzle Flash">
+			<Settings count="1" time="200" ambient="1" />
+			<Image file="assault_muzzle" count="1" time="100" loop="true" />
+			<Trail count="0" step="0" reduce="1" />
+			<Gravity start="0" add="0" />
+			<Size start="1000" end="1000" />
+			<X offset="0" move="0" rot="0" rot_accel="0" />
+			<Y offset="0" move="0" rot="0" rot_accel="0" />
+			<Z offset="0" move="0" rot="0" rot_accel="0" />
+			<Color start="FFFFFF" end="FFFFFF" />
+			<Alpha start="1" end="0.1" />
+		</Particle>
+		<Particle name="Shotgun Muzzle Flash">
+			<Settings count="1" time="200" ambient="1" />
+			<Image file="shotgun_muzzle" count="1" time="100" loop="true" />
+			<Trail count="0" step="0" reduce="1" />
+			<Gravity start="0" add="0" />
+			<Size start="1000" end="1000" />
+			<X offset="0" move="0" rot="0" rot_accel="0" />
+			<Y offset="0" move="0" rot="0" rot_accel="0" />
+			<Z offset="0" move="0" rot="0" rot_accel="0" />
+			<Color start="FFFFFF" end="FFFFFF" />
+			<Alpha start="1" end="0.1" />
+		</Particle>
+		<Particle name="Bot Muzzle Flash">
+			<Settings count="1" time="200" ambient="1" />
+			<Image file="shotgun_muzzle" count="1" time="100" loop="true" />
+			<Trail count="0" step="0" reduce="1" />
+			<Gravity start="0" add="0" />
+			<Size start="200" end="200" />
+			<X offset="0" move="0" rot="0" rot_accel="0" />
+			<Y offset="0" move="0" rot="0" rot_accel="0" />
+			<Z offset="0" move="0" rot="0" rot_accel="0" />
+			<Color start="FFFFFF" end="FFFFFF" />
+			<Alpha start="1" end="0.1" />
+		</Particle>
+		<Particle name="Telefrag Blood">
+			<Settings count="100" time="3000" ambient="1" />
+			<Image file="particle_gradient" count="1" time="200" loop="true" />
+			<Trail count="3" step="3" reduce="0.8" />
+			<Gravity start="-3" add="0.01" />
+			<Size start="500" end="800" />
+			<X offset="0" move="20" rot="0" rot_accel="0" />
+			<Y offset="0" move="20" rot="0" rot_accel="0" />
+			<Z offset="0" move="20" rot="0" rot_accel="0" />
+			<Color start="FF0033" end="003300" />
+			<Alpha start="0.8" end="0" />
+		</Particle>
+		<Particle name="JoeFoe Smoke">
+			<Settings count="5" time="1800" ambient="1" />
+			<Image file="particle_smoke" count="4" time="200" loop="true" />
+			<Trail count="0" step="0" reduce="1" />
+			<Gravity start="0" add="-0.1" />
+			<Size start="50" end="850" />
+			<X offset="150" move="2" rot="0" rot_accel="0" />
+			<Y offset="150" move="2" rot="0" rot_accel="0" />
+			<Z offset="150" move="2" rot="0" rot_accel="0" />
+			<Color start="00FF00" end="00CC00" />
+			<Alpha start="0.6" end="0" />
+		</Particle>
+		<Particle name="JoeFoe Blood">
+			<Settings count="14" time="1500" ambient="1" />
+			<Image file="particle_solid" count="1" time="200" loop="true" />
+			<Trail count="15" step="4" reduce="0.5" />
+			<Gravity start="0" add="0.3" />
+			<Size start="20" end="20" />
+			<X offset="5" move="10" rot="0" rot_accel="0" />
+			<Y offset="5" move="10" rot="0" rot_accel="0" />
+			<Z offset="5" move="10" rot="0" rot_accel="0" />
+			<Color start="660000" end="330000" />
+			<Alpha start="1" end="0.3" />
+		</Particle>
+		<Particle name="JoeFoe Fireball Form">
+			<Settings count="48" time="500" reverse="true" ambient="1" />
+			<Image file="particle_gradient" count="1" time="200" loop="true" />
+			<Trail count="4" step="3" reduce="0.8" />
+			<Gravity start="0" add="0" />
+			<Size start="30" end="100" />
+			<X offset="150" move="10" rot="0" rot_accel="0" />
+			<Y offset="150" move="10" rot="0" rot_accel="0" />
+			<Z offset="150" move="10" rot="0" rot_accel="0" />
+			<Color start="33FF00" end="CCFFCC" />
+			<Alpha start="0.8" end="0.1" />
+		</Particle>
+		<Particle name="JoeFoe Fireball Dots">
+			<Settings count="1" time="1500" ambient="1" additive="true" />
+			<Image file="particle_dots" count="1" time="200" loop="true" />
+			<Trail count="0" step="0" reduce="1" />
+			<Gravity start="0" add="0.1" />
+			<Size start="150" end="700" />
+			<X offset="0" move="0" rot="0" rot_accel="0" />
+			<Y offset="0" move="0" rot="0" rot_accel="0" />
+			<Z offset="0" move="0" rot="0" rot_accel="0" />
+			<Color start="00FF00" end="33FF33" />
+			<Alpha start="0.4" end="0.05" />
+		</Particle>
+		<Particle name="JoeFoe Explode Top">
+			<Settings count="256" time="5000" ambient="1" />
+			<Image file="particle_gradient" count="1" time="200" loop="true" />
+			<Trail count="0" step="0" reduce="1" />
+			<Gravity start="-20" add="0.1" />
+			<Size start="200" end="40" />
+			<X offset="30" move="20" rot="0" rot_accel="0" />
+			<Y offset="30" move="10" rot="0" rot_accel="0" />
+			<Z offset="30" move="20" rot="0" rot_accel="0" />
+			<Color start="00FF00" end="333333" />
+			<Alpha start="0.7" end="0.1" />
+		</Particle>
+		<Particle name="JoeFoe Explode Bottom">
+			<Settings count="256" time="2500" ambient="1" />
+			<Image file="particle_gradient" count="1" time="200" loop="true" />
+			<Trail count="0" step="0" reduce="1" />
+			<Gravity start="-5" add="0.1" />
+			<Size start="200" end="40" />
+			<X offset="30" move="20" rot="0" rot_accel="0" />
+			<Y offset="30" move="10" rot="0" rot_accel="0" />
+			<Z offset="30" move="20" rot="0" rot_accel="0" />
+			<Color start="00FF00" end="003300" />
+			<Alpha start="0.7" end="0.1" />
+		</Particle>
+		<Particle name="Fire 1">
+			<Settings count="10" time="1000" ambient="1" additive="true" chain="Fire 1 Reverse" />
+			<Image file="particle_blob" count="4" time="100" loop="true" />
+			<Trail count="0" step="0" reduce="1" />
+			<Gravity start="-1.5" add="0" />
+			<Size start="450" end="420" />
+			<X offset="60" move="1" rot="0" rot_accel="0" />
+			<Y offset="60" move="1" rot="0" rot_accel="0" />
+			<Z offset="60" move="1" rot="0" rot_accel="0" />
+			<Color start="FF0000" end="FF0000" />
+			<Alpha start="0.8" end="0.8" />
+		</Particle>
+		<Particle name="Fire 1 Reverse">
+			<Settings count="10" time="1000" reverse="true" ambient="1" additive="true" chain="Fire 1" />
+			<Image file="particle_blob" count="4" time="100" loop="true" />
+			<Trail count="0" step="0" reduce="1" />
+			<Gravity start="-1.5" add="0" />
+			<Size start="450" end="420" />
+			<X offset="60" move="1" rot="0" rot_accel="0" />
+			<Y offset="60" move="1" rot="0" rot_accel="0" />
+			<Z offset="60" move="1" rot="0" rot_accel="0" />
+			<Color start="FF0000" end="FF0000" />
+			<Alpha start="0.8" end="0.8" />
+		</Particle>
+		<Particle name="Fire 2">
+			<Settings count="10" time="1000" ambient="1" additive="true" chain="Fire 2 Reverse" />
+			<Image file="particle_blob" count="4" time="100" loop="true" />
+			<Trail count="0" step="0" reduce="1" />
+			<Gravity start="-1.5" add="0" />
+			<Size start="250" end="220" />
+			<X offset="30" move="1" rot="0" rot_accel="0" />
+			<Y offset="30" move="1" rot="0" rot_accel="0" />
+			<Z offset="30" move="1" rot="0" rot_accel="0" />
+			<Color start="FF7F00" end="FF7F00" />
+			<Alpha start="0.4" end="0.4" />
+		</Particle>
+		<Particle name="Fire 2 Reverse">
+			<Settings count="10" time="1000" reverse="true" ambient="1" additive="true" chain="Fire 2" />
+			<Image file="particle_blob" count="4" time="100" loop="true" />
+			<Trail count="0" step="0" reduce="1" />
+			<Gravity start="-1.5" add="0" />
+			<Size start="250" end="220" />
+			<X offset="30" move="1" rot="0" rot_accel="0" />
+			<Y offset="30" move="1" rot="0" rot_accel="0" />
+			<Z offset="30" move="1" rot="0" rot_accel="0" />
+			<Color start="FF7F00" end="FF7F00" />
+			<Alpha start="0.4" end="0.4" />
+		</Particle>
+		<Particle name="Water Drop">
+			<Settings count="1" time="2000" ambient="1" additive="true" />
+			<Image file="particle_gradient" count="1" time="200" />
+			<Trail count="15" step="1" reduce="0.5" />
+			<Gravity start="30" add="0.2" />
+			<Size start="150" end="100" />
+			<X offset="0" move="0" rot="0" rot_accel="0" />
+			<Y offset="0" move="0" rot="0" rot_accel="0" />
+			<Z offset="0" move="0" rot="0" rot_accel="0" />
+			<Color start="00337F" end="0055FF" />
+			<Alpha start="0.2" end="0.2" />
+		</Particle>
+		<Particle name="Ray Globe">
+			<Settings count="200" time="1000" ambient="1" additive="true" globe="true" />
+			<Image file="particle_gradient" count="1" time="200" loop="true" />
+			<Trail count="0" step="0" reduce="0" />
+			<Gravity start="0" add="0" />
+			<Size start="200" end="1000" />
+			<X offset="100" move="20" rot="0.05" rot_accel="0.3" />
+			<Y offset="100" move="20" rot="0.05" rot_accel="0.3" />
+			<Z offset="100" move="20" rot="0.05" rot_accel="0.3" />
+			<Color start="FFFFFF" end="555555" team="true" />
+			<Alpha start="0.5" end="0.01" />
+		</Particle>
+		<Particle name="Teleport">
+			<Settings count="128" time="2000" ambient="1" additive="true" />
+			<Image file="particle_gradient" count="1" time="200" loop="true" />
+			<Trail count="10" step="16" reduce="0.1" />
+			<Gravity start="0" add="-0.1" />
+			<Size start="40" end="40" />
+			<X offset="0" move="10" rot="0" rot_accel="0" />
+			<Y offset="0" move="-20" rot="0" rot_accel="0" />
+			<Z offset="0" move="10" rot="0" rot_accel="0" />
+			<Color start="DDDDFF" end="FFFFFF" />
+			<Alpha start="0.7" end="0" />
+		</Particle>
+	</Particles>
+	<Particle_Groups>
+		<Particle_Group name="Missile Explosion">
+			<Particles>
+				<Particle name="Explosion Smoke" offset="0" />
+				<Particle name="Explosion Orange Outer" offset="0" />
+				<Particle name="Explosion Red Outer" offset="0" />
+				<Particle name="Explosion Yellow Middle" offset="0" />
+				<Particle name="Explosion White Center" offset="0" />
+				<Particle name="Debris Explode 1" offset="0" />
+				<Particle name="Debris Explode 2" offset="0" />
+			</Particles>
+		</Particle_Group>
+		<Particle_Group name="Debris">
+			<Particles>
+				<Particle name="Debris Explode 1" offset="0" />
+				<Particle name="Debris Explode 2" offset="0" />
+			</Particles>
+		</Particle_Group>
+		<Particle_Group name="Fire">
+			<Particles>
+				<Particle name="Fire 1" offset="0" />
+				<Particle name="Fire 2" offset="0" />
+			</Particles>
+		</Particle_Group>
+	</Particle_Groups>
 </Particle_Data>

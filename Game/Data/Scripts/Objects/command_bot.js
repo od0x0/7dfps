@@ -54,7 +54,7 @@ function summonEnemies(obj,tick) {
         
         var point = map.spot.getPosition(summon_spots[i]);
         var angle = map.spot.getAngle(summon_spots[i]);
-        map.object.spawn(summon_spot_name,"security_bot",null,point,angle);
+        map.object.spawn(summon_spot_name,"security_bot","4",point,angle);
         spawn.particle(point,"Teleport");
         var white = Color;
         spawn.flash(point,new Color(1,1,1),150,250,250);
@@ -78,7 +78,7 @@ function startFire(obj,tick) { // fires for a few seconds? randomly
     obj.weapon.fire("SecurityBot_Weapon",1); // BAM
     
     // Lights and Sounds
-    spawn.particle(obj.model.bone.findPosition("Idle","Fire"+fireBone),"Muzzle Flash");
+    spawn.particle(obj.model.bone.findPosition("Idle","Fire"+fireBone),"Bot Muzzle Flash");
 	spawn.particle(obj.model.bone.findPosition("Idle","Fire"+fireBone),"Explosion White Center");
     sound.playAtObject("Gun Fire",obj.setting.id,1.0);
     

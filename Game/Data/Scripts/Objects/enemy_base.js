@@ -21,6 +21,9 @@
 //     Assumes a clear path, does not check for obstacles.
 //     Requires parameter 1 and 2 to be valid node names.
 //
+// 4 - Chase Player NOW
+//     Only to be used when spawning from the command bot script.
+//
 // No matter which pattern is chosen, upon sighting the player, the bot will
 // start attacking him.
 // Sight uses 3 ways to test if the player can be seen:
@@ -53,6 +56,7 @@ script.attachEvent(DIM3_EVENT_DIE,'enemyDie');
 const ENEMY_MODE_STAND = 1; // Stand in place.
 const ENEMY_MODE_RANDOM_WALK = 2; // Walk around randomly.
 const ENEMY_MODE_NODE_PATROL = 3; // Walk node paths.
+const ENEMY_MODE_CHASE = 4;
 
 
 // difficulty constants
@@ -141,6 +145,9 @@ function enemyBehaviorReset(obj) {
     obj.event.clearChain();
     
     switch (behavior_mode) {
+        case ENEMY_MODE_CHASE:
+            enemyChaseAfterSpawn(obj);
+            break;
         case ENEMY_MODE_NODE_PATROL: // Node walk
             enemyNodePatrol(obj);
             break;
@@ -154,6 +161,14 @@ function enemyBehaviorReset(obj) {
     
     obj.watch.start(WATCH_DISTANCE);
     
+}
+
+// chasing after spawn
+
+function enemyChaseAfterSpawn(obj) {
+    chasing_player = true;
+    behavior_mode = ENEMY_MODE_STAND;
+    obj.motionVector.walkToPlayer();
 }
 
 // patroling nodes
