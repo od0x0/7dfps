@@ -1,5 +1,5 @@
 <Shaders>
-	<Shader name="bloom">
-		<Code vert="FullScreen/bloom2" frag="FullScreen/bloom2" />
-	</Shader>
+<Shader name="bloom">
+<Code vert="FullScreen/bloom2" frag="FullScreen/bloom2" />
+</Shader>
 </Shaders>

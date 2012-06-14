@@ -77,7 +77,7 @@
 </Items>
 </Menu>
 </Menus>
-<Color background="000000" menu_text="FFFFFF" menu_mouse_over="7F007F" menu_background="7F7F7F" menu_outline="000000" dialog_background="999999" dialog_header="0080FF" dialog_outline="FFFFFF" dialog_title="CCCCCC" tab_background="999999" tab_dimmed="666666" tab_outline="FFFFFF" tab_text="E6E6E6" tab_text_mouse_over="FFFFFF" tab_text_dimmed="4C4C4C" control_label="000000" control_text="000000" control_fill="888899" control_header="FF3FFF" control_outline="000000" control_mouse_over="FFFFFF" control_hilite="AA00AA" control_disabled="3F3F3F" button_fill="AAAAAA" button_text="2F2F2F" button_outline="000000" system_metric="FFFFFF" default_tint="33FF33" />
+<Color background="000000" menu_text="FFFFFF" menu_mouse_over="7F007F" menu_background="7F7F7F" menu_outline="000000" dialog_background="999999" dialog_header="0080FF" dialog_outline="FFFFFF" dialog_title="CCCCCC" tab_background="999999" tab_dimmed="666666" tab_outline="FFFFFF" tab_text="E6E6E6" tab_text_mouse_over="FFFFFF" tab_text_dimmed="4C4C4C" control_label="000000" control_text="000000" control_fill="888899" control_header="95AFB8" control_outline="000000" control_mouse_over="FFFFFF" control_hilite="57687E" control_disabled="3F3F3F" button_fill="AAAAAA" button_text="2F2F2F" button_outline="000000" system_metric="FFFFFF" default_tint="33FF33" />
 <Font name="Arial" hud_name="Impact" name_1="Helvetica" hud_name_1="Verdana" name_2="Courier New" hud_name_2="Arial" />
 <Progress left_x="20" right_x="980" top_y="720" bottom_y="735" outline="true" background_color="004080" hilite_color="400080" outline_color="FFFFFF" />
 <Chat x="950" y="630" last_add_life_sec="15" next_life_sec="5" />
