@@ -715,7 +715,7 @@
 </Mesh>
 </Meshes>
 <Fills>
-<Fill shine_factor="10" glow_rate="100" glow_min="0" glow_max="1" shader="Default" material_name="_null__untitled">
+<Fill shine_factor="10" glow_rate="0" glow_min="0" glow_max="1" shader="Default" material_name="_null__untitled">
 <Images>
 <Image wait="100" bitmap="littleGuy_tex" />
 </Images>
