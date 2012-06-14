@@ -1,0 +1,155 @@
+# Blender MTL File: 'Map One.blend'
+# Material Count: 15
+newmtl _room_ceilingBase_tex.
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd /Users/jerrykathleensand/Documents/7dfps/Source Content/Modular Packs/Room/room_ceilingBase/room_ceilingBase_tex.png
+
+
+newmtl _untitled
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd /Users/jerrykathleensand/Documents/7dfps/Source Content/Modular Packs/Corridor/corridor_wallBase/corridor_wallBase_tex.png
+
+
+newmtl _untitled.001
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd /Users/jerrykathleensand/Documents/7dfps/Source Content/Modular Packs/Corridor/corridor_floorBase/corridor_floorBase_tex.png
+
+
+newmtl _untitled.002
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd /Users/jerrykathleensand/Documents/7dfps/Source Content/Modular Packs/Corridor/corridor_wallCornerOutside/corridor_wallCornerOutside_tex.png
+
+
+newmtl _untitled.003
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd /Users/jerrykathleensand/Documents/7dfps/Source Content/Modular Packs/Room/room_ceilingConnector/room_ceilingConnector_tex.png
+
+
+newmtl _untitled.004
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd /Users/jerrykathleensand/Documents/7dfps/Source Content/Modular Packs/Corridor/corridor_floorCorner/corridor_floorCorner_tex.png
+
+
+newmtl _untitled.005
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd /Users/jerrykathleensand/Documents/7dfps/Source Content/Modular Packs/Corridor/corridor_wallCornerInside/corridor_wallCornerInside_tex.png
+
+
+newmtl _untitled.006
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd /Users/jerrykathleensand/Documents/7dfps/Source Content/Modular Packs/Corridor/corridor_ceilingCorner/corridor_ceilingCorner_tex.png
+
+
+newmtl _untitled.007
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd /Users/jerrykathleensand/Documents/7dfps/Source Content/Modular Packs/Corridor/corridor_ceilingBase/corridor_ceilingBase_tex.png
+
+
+newmtl _untitled.008
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd /Users/jerrykathleensand/Documents/7dfps/Source Content/Modular Packs/Room/room_floorBase/room_floorBase_tex.png
+
+
+newmtl _untitled.009
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd /Users/jerrykathleensand/Documents/7dfps/Source Content/Modular Packs/Room/room_floorConnector/room_floorConnector_tex.png
+
+
+newmtl _untitled.011
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd /Users/jerrykathleensand/Documents/7dfps/Source Content/Modular Packs/Room/room_ceilingCorner/room_ceilingCorner_tex.png
+
+
+newmtl room_ceilingConnecto2_untitled.003
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /Users/jerrykathleensand/Documents/7dfps/Source Content/Modular Packs/Room/room_ceilingConnector/room_ceilingConnector_tex.png
+
+
+newmtl room_ceilingConnector_untitled.003
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /Users/jerrykathleensand/Documents/7dfps/Source Content/Modular Packs/Room/room_ceilingConnector/room_ceilingConnector_tex.png
+
+
+newmtl room_ceilingCorner_untitled.011
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /Users/jerrykathleensand/Documents/7dfps/Source Content/Modular Packs/Room/room_ceilingCorner/room_ceilingCorner_tex.png
+
+
