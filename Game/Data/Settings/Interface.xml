@@ -89,13 +89,13 @@
 <Simple_Save desc_text_size="20" progress_max_point="100" progress_max_bitmap="5" progress_wid="-1" progress_high="-1" progress_bitmap_add="16" progress_horizontal="true" progress_wrap_count="-1" />
 <Score x="0" y="0" width="150" height="200" text_size="20" format="Number" color="FFFFFF" />
 <Buttons>
-<Game_New x="80" y="100" width="200" height="50" on="true" />
-<Game_Load x="80" y="200" width="200" height="50" on="true" />
-<Game_Setup x="80" y="300" width="200" height="50" on="true" />
+<Game_New x="410" y="400" width="128" height="32" on="true" />
+<Game_Load x="410" y="464" width="128" height="32" on="true" />
+<Game_Setup x="410" y="512" width="128" height="32" on="true" />
 <Multiplayer_Host x="700" y="100" width="200" height="50" />
 <Multiplayer_Join x="700" y="200" width="200" height="50" />
 <Credit x="200" y="670" width="200" height="50" />
-<Quit x="600" y="670" width="200" height="50" on="true" />
+<Quit x="410" y="670" width="128" height="32" on="true" />
 <Simple_Start_0 x="0" y="0" desc_x="0" desc_y="0" progress_x="0" progress_y="0" />
 <Simple_Erase_0 x="0" y="0" />
 <Simple_Start_1 x="0" y="0" desc_x="0" desc_y="0" progress_x="0" progress_y="0" />

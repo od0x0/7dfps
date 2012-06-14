@@ -5,11 +5,12 @@
 <Crosshair name="xcross">
 <Image file="xcross" />
 </Crosshair>
-<Crosshair name="click_up">
-<Image file="click_up" />
-</Crosshair>
+
 <Crosshair name="click_down">
 <Image file="click_down" />
+</Crosshair>
+<Crosshair name="click_up">
+<Image file="click_up" />
 </Crosshair>
 <Crosshair name="scope">
 <Image file="scope" />

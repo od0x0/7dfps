@@ -16,5 +16,5 @@ void main()
 		}
 	}
 	
-	gl_FragColor = map+blurSample/64.0;
+	gl_FragColor = map+blurSample/20.0;
 }

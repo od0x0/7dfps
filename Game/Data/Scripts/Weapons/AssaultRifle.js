@@ -59,6 +59,11 @@ function OnConstruct(weap,subEvent,id,tick)
 	weap.crosshair.on=true;
 	weap.crosshair.type=DIM3_WEAPON_CROSSHAIR_TYPE_CENTER;
 	weap.crosshair.name='xcross';
+	weap.crosshair.minSize=32;
+	weap.crosshair.maxSize=64;
+	weap.crosshair.color.red=1;
+	weap.crosshair.color.green=1;
+	weap.crosshair.color.blue=1;
 
 		// fails under water
 
