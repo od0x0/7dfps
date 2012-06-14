@@ -8,6 +8,11 @@
 <Settings alpha="1" size="20" color="FFFFFF" just="left" special="none" />
 <Fade fade_in_msec="0" life_msec="0" fade_out_msec="0" />
 </Text>
+<Text name="DeathInfo">
+<Position x="500" y="375" />
+<Settings alpha="1" data="You Died." size="50" color="FFFFFF" just="center" special="none" />
+<Fade fade_in_msec="0" life_msec="0" fade_out_msec="0" />
+</Text>
 </Texts>
 <Bars>
 <Bar name="Health" type="vertical">

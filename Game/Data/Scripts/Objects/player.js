@@ -131,6 +131,15 @@ function OnSpawn(object, subevent, id, tick)
 	camera.plane.near = 100;
 	camera.plane.far = 1000000;
 
+	object.weapon.hide(false);
+
+	object.setting.damage=true;
+	object.setting.contact=true;
+	
+	object.status.freezeInput(false);
+
+	iface.text.hide("DeathInfo");
+
 	UpdateWeaponDisplay(object);
 	OnHealthUpdate(object, subevent, id, tick);
 }
@@ -151,6 +160,60 @@ function OnHealthUpdate(object, subevent, id, tick)
 function OnDeath(object, subevent, id, tick)
 {
 	object.event.clearTimer();
+	//map.action.restartMap();
+
+	OnHealthUpdate(object, subevent, id, tick);
+
+	object.weapon.hide(true);
+	//iface.bar.hide('Health');
+	
+		// freeze all input and lock off player
+		
+	object.setting.damage=false;
+	object.setting.contact=false;
+	
+	object.motionVector.stop();
+	object.motionAngle.turnStop();
+	
+	object.status.freezeInput(true);
+
+		// death is seen from above
+		
+	//camera.setting.type=DIM3_CAMERA_TYPE_CHASE_STATIC;
+		
+	//camera.chase.trackAngle.y=270;
+	//camera.chase.distance=8000;
+	
+		// death scream
+		
+	//sound.playAtObject("Scream",obj.setting.id,utility.random.getFloat(0.4,0.5));
+	
+		// death animation
+		
+	//obj.model.animation.stopAll();
+	//obj.model.animation.start('Die');
+	
+		// don't let respawn happen while we are dying
+		
+	object.status.freezeRespawn(true);
+	
+	iface.text.show("DeathInfo");
+
+	object.event.chain(50,'playerDieEnd');
+}
+
+function playerDieEnd(obj,tick)
+{
+
+		// let player respawn
+		
+	//camera.setting.type=DIM3_CAMERA_TYPE_FPP;
+		
+	//camera.chase.trackAngle.y=270;
+	//camera.chase.distance=8000;
+
+	obj.status.freezeRespawn(false);
+	iface.text.hide("DeathInfo");
 	map.action.restartMap();
 }
 
