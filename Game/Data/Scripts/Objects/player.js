@@ -157,7 +157,8 @@ function OnDeath(object, subevent, id, tick)
 function OnPickup(object, subevent, id, tick)
 {
 	if(!object.pickup.itemName) return;
-	object.weapon.setSelect(object.pickup.itemName);
+	//object.weapon.setSelect(object.pickup.itemName);
+	OnHealthUpdate(object, subevent, id, tick);
 	UpdateWeaponDisplay(object);
 }
 
