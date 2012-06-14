@@ -69,6 +69,7 @@ const DODGE_CHANCE = 10;
 // misc constans
 const WATCH_DISTANCE = 20000;
 const ATTACK_DISTANCE = 15000;
+const LISTEN_SOUNDS = new Array("Gun Fire");
 
 
 //
@@ -221,6 +222,9 @@ function enemyWatch(obj,subEvent,id,tick) {
         case DIM3_EVENT_WATCH_OBJECT_FAR:
             enemyStopChase(obj,tick);
             break;
+        case DIM3_EVENT_WATCH_OBJECT_SOUND:
+            enemyCheckSound(obj,tick,obj.watch.soundName);
+            break;
         default:
             break;
     }
@@ -278,6 +282,30 @@ function enemyChaseLoop(obj,tick) {
     // Do all of the above every second.
     obj.event.chain(5,"enemyChaseLoop");
 }
+
+
+// listening
+
+function enemyListenSound(sound) {
+    for (var i = 0; i < LISTEN_SOUNDS.length; i++) {
+        if (sound == LISTEN_SOUNDS[i]) return true;
+    }
+    return false;
+}
+
+function enemyCheckSound(obj,tick,sound) {
+    iface.console.write(sound);
+    if(enemyListenSound(sound)) {
+        enemySoundReact(obj,tick);
+    }
+}
+
+function enemySoundReact(obj,tick) {
+    obj.motionVector.turnToPlayer(); // cant turn to the source of the sound yet  
+    obj.model.animation.change("Head Swivel");
+    obj.event.chain(50,"enemyBehaviorReset"); // go back to normal after a while
+}
+
 
 // attacking
 

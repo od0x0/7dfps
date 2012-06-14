@@ -43,7 +43,7 @@ function enemyAttack(obj,tick) {
 }
 
 function enemyWatch(obj,subEvent,id,tick) {
-    summonEnemies(obj,tick);
+    if(subEvent == DIM3_EVENT_WATCH_OBJECT_NEAR) summonEnemies(obj,tick);
     script.callParent();
 }
 
