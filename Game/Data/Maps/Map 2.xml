@@ -458,7 +458,7 @@
 <Static follow="true" />
 </Camera>
 <Editor_Views>
-<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="436487,92355,709791" ang="7.399021,358.799438,0" uv_layer="1" />
+<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="439338,92035,685192" ang="356.198792,178.19931,0" uv_layer="1" />
 </Editor_Views>
 <Meshes>
 <Mesh lock_uv="true">
@@ -27018,9 +27018,9 @@
 <Sceneries>
 </Sceneries>
 <Lights>
-<Light c3="439971,93221,689093" type="normal" light_map="true" direction="all" intensity="12000" exponent="1" rgb="A9BDD5" />
-<Light c3="417722,93757,688413" type="normal" light_map="true" direction="all" intensity="15000" exponent="1" rgb="77A3C8" />
-<Light c3="419269,93757,703920" type="normal" light_map="true" direction="all" intensity="15000" exponent="1" rgb="77A3C8" />
+<Light c3="439971,93221,689093" type="normal" light_map="true" direction="all" intensity="12000" exponent="1" rgb="A9BDD5" off="true" />
+<Light c3="417722,93757,688413" type="normal" light_map="true" direction="all" intensity="15000" exponent="1" rgb="77A3C8" off="true" />
+<Light c3="419269,93757,703920" type="normal" light_map="true" direction="all" intensity="15000" exponent="1" rgb="77A3C8" off="true" />
 <Light c3="437118,93181,703438" type="normal" light_map="true" direction="all" intensity="15000" exponent="1" rgb="77A3C8" off="true" />
 <Light c3="437118,93181,716110" type="normal" light_map="true" direction="all" intensity="15000" exponent="1" rgb="77A3C8" />
 <Light c3="419840,94333,715199" type="normal" light_map="true" direction="all" intensity="15000" exponent="1" rgb="77A3C8" />
@@ -27028,7 +27028,11 @@
 <Light c3="453730,93591,696262" type="normal" light_map="true" direction="all" intensity="10000" exponent="1" rgb="B7D1FF" />
 <Light name="field_1" c3="448035,93797,689093" type="normal" direction="all" intensity="5000" exponent="1" rgb="09BA02" />
 <Light c3="443508,93757,739593" type="normal" light_map="true" direction="all" intensity="15000" exponent="1" rgb="66C838" />
-<Light c3="437118,92605,703438" type="normal" direction="all" intensity="15000" exponent="1" rgb="AFD2FF" />
+<Light c3="437118,92605,703438" type="normal" direction="all" intensity="15000" exponent="1" rgb="7188A5" />
+<Light c3="417722,92932,688413" type="normal" direction="all" intensity="15000" exponent="1" rgb="93C9F6" />
+<Light c3="439971,92441,689093" type="normal" direction="all" intensity="12000" exponent="0" rgb="C4DBF6" />
+<Light c3="434774,92441,689569" type="normal" direction="all" intensity="12000" exponent="1" rgb="C4DBF6" />
+<Light c3="445131,92441,688625" type="normal" direction="all" intensity="12000" exponent="1" rgb="C4DBF6" />
 </Lights>
 <Sounds>
 </Sounds>

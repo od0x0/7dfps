@@ -137,7 +137,7 @@ function OnSpawn(object, subevent, id, tick)
 
 function OnDamage(object, subevent, id, tick)
 {
-	object.status.tintView(new Color(1, 0, 0), 0.5, 500, 300, 1000);
+	object.status.tintView(new Color(1, 0, 0), 0.5, 20, 100, 20);
 	OnHealthUpdate(object, subevent, id, tick);
 }
 
