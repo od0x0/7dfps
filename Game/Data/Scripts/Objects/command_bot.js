@@ -6,6 +6,7 @@
 script.implements('enemy_base');
 script.attachEvent(DIM3_EVENT_CONSTRUCT,"enemyConstruct");
 script.attachEvent(DIM3_EVENT_SPAWN,"enemySpawn");
+script.attachEvent(DIM3_EVENT_WATCH,'enemyWatch');
 
 var fireBone = 1;
 var shotsFired = -1;
@@ -38,9 +39,12 @@ function enemyAttack(obj,tick) {
     obj.model.animation.change("Idle");
     obj.motionVector.stop();
     obj.motionVector.turnToPlayer();
-    if (!summonEnemies()) {
-        startFire(obj,tick);
-    }
+    startFire(obj,tick);
+}
+
+function enemyWatch(obj,subEvent,id,tick) {
+    summonEnemies(obj,tick);
+    script.callParent();
 }
 
 function summonEnemies(obj,tick) {
