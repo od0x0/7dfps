@@ -69,7 +69,7 @@ const DODGE_CHANCE = 10;
 // misc constans
 const WATCH_DISTANCE = 20000;
 const ATTACK_DISTANCE = 15000;
-const LISTEN_SOUNDS = new Array("Gun Fire");
+const LISTEN_SOUNDS = new Array("Gun Fire","Shell Fire");
 
 
 //
@@ -243,6 +243,7 @@ function enemyStopChase(obj,tick) {
     //iface.console.write("Lost sight. Stop chase.");
     chasing_player = false;
     searching_player = true;
+    robotVoice(obj,"Robot Bark Target Lost",tick,"10000");
     enemyChaseLoop(obj,tick);
 }
 
@@ -300,6 +301,7 @@ function enemyCheckSound(obj,tick,sound) {
 }
 
 function enemySoundReact(obj,tick) {
+    robotVoice(obj,"Robot Bark Heard Player",tick,"10000");
     obj.motionVector.turnToPlayer(); // cant turn to the source of the sound yet  
     obj.model.animation.change("Head Swivel");
     obj.event.chain(50,"enemyBehaviorReset"); // go back to normal after a while

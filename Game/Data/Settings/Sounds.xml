@@ -155,4 +155,12 @@
 <Wave file="Amb Force Field" />
 <Distance min="1500" max="12000" />
 </Sound>
+<Sound name="Robot Bark Target Lost">
+<Wave file="Robot Bark Target Lost" />
+<Distance min="1500" max="30000" />
+</Sound>
+<Sound name="Robot Bark Heard Player">
+<Wave file="Robot Bark Heard Player" />
+<Distance min="1500" max="30000" />
+</Sound>
 </Sounds>
