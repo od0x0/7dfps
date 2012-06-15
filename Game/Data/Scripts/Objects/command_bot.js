@@ -59,7 +59,7 @@ function enemyWatch(obj,subEvent,id,tick) {
 function startSummon(obj,tick) {
     iface.console.write("SPAWN!");
     summoning = true;
-    obj.event.chain(15,"summonEnemies");
+    obj.event.chain(13,"summonEnemies");
 }
 
 function summonEnemies(obj,tick) {
