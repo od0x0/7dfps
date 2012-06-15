@@ -1,7 +1,7 @@
-# Blender v2.57 (sub 0) OBJ File: ''
+# Blender v2.57 (sub 0) OBJ File: 'ceilingLight1.blend'
 # www.blender.org
 mtllib ceilingLight1.mtl
-o Cylinder
+g Cylinder
 v 1.304904 0.458583 -3.528851
 v 1.687587 0.458583 -3.452730
 v 2.012011 0.458583 -3.235958

@@ -44,7 +44,7 @@
 <Static follow="true" />
 </Camera>
 <Editor_Views>
-<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="502086,547329,491138" ang="351.000183,175.999847,0" uv_layer="0" />
+<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="505773,546009,476143" ang="7.800225,188.999832,0" uv_layer="0" />
 </Editor_Views>
 <Meshes>
 <Mesh never_obscure="true" never_cull="true" no_halo_obscure="true">
@@ -132,5 +132,6 @@
 <Spot id="4" c3="524534,549184,493838" name="urmom" type="Spawn" params="2" angle="0" skill="easy" spawn="always" />
 <Spot id="5" c3="524534,549184,486926" name="urmom" type="Spawn" params="2" angle="0" skill="easy" spawn="always" />
 <Spot id="6" c3="502304,550111,500000" name="AssaultRifle" type="Object" script="PickupWeapon" angle="0" skill="easy" spawn="always" />
+<Spot id="7" c3="476726,548608,481742" name="urmom" type="Object" script="destroyer_bot" params="2" angle="0" skill="easy" spawn="always" />
 </Spots>
 </Map>
