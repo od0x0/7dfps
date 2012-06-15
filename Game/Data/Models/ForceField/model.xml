@@ -59,7 +59,7 @@
 </Poses>
 <Animations>
 <Animation name="Idle">
-<Loop repeat="true" start="-1" end="-1" />
+<Loop repeat="true" start="0" end="0" />
 <Poses>
 <Pose name="Idle" time="100" sway="0,0,0" move="0,0,0" acceleration="0">
 <Sound pitch="1" />

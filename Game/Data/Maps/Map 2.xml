@@ -9,7 +9,7 @@
 <Editor txt_uv_scale_x="0.25" txt_uv_scale_y="0.25" view_near_dist="400" view_far_dist="300000" link_always_start="true" />
 <Media type="none" event_id="-1" />
 <Music fade_msec="0" name="Molotov" />
-<Ambient_Light rgb="000000" light_map_boost="0" />
+<Ambient_Light rgb="050709" light_map_boost="0" />
 <Ambient_Sound pitch="1" />
 <Background front_fill="-1" front_stamp="1,1" front_scroll="0,0" middle_fill="-1" middle_stamp="1,1" middle_scroll="0,0" back_fill="-1" back_stamp="1,1" back_scroll="0,0" />
 <Sky>
@@ -118,7 +118,7 @@
 </Images>
 </Fill>
 <Fill id="16" shine_factor="10" glow_rate="10" glow_min="1" glow_max="1" material_name="None_untitled">
-<Scale x="0.25" y="0.25" />
+<Scale x="0.2776" y="0.2416" />
 <Images>
 <Image wait="100" bitmap="plasmaTube_tex" />
 </Images>
@@ -212,7 +212,7 @@
 <Static follow="true" />
 </Camera>
 <Editor_Views>
-<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="415940,93227,718311" ang="355.198395,44.798534,0" uv_layer="1" />
+<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="437301,92599,685074" ang="348.998444,19.798489,0" uv_layer="1" />
 </Editor_Views>
 <Meshes>
 <Mesh lock_uv="true">
@@ -27598,6 +27598,8 @@
 <Light c3="438775,93181,714208" type="normal" light_map="true" direction="all" intensity="4000" exponent="1" rgb="3BCEFF" />
 </Lights>
 <Sounds>
+<Sound name="Amb Machinery" c3="438767,92956,714185" pitch="1" />
+<Sound name="Amb Machinery" c3="438263,92956,703835" pitch="1" />
 </Sounds>
 <Particles>
 </Particles>
@@ -27614,7 +27616,7 @@
 <Spots>
 <Spot id="0" c3="439330,94743,674662" name="Start" type="Player" script="player" angle="180" skill="easy" spawn="always" />
 <Spot id="1" c3="433696,94829,688075" type="Object" script="command_bot" display_model="Little Guy Red" params="1|||bot" angle="66" skill="easy" spawn="always" />
-<Spot id="2" c3="439330,94167,678262" name="AssaultRifle" type="Object" script="PickupWeapon" display_model="PickupAssaultRifle" angle="0" skill="easy" spawn="always" />
+<Spot id="2" c3="439330,94167,678262" name="Shotgun" type="Object" script="PickupWeapon" display_model="PickupAssaultRifle" angle="0" skill="easy" spawn="always" />
 <Spot id="3" c3="447586,95319,688162" name="field_1" type="Object" script="ForceField" display_model="ForceField" angle="91" skill="easy" spawn="always" />
 <Spot id="4" c3="429401,94359,687099" name="bot" type="Spawn" display_model="Little Guy" angle="96" skill="easy" spawn="always" />
 <Spot id="5" c3="429437,94319,688473" name="bot" type="Spawn" display_model="Little Guy" angle="84" skill="easy" spawn="always" />

@@ -1,6 +1,10 @@
 <Sounds>
-<Sound name="Splash">
-<Wave file="Splash" />
+<Sound name="Amb Eerie">
+<Wave file="Amb Eerie" />
+<Distance min="1500" max="30000" />
+</Sound>
+<Sound name="Amb Machinery">
+<Wave file="Amb Machinery" />
 <Distance min="1500" max="30000" />
 </Sound>
 <Sound name="Robot Explosion 1">

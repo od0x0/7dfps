@@ -11,13 +11,13 @@ function OnConstruct(weap,subEvent,id,tick)
 		// weapon model
 		
 	weap.model.on=true;
-	weap.model.name="Shotgun";
+	weap.model.name="Shot Gun";
 
 		// setup how weapon is held in hand
 		
 	weap.handPosition.x=-500;
-	weap.handPosition.y=-1400;
-	weap.handPosition.z=2500;
+	weap.handPosition.y=-1200;
+	weap.handPosition.z=2600;
 	
 	weap.handAngle.x=0;
 	weap.handAngle.y=0;
