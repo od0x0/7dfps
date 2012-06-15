@@ -31,7 +31,7 @@ function enemyConstruct(obj,subEvent,id,tick) {
     obj.health.maximum = HEALTH_BASE;
     obj.health.start = HEALTH_BASE;
     
-    obj.setting.invincible = true;
+    obj.setting.invincible = false;
 
     script.callParentFunction("enemySetBounty", BOUNTY);
 }
@@ -124,6 +124,7 @@ function enemyHit(obj,subevent,id,tick) {
 
 function enemyDie(obj,subevent,id,tick) {
     script.callParent();
+    obj.event.callObjectById(map.object.findPlayer(), "DisplayScoreWon");
     obj.event.chain(50,"gameEnd");
 }
 

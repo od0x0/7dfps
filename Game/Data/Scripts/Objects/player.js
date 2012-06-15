@@ -398,3 +398,13 @@ function DisplayScoreThenStartMap(object, mapname)
 	singleplayer.highScore.add("Score " + map.info.title + " " + dateString, Score);
 	singleplayer.highScore.add("Time " + map.info.title + " " + dateString, time);
 }
+
+function DisplayScoreWon()
+{
+	iface.text.show("DeathInfo");
+	var time = map.setting.getTime()/1000;
+	iface.text.setText("DeathInfo", "You Won. Score: " + Score + " Time: " + time + " seconds");
+	var dateString = (new Date()).toDateString();
+	singleplayer.highScore.add("Score " + map.info.title + " " + dateString, Score);
+	singleplayer.highScore.add("Time " + map.info.title + " " + dateString, time);
+}
