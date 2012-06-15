@@ -52,7 +52,7 @@
 </Fill>
 <Fill shine_factor="10" glow_rate="100" glow_min="0" glow_max="1" shader="Default" material_name="(null)">
 <Images>
-<Image wait="100" bitmap="PickupShotgunText" />
+<Image wait="100" bitmap="PickupARText" />
 </Images>
 </Fill>
 </Fills>
