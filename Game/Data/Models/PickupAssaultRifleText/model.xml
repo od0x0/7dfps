@@ -1,9 +1,9 @@
 <Model version="3">
 <Options comulative_rotation="true" diffuse_boost="1" />
 <Center offset="0,0,0" />
-<View_Box size="6000,4000,0" offset="0,0,0" />
+<View_Box size="999,999,0" offset="0,0,0" />
 <Bones>
-<Bone name="light" c3="0,-2000,0" o3="0,0,0" r3="0,0,0" />
+<Bone name="light" c3="499,-3499,0" o3="0,0,0" r3="0,0,0" />
 </Bones>
 <Lights>
 <Light />
@@ -34,20 +34,25 @@
 <Meshes>
 <Mesh name="Default" diffuse="true" never_cull="true" import_move="0,0,0">
 <Vertexes>
-<v c3="937,-500,0" t3="-1,0,0" n3="0,0,1" factor="1" />
-<v c3="937,0,0" t3="-1,0,0" n3="0,0,1" factor="1" />
-<v c3="-937,0,0" t3="-1,0,0" n3="0,0,1" factor="1" />
-<v c3="-937,-500,0" t3="-1,0,0" n3="0,0,1" factor="1" />
+<v c3="-499,0,0" t3="0,-1,0" n3="0,0,-1" factor="1" />
+<v c3="-499,-999,0" t3="0,-1,0" n3="0,0,-1" factor="1" />
+<v c3="500,-999,0" t3="0,-1,0" n3="0,0,-1" factor="1" />
+<v c3="500,0,0" t3="0,-1,0" n3="0,0,-1" factor="1" />
 </Vertexes>
 <Polys>
-<p v="0,3,2,1" txt="0" x="1,0,0,1" y="0.333333,0.333333,1,1" />
+<p v="0,3,2,1" txt="1" x="0,1,1,0" y="1,1,0,0" />
 </Polys>
 </Mesh>
 </Meshes>
 <Fills>
 <Fill shine_factor="10" glow_rate="100" glow_min="0" glow_max="1" shader="Default" material_name="None_forceField_tex.png">
 <Images>
-<Image wait="100" bitmap="PickupAssaultRifleText" />
+<Image wait="100" bitmap="PickupARText" />
+</Images>
+</Fill>
+<Fill shine_factor="10" glow_rate="100" glow_min="0" glow_max="1" shader="Default" material_name="(null)">
+<Images>
+<Image wait="100" bitmap="PickupShotgunText" />
 </Images>
 </Fill>
 </Fills>
