@@ -337,6 +337,7 @@ function enemyDie(obj,subEvent,id,tick) {
     obj.setting.contact = false;
     obj.setting.damage = false;
 	sound.play('Robot Explosion 1',obj.position,1.0);
+	spawn.particle(obj.position,'Bot Explosion');
 }
 
 // being targetted
