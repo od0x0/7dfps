@@ -19,6 +19,7 @@ var reloadTick = 0;
 var summoned_enemies = false;
 var summon_spot_name = "";
 var summon_spots = new Array();
+var summoning = false;
 
 function enemyConstruct(obj,subEvent,id,tick) {
     script.callParent();
@@ -47,8 +48,14 @@ function enemyAttack(obj,tick) {
 }
 
 function enemyWatch(obj,subEvent,id,tick) {
-    if(subEvent == DIM3_EVENT_WATCH_OBJECT_NEAR && obj.watch.objectIsPlayer) summonEnemies(obj,tick);
+    if(subEvent == DIM3_EVENT_WATCH_OBJECT_NEAR && obj.watch.objectIsPlayer) startSummon(obj,tick);
     script.callParent();
+}
+
+function startSummon(obj,tick) {
+    iface.console.write("SPAWN!");
+    summoning = true;
+    obj.event.chain(30,"summonEnemies");
 }
 
 function summonEnemies(obj,tick) {
@@ -64,10 +71,12 @@ function summonEnemies(obj,tick) {
         spawn.flash(point,new Color(1,1,1),150,250,250);
         // TODO: Particle and sound
     }
+    summoning = false;
     return true;
 }
 
 function startFire(obj,tick) { // fires for a few seconds? randomly
+    if (summoning) return;
     obj.model.animation.change("Idle"); // make sure we're not swiveling while aiming
     if (tick < reloadTick) return; //still reloading
     obj.motionVector.stop(); // stop movement to fire
