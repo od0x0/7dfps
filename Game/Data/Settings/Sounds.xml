@@ -11,6 +11,10 @@
 <Wave file="Robot Explosion 1" />
 <Distance min="1500" max="30000" />
 </Sound>
+<Sound name="Boss Start Voice">
+<Wave file="Boss Start Voice" />
+<Distance min="1500" max="30000" />
+</Sound>
 <Sound name="JoeFoe Growl">
 <Wave file="Bear Growl" />
 <Distance min="1500" max="30000" />
