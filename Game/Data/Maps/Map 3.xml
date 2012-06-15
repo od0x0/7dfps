@@ -106,7 +106,7 @@
 </Images>
 </Fill>
 <Fill id="14" shine_factor="10" glow_rate="100" glow_min="0" glow_max="1" shader="Default" material_name="None_untitled">
-<Scale x="0.25" y="0.25" />
+<Scale x="0.2776" y="0.2416" />
 <Images>
 <Image wait="100" bitmap="ceilingLight1_tex" />
 </Images>
@@ -236,7 +236,7 @@
 <Static follow="true" />
 </Camera>
 <Editor_Views>
-<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="485525,495054,524850" ang="345.800079,356.800964,0" uv_layer="1" />
+<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="515715,499714,521088" ang="339.800262,26.800768,0" uv_layer="1" />
 </Editor_Views>
 <Meshes>
 <Mesh lock_uv="true">
@@ -35790,12 +35790,12 @@
 <Light c3="485084,499648,510230" type="normal" light_map="true" direction="all" intensity="4500" exponent="1" rgb="B0D6FF" />
 <Light c3="500780,499688,488249" type="normal" light_map="true" direction="all" intensity="4500" exponent="1" rgb="B9FF8A" />
 <Light c3="500856,499688,485128" type="normal" light_map="true" direction="all" intensity="4500" exponent="1" rgb="B5FF87" />
-<Light c3="479066,500808,481160" type="pulse" direction="all" intensity="5000" exponent="1" rgb="75B92A" />
+<Light c3="479066,500808,481160" type="normal" light_map="true" direction="all" intensity="3500" exponent="1" rgb="75B92A" />
 <Light c3="485033,499928,481119" type="normal" light_map="true" direction="all" intensity="10000" exponent="1" rgb="9B9C6E" />
 <Light c3="500835,500088,499961" type="normal" light_map="true" direction="all" intensity="13000" exponent="1" rgb="3B5542" />
 <Light c3="508776,500248,492152" type="pulse" direction="all" intensity="8000" exponent="1" rgb="C90400" />
 <Light c3="509331,500048,507968" type="pulse" direction="all" intensity="8000" exponent="1" rgb="C90400" />
-<Light c3="479005,500848,518930" type="pulse" direction="all" intensity="5000" exponent="1" rgb="002CFF" />
+<Light c3="479005,500848,518930" type="normal" light_map="true" direction="all" intensity="3500" exponent="1" rgb="002CFF" />
 <Light c3="485023,499938,518938" type="normal" light_map="true" direction="all" intensity="10000" exponent="1" rgb="7189CB" />
 <Light c3="493781,499688,518855" type="normal" light_map="true" direction="all" intensity="4500" exponent="1" rgb="A2C3FF" />
 <Light c3="496971,499688,518855" type="normal" light_map="true" direction="all" intensity="4500" exponent="1" rgb="B2CBFF" />
@@ -35808,14 +35808,14 @@
 <Light c3="500805,499728,511757" type="normal" light_map="true" direction="all" intensity="4500" exponent="1" rgb="B2CBFF" />
 <Light c3="496703,499728,481167" type="normal" light_map="true" direction="all" intensity="4500" exponent="1" rgb="B5FF87" />
 <Light c3="493677,499648,481115" type="normal" light_map="true" direction="all" intensity="4500" exponent="1" rgb="B5FF87" />
-<Light c3="519623,500812,475706" type="pulse" direction="all" intensity="5000" exponent="1" rgb="FF6F00" />
+<Light c3="519607,500892,475394" type="normal" light_map="true" direction="all" intensity="3500" exponent="1" rgb="FF6F00" />
 <Light c3="519540,499963,481164" type="normal" light_map="true" direction="all" intensity="10000" exponent="1" rgb="9C683C" />
 <Light c3="519665,499728,490408" type="flicker" direction="all" intensity="6000" exponent="1" rgb="FF9A70" />
 <Light c3="507950,499728,481125" type="normal" light_map="true" direction="all" intensity="4500" exponent="1" rgb="FF9A70" />
 <Light c3="516067,500062,502565" type="pulse" direction="all" intensity="4500" exponent="1" rgb="C90400" />
 <Light c3="519601,500302,503338" type="pulse" direction="all" intensity="4500" exponent="1" rgb="C90400" />
 <Light c3="519694,499742,507447" type="pulse" direction="all" intensity="4500" exponent="1" rgb="C90400" />
-<Light c3="519586,500811,524363" type="pulse" direction="all" intensity="5000" exponent="1" rgb="FF0800" />
+<Light c3="519586,500811,524363" type="normal" light_map="true" direction="all" intensity="3500" exponent="1" rgb="FF0800" />
 <Light c3="519634,499971,518862" type="normal" light_map="true" direction="all" intensity="11000" exponent="1" rgb="6F2223" />
 <Light c3="510979,499688,518865" type="pulse" direction="all" intensity="4500" exponent="1" rgb="E60200" />
 <Light c3="492225,500048,508142" type="pulse" direction="all" intensity="8000" exponent="1" rgb="C90400" />
