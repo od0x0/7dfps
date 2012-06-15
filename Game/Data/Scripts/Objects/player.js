@@ -10,6 +10,7 @@ script.attachEvent(DIM3_EVENT_WEAPON_SELECT, "OnWeaponSelect");
 script.attachEvent(DIM3_EVENT_WEAPON_FIRE, "OnWeaponFire");
 
 const LineOfSightTimerID = 1;
+var Score = 0;
 
 function Weapon(name)
 {
@@ -115,6 +116,8 @@ function OnConstruct(object, subevent, id, tick)
 	}
 	object.weapon.hideSingle(Weapons[3].name, false);*/
 	object.weapon.setSelect(Weapons[3].name);
+
+	Score = 0;
 }
 
 function OnSpawn(object, subevent, id, tick)
@@ -216,6 +219,13 @@ function OnDeath(object, subevent, id, tick)
 	object.status.freezeRespawn(true);
 	
 	iface.text.show("DeathInfo");
+	var time = map.setting.getTime();
+	iface.text.setText("DeathInfo", "You Died. Score: " + Score + " Time: " + time);
+	var dateString = (new Date()).toDateString();
+	singleplayer.highScore.add("Score " + map.info.title + " " + dateString, Score);
+	singleplayer.highScore.add("Time " + map.info.title + " " + dateString, time);
+
+	Score = 0;
 
 	object.event.chain(50,'playerDieEnd');
 }
@@ -232,6 +242,7 @@ function playerDieEnd(obj,tick)
 
 	obj.status.freezeRespawn(false);
 	iface.text.hide("DeathInfo");
+	//data.set(ScoreHandle, 0);
 
 	map.action.restartMap();
 }
@@ -343,4 +354,9 @@ function OnWeaponSelect(object, subevent, id, tick)
 function OnWeaponFire(object, subevent, id, tick)
 {
 	UpdateWeaponDisplay(object);
+}
+
+function AddPointsToScore(object, amount)
+{
+	Score += amount;
 }
