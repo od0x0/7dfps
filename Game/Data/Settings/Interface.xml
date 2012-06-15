@@ -127,5 +127,5 @@
 <Model />
 </Models>
 </Preload>
-<Project name="7dfps" modernize="true" />
+<Project name="7dfps" modernize="true" no_shaders="true" />
 </Interface>

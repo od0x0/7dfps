@@ -1,5 +1,5 @@
 <Multiplayer>
-<Settings on="true" />
+<Settings />
 <Games>
 <Game type="Death Match">
 <Script player="Player" bot="Bot DM" />
