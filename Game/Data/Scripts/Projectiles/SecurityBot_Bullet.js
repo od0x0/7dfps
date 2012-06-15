@@ -38,7 +38,7 @@ function OnConstruct(projectile, subevent, id, tick)
 function OnContact(projectile, subevent, id, tick)
 {	
 	if(projectile.hit.type != DIM3_PROJ_HIT_TYPE_OBJECT) sound.play("MapGeometryBulletHit", projectile.position, utility.random.getFloat(0.8, 1.2));
-	spawn.particleMoving(projectile.position, projectile.hit.ejectVector, 'Debris');
+	spawn.particleMoving(projectile.position, projectile.hit.ejectVector, 'sparks');
 	var yellow = Color;
 	yellow.red = 1;
 	yellow.green = 1;
