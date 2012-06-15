@@ -219,8 +219,8 @@ function OnDeath(object, subevent, id, tick)
 	object.status.freezeRespawn(true);
 	
 	iface.text.show("DeathInfo");
-	var time = map.setting.getTime();
-	iface.text.setText("DeathInfo", "You Died. Score: " + Score + " Time: " + time);
+	var time = map.setting.getTime()/1000;
+	iface.text.setText("DeathInfo", "You Died. Score: " + Score + " Time: " + time + " seconds");
 	var dateString = (new Date()).toDateString();
 	singleplayer.highScore.add("Score " + map.info.title + " " + dateString, Score);
 	singleplayer.highScore.add("Time " + map.info.title + " " + dateString, time);
