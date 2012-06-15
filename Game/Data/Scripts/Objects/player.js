@@ -179,12 +179,12 @@ function OnHealthUpdate(object, subevent, id, tick)
 	else iface.bar.setValue('Armor', 0);
 }
 
-function OnDeath(object, subevent, id, tick)
+var NextMap = null;
+
+function DisplayScore(object, nextMapName, isDead)
 {
 	object.event.clearTimer();
 	//map.action.restartMap();
-
-	OnHealthUpdate(object, subevent, id, tick);
 
 	object.weapon.hide(true);
 	//iface.bar.hide('Health');
@@ -217,20 +217,41 @@ function OnDeath(object, subevent, id, tick)
 	
 		// don't let respawn happen while we are dying
 		
+
+
 	object.status.freezeRespawn(true);
-	
+
 	iface.text.show("DeathInfo");
 	var time = map.setting.getTime()/1000;
-	iface.text.setText("DeathInfo", "You Died. Score: " + Score + " Time: " + time + " seconds");
+	iface.text.setText("DeathInfo", (isDead ? "You Died." : "You Cleared.") + " Score: " + Score + " Time: " + time + " seconds");
 	var dateString = (new Date()).toDateString();
 	singleplayer.highScore.add("Score " + map.info.title + " " + dateString, Score);
 	singleplayer.highScore.add("Time " + map.info.title + " " + dateString, time);
 
 	Score = 0;
 
-	object.event.chain(50,'playerDieEnd');
+	NextMap = (isDead ? null : nextMapName);
+
+	//if(isDead) object.event.chain(50,'playerDieEnd');
+	//else 
+	object.event.chain(50, "StartNextMap");
 }
 
+function StartNextMap(object)
+{
+	object.status.freezeRespawn(false);
+	iface.text.hide("DeathInfo");
+	//NextMap
+	if(NextMap == null) map.action.restartMap();
+	else map.action.setMap(NextMap,'Start');
+}
+
+function OnDeath(object, subevent, id, tick)
+{
+	OnHealthUpdate(object, subevent, id, tick);
+	DisplayScore(object, null, true);
+}
+/*
 function playerDieEnd(obj,tick)
 {
 
@@ -246,7 +267,7 @@ function playerDieEnd(obj,tick)
 	//data.set(ScoreHandle, 0);
 
 	map.action.restartMap();
-}
+}*/
 
 function OnPickup(object, subevent, id, tick)
 {
@@ -366,4 +387,14 @@ function OnHit(object, subevent, id, tick)
 {
 	//if(object.hit.objectId == -1) return;
 	Score -= object.hit.damage;
+}
+
+function DisplayScoreThenStartMap(object, mapname)
+{
+	iface.text.show("DeathInfo");
+	var time = map.setting.getTime()/1000;
+	iface.text.setText("DeathInfo", "You Died. Score: " + Score + " Time: " + time + " seconds");
+	var dateString = (new Date()).toDateString();
+	singleplayer.highScore.add("Score " + map.info.title + " " + dateString, Score);
+	singleplayer.highScore.add("Time " + map.info.title + " " + dateString, time);
 }
