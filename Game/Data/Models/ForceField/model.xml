@@ -47,7 +47,17 @@
 <Fills>
 <Fill animate="true" shine_factor="10" glow_rate="100" glow_min="0" glow_max="1" shader="Default" material_name="None_forceField_tex.png">
 <Images>
-<Image wait="100" bitmap="forceField_tex" />
+<Image wait="100" bitmap="forceField_tex0" />
+<Image wait="100" bitmap="forceField_tex1" />
+<Image wait="100" bitmap="forceField_tex2" />
+<Image wait="100" bitmap="forceField_tex3" />
+<Image wait="100" bitmap="forceField_tex4" />
+<Image wait="100" bitmap="forceField_tex5" />
+<Image wait="100" bitmap="forceField_tex6" />
+<Image wait="100" bitmap="forceField_tex7" />
+<Image wait="100" bitmap="forceField_tex8" />
+<Image wait="100" bitmap="forceField_tex9" />
+<Image wait="100" bitmap="forceField_tex10" />
 </Images>
 </Fill>
 </Fills>
