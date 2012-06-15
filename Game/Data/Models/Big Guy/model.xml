@@ -3916,12 +3916,14 @@
 <Pose name="Head Left">
 <Bones>
 <Bone name="Null" rot="0,-90,0" move="1,1,1" acceleration="0" constraint_offset="0,0,0" />
+<Bone name="Body" rot="0,0,0" move="1,1.1,1" acceleration="0" constraint_offset="0,0,0" />
 <Bone name="Head" rot="0,-60,0" move="1,1,1" acceleration="0" constraint_offset="0,0,0" />
 </Bones>
 </Pose>
 <Pose name="Head Right">
 <Bones>
 <Bone name="Null" rot="0,-90,0" move="1,1,1" acceleration="0" constraint_offset="0,0,0" />
+<Bone name="Body" rot="0,0,0" move="1,1.1,1" acceleration="0" constraint_offset="0,0,0" />
 <Bone name="Head" rot="0,60,0" move="1,1,1" acceleration="0" constraint_offset="0,0,0" />
 </Bones>
 </Pose>
@@ -3941,6 +3943,51 @@
 </Rings>
 </Pose>
 <Pose name="Idle2" time="700" sway="0,0,0" move="0,0,0" acceleration="0">
+<Sound pitch="1" />
+<Fade in_time="0" life_time="0" out_time="0" />
+<Flash intensity="0" time="0" fade_time="0" exponent="1" color="FFFFFF" />
+<Shake distance="0" size="0" time="0" />
+<Particles>
+</Particles>
+<Rings>
+</Rings>
+</Pose>
+</Poses>
+</Animation>
+<Animation name="Head Swivel">
+<Loop repeat="true" start="0" end="3" />
+<Poses>
+<Pose name="Head Left" time="700" sway="0,0,0" move="0,0,0" acceleration="0">
+<Sound pitch="1" />
+<Fade in_time="0" life_time="0" out_time="0" />
+<Flash intensity="0" time="0" fade_time="0" exponent="1" color="FFFFFF" />
+<Shake distance="0" size="0" time="0" />
+<Particles>
+</Particles>
+<Rings>
+</Rings>
+</Pose>
+<Pose name="Idle" time="700" sway="0,0,0" move="0,0,0" acceleration="0">
+<Sound pitch="1" />
+<Fade in_time="0" life_time="0" out_time="0" />
+<Flash intensity="0" time="0" fade_time="0" exponent="1" color="FFFFFF" />
+<Shake distance="0" size="0" time="0" />
+<Particles>
+</Particles>
+<Rings>
+</Rings>
+</Pose>
+<Pose name="Head Right" time="700" sway="0,0,0" move="0,0,0" acceleration="0">
+<Sound pitch="1" />
+<Fade in_time="0" life_time="0" out_time="0" />
+<Flash intensity="0" time="0" fade_time="0" exponent="1" color="FFFFFF" />
+<Shake distance="0" size="0" time="0" />
+<Particles>
+</Particles>
+<Rings>
+</Rings>
+</Pose>
+<Pose name="Idle" time="700" sway="0,0,0" move="0,0,0" acceleration="0">
 <Sound pitch="1" />
 <Fade in_time="0" life_time="0" out_time="0" />
 <Flash intensity="0" time="0" fade_time="0" exponent="1" color="FFFFFF" />
