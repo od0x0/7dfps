@@ -7,7 +7,7 @@ function OnConstruct(projectile, subevent, id, tick)
 	
 	projectile.speed.maxHitScanDistance=150000;
 	
-	projectile.action.damage=7;
+	projectile.action.damage=15;
 	projectile.action.collision=true;
 
 	projectile.push.on=true;
