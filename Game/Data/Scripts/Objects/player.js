@@ -30,7 +30,7 @@ function OnConstruct(object, subevent, id, tick)
 	
 	object.size.x=2000;
 	object.size.z=2000;	
-	object.size.y=1800;
+	object.size.y=1600;
 	object.size.eyeOffset=-1600;
 	object.size.weight=180;
 	
@@ -76,7 +76,7 @@ function OnConstruct(object, subevent, id, tick)
 	object.objectSpeed.jumpHeight=45;
 	object.objectSpeed.bumpHeight=800;
 	object.objectSpeed.duckAdd=100;
-	object.objectSpeed.duckChange=1000;
+	object.objectSpeed.duckChange=600;
 	
 	object.look.upAngle=90;
 	object.look.downAngle=90;

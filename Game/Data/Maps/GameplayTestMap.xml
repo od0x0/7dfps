@@ -8,8 +8,8 @@
 <LightMap quality="0" size="2" diffuse_boost="0" />
 <Editor txt_uv_scale_x="0.25" txt_uv_scale_y="0.25" view_near_dist="400" view_far_dist="300000" link_always_start="true" />
 <Media type="none" event_id="-1" />
-<Music fade_msec="0" />
-<Ambient_Light rgb="000000" light_map_boost="0" />
+<Music fade_msec="0" name="Orion's Onion Rings" />
+<Ambient_Light rgb="292929" light_map_boost="0" />
 <Ambient_Sound pitch="1" />
 <Background front_fill="-1" front_stamp="1,1" front_scroll="0,0" middle_fill="-1" middle_stamp="1,1" middle_scroll="0,0" back_fill="-1" back_stamp="1,1" back_scroll="0,0" />
 <Sky>
@@ -86,7 +86,7 @@
 <Static follow="true" />
 </Camera>
 <Editor_Views>
-<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="655842,473512,565399" ang="270,1.599918,0" uv_layer="1" no_rot="true" />
+<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="655503,461407,567531" ang="270,1.599918,0" uv_layer="1" no_rot="true" />
 </Editor_Views>
 <Meshes>
 <Mesh lock_uv="true" never_cull="true">
