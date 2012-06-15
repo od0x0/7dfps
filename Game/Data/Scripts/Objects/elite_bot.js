@@ -6,7 +6,7 @@
 script.implements('enemy_base');
 script.attachEvent(DIM3_EVENT_CONSTRUCT,"enemyConstruct");
 
-const HEALTH_BASE = 100;
+const HEALTH_BASE = 200;
 
 var skill_factor = 1;
 
