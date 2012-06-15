@@ -131,6 +131,10 @@
 <Wave file="Teleport" />
 <Distance min="1500" max="30000" />
 </Sound>
+<Sound name="Teleporter">
+<Wave file="Warp" />
+<Distance min="1500" max="30000" />
+</Sound>
 <Sound name="Scream">
 <Wave file="Scream" />
 <Distance min="10" max="10000" />
