@@ -8,7 +8,7 @@ script.attachEvent(DIM3_EVENT_MENU,'OnSelect');
 
 function OnConstruct(obj,subEvent,id,tick){
 	
-	map.action.setMap('Test','Start')
+	map.action.setMap('Map 1','Start')
 	
 }
 
