@@ -9,7 +9,7 @@ script.attachEvent(DIM3_EVENT_SPAWN,"enemySpawn");
 script.attachEvent(DIM3_EVENT_WATCH,'enemyWatch');
 script.attachEvent(DIM3_EVENT_DIE,'enemyDie');
 
-const HEALTH_BASE = 25;
+const HEALTH_BASE = 40;
 
 
 var fireBone = 1;
@@ -56,7 +56,7 @@ function enemyWatch(obj,subEvent,id,tick) {
 function startSummon(obj,tick) {
     iface.console.write("SPAWN!");
     summoning = true;
-    obj.event.chain(30,"summonEnemies");
+    obj.event.chain(15,"summonEnemies");
 }
 
 function summonEnemies(obj,tick) {
