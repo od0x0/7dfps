@@ -8,6 +8,7 @@ script.attachEvent(DIM3_EVENT_TIMER, "OnTimer")
 script.attachEvent(DIM3_EVENT_MESSAGE, "OnMessage");
 script.attachEvent(DIM3_EVENT_WEAPON_SELECT, "OnWeaponSelect");
 script.attachEvent(DIM3_EVENT_WEAPON_FIRE, "OnWeaponFire");
+script.attachEvent(DIM3_EVENT_HIT, "OnHit");
 
 const LineOfSightTimerID = 1;
 var Score = 0;
@@ -359,4 +360,10 @@ function OnWeaponFire(object, subevent, id, tick)
 function AddPointsToScore(object, amount)
 {
 	Score += amount;
+}
+
+function OnHit(object, subevent, id, tick)
+{
+	//if(object.hit.objectId == -1) return;
+	Score -= object.hit.damage;
 }

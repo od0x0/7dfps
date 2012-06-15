@@ -17,7 +17,7 @@ function OnConstruct(object, subevent, id, tick)
 	object.setting.damage=false;
 	object.setting.invincible=true;
 	object.setting.clickable=true;
-	object.size.clickDistance=5000;
+	object.size.clickDistance=3000;
 
 	object.size.x=200;
 	object.size.z=200;

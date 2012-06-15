@@ -7,6 +7,7 @@ script.implements('enemy_base');
 script.attachEvent(DIM3_EVENT_CONSTRUCT,"enemyConstruct");
 
 const HEALTH_BASE = 50;
+const BOUNTY = 500;
 
 var fireBone = 1;
 var shotsFired = -1;
@@ -21,6 +22,8 @@ function enemyConstruct(obj,subEvent,id,tick) {
     obj.weapon.add("SecurityBot_Weapon");
     obj.health.maximum = HEALTH_BASE;
     obj.health.start = HEALTH_BASE;
+
+    script.callParentFunction("enemySetBounty", BOUNTY);
 }
 
 function enemyAttack(obj,tick) {
