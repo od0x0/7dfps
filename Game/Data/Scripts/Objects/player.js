@@ -108,6 +108,13 @@ function OnConstruct(object, subevent, id, tick)
 	object.model.lightColor.blue=0.3;
 	
    // object.setting.contactProjectile=false;
+   
+   	for(var i = 0; i < Weapons.length; i++)
+	{
+		object.weapon.hideSingle(Weapons[i].name, true);
+	}
+	object.weapon.hideSingle(Weapons[3].name, false);
+	object.weapon.setSelect(Weapons[3].name);
 }
 
 function OnSpawn(object, subevent, id, tick)
@@ -117,12 +124,7 @@ function OnSpawn(object, subevent, id, tick)
 	object.setting.suspend=false;
 	object.health.reset();
 	object.position.reset();
-	for(var i = 0; i < Weapons.length; i++)
-	{
-		object.weapon.hideSingle(Weapons[i].name, true);
-	}
-	object.weapon.hideSingle(Weapons[3].name, false);
-	object.weapon.setSelect(Weapons[3].name);
+
 	//iface.bitmap.setAlpha("Blood", 1-(object.health.current/object.health.maximum));
 	//iface.text.setText("AmmoTextbox"," ");
 
