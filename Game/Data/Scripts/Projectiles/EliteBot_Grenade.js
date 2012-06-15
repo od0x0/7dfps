@@ -50,7 +50,7 @@ function OnConstruct(projectile, subevent, id, tick) {
 function OnContact(projectile, subevent, id, tick) {	
 
     // TODO: Effects
-	sound.play("MapGeometryBulletHit", projectile.position, utility.random.getFloat(0.8, 1.2));
+	sound.play("Robot Explosion 1", projectile.position, utility.random.getFloat(0.8, 1.2));
 	spawn.particleMoving(projectile.position, projectile.hit.ejectVector, 'sparks');
 
     projectile.melee.spawnFromProjectileBone();

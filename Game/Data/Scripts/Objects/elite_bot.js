@@ -6,6 +6,7 @@
 script.implements('enemy_base');
 script.attachEvent(DIM3_EVENT_CONSTRUCT,"enemyConstruct");
 script.attachEvent(DIM3_EVENT_DIE,'enemyDie');
+script.attachEvent(DIM3_EVENT_DAMAGE,"enemyHit");
 
 const HEALTH_BASE = 200;
 const BOUNTY = 5000;
@@ -24,7 +25,7 @@ var fireWait = 1;
 function enemyConstruct(obj,subEvent,id,tick) {
     script.callParent();
 
-    obj.model.name = "Big Guy"; // TODO: Change this
+    obj.model.name = "Big Guy Orange";
     //obj.weapon.add("SecurityBot_Weapon");
     obj.weapon.add("DestroyerBot_Weapon");
     obj.health.maximum = HEALTH_BASE;
@@ -115,6 +116,10 @@ function fireGrenade(obj,tick) { // Fire 4 grenades in quick succession
 
 function OnSwitchToggle(obj, isEnabled) {
     obj.setting.invincible = false;
+}
+
+function enemyHit(obj,subevent,id,tick) {
+    if(obj.setting.invincible) spawn.ring(obj.hitPosition,"FieldHit");
 }
 
 function enemyDie(obj,subevent,id,tick) {

@@ -39,4 +39,14 @@
 <Color start="33FF33" end="00AA00" />
 <Alpha start="0.5" end="0.01" />
 </Ring>
+<Ring name="FieldHit">
+<Settings time="200" additive="true" />
+<Image count="1" time="0" />
+<Outer start="100" end="300" />
+<Inner start="50" end="300" />
+<Rotate x="0" y="90" z="0" x_add="0" y_add="0" z_add="0" x_accel="0" y_accel="0" z_accel="0" />
+<Move x="0" y="0" z="0" />
+<Color start="9DFF8C" end="C8FFBC" />
+<Alpha start="0.8" end="0" />
+</Ring>
 </Rings>
