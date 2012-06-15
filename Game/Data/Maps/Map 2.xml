@@ -230,7 +230,7 @@
 <Static follow="true" />
 </Camera>
 <Editor_Views>
-<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="466481,92910,689069" ang="350.599762,266.600037,0" uv_layer="1" />
+<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="432872,93310,688041" ang="357.19986,267.800049,0" uv_layer="1" />
 </Editor_Views>
 <Meshes>
 <Mesh lock_uv="true">
@@ -28186,26 +28186,25 @@
 </Nodes>
 <Spots>
 <Spot id="0" c3="439330,94743,674662" name="Start" type="Player" script="player" angle="180" skill="easy" spawn="always" />
-<Spot id="1" c3="431269,94749,688480" type="Object" script="command_bot" display_model="Little Guy Red" params="1|||bot" angle="88" skill="easy" spawn="always" />
+<Spot id="1" c3="428389,94749,688480" type="Object" script="command_bot" display_model="Little Guy Red" params="1|||bot" angle="88" skill="easy" spawn="always" />
 <Spot id="2" c3="438400,94903,694209" name="Shotgun" type="Object" script="PickupWeapon" display_model="PickupAssaultRifle" angle="0" skill="easy" spawn="always" />
 <Spot id="3" c3="447586,95319,688162" name="field_1" type="Object" script="ForceField" display_model="ForceField" angle="91" skill="easy" spawn="always" />
 <Spot id="4" c3="429401,94359,687099" name="bot" type="Spawn" display_model="Little Guy" angle="96" skill="easy" spawn="always" />
 <Spot id="5" c3="429437,94319,688473" name="bot" type="Spawn" display_model="Little Guy" angle="84" skill="easy" spawn="always" />
-<Spot id="6" c3="416505,94799,699574" type="Object" script="security_bot" display_model="Little Guy" params="2" angle="0" skill="easy" spawn="always" />
-<Spot id="7" c3="418497,94599,696586" type="Object" script="security_bot" display_model="Little Guy" params="2" angle="0" skill="easy" spawn="always" />
-<Spot id="8" c3="437118,94508,710350" type="Object" script="command_bot" display_model="Little Guy Red" angle="308" skill="easy" spawn="always" />
-<Spot id="9" c3="435966,94508,712654" type="Object" script="command_bot" display_model="Little Guy Red" params="|||bot2" angle="334" skill="easy" spawn="always" />
-<Spot id="10" c3="432652,94293,715597" name="bot2" type="Spawn" display_model="Little Guy" angle="333" skill="easy" spawn="always" />
-<Spot id="11" c3="438430,94293,709294" name="bot2" type="Spawn" display_model="Little Guy" angle="282" skill="easy" spawn="always" />
-<Spot id="12" c3="438430,94293,707566" name="bot2" type="Spawn" display_model="Little Guy" angle="261" skill="easy" spawn="always" />
-<Spot id="13" c3="444006,95319,704475" name="field_1" type="Object" script="ForceField" display_model="ForceField" angle="91" skill="easy" spawn="always" />
-<Spot id="14" c3="442645,94869,699289" type="Object" script="PickupHealth" display_model="HealthCrate" params="25" angle="0" skill="easy" spawn="always" />
-<Spot id="15" c3="445243,93895,740087" name="field_1" type="Object" script="Button" display_model="Button Green" params="Green" angle="44" skill="easy" spawn="always" />
-<Spot id="16" c3="434438,95639,719771" name="field_1" type="Object" script="ForceField" display_model="ForceField" angle="180" skill="easy" spawn="always" />
-<Spot id="17" c3="423580,94167,729562" type="Object" script="security_bot" display_model="Little Guy" params="2" angle="271" skill="easy" spawn="always" />
-<Spot id="18" c3="444436,94167,738246" type="Object" script="security_bot" display_model="Little Guy" params="2" angle="338" skill="easy" spawn="always" />
-<Spot id="19" c3="441034,94167,738270" type="Object" script="security_bot" display_model="Little Guy" params="2" angle="338" skill="easy" spawn="always" />
-<Spot id="20" c3="438687,94863,692452" name="AssaultRifle" type="Object" script="PickupWeapon" display_model="PickupAssaultRifle" angle="0" skill="easy" spawn="always" />
-<Spot id="21" c3="475559,94953,688127" type="Object" script="Teleporter" display_model="Teleporter" params="Map 3" angle="0" skill="easy" spawn="always" />
+<Spot id="6" c3="437118,94508,710350" type="Object" script="command_bot" display_model="Little Guy Red" angle="308" skill="easy" spawn="always" />
+<Spot id="7" c3="435966,94508,712654" type="Object" script="command_bot" display_model="Little Guy Red" params="|||bot2" angle="334" skill="easy" spawn="always" />
+<Spot id="8" c3="432652,94293,715597" name="bot2" type="Spawn" display_model="Little Guy" angle="333" skill="easy" spawn="always" />
+<Spot id="9" c3="438430,94293,709294" name="bot2" type="Spawn" display_model="Little Guy" angle="282" skill="easy" spawn="always" />
+<Spot id="10" c3="438430,94293,707566" name="bot2" type="Spawn" display_model="Little Guy" angle="261" skill="easy" spawn="always" />
+<Spot id="11" c3="444006,95319,704475" name="field_1" type="Object" script="ForceField" display_model="ForceField" angle="91" skill="easy" spawn="always" />
+<Spot id="12" c3="442645,94869,699289" type="Object" script="PickupHealth" display_model="HealthCrate" params="25" angle="0" skill="easy" spawn="always" />
+<Spot id="13" c3="445243,93895,740087" name="field_1" type="Object" script="Button" display_model="Button Green" params="Green" angle="44" skill="easy" spawn="always" />
+<Spot id="14" c3="434438,95639,719771" name="field_1" type="Object" script="ForceField" display_model="ForceField" angle="180" skill="easy" spawn="always" />
+<Spot id="15" c3="423580,94167,729562" type="Object" script="security_bot" display_model="Little Guy" params="2" angle="271" skill="easy" spawn="always" />
+<Spot id="16" c3="444436,94167,738246" type="Object" script="security_bot" display_model="Little Guy" params="2" angle="338" skill="easy" spawn="always" />
+<Spot id="17" c3="441034,94167,738270" type="Object" script="security_bot" display_model="Little Guy" params="2" angle="338" skill="easy" spawn="always" />
+<Spot id="18" c3="438687,94863,692452" name="AssaultRifle" type="Object" script="PickupWeapon" display_model="PickupAssaultRifle" angle="0" skill="easy" spawn="always" />
+<Spot id="19" c3="475559,94953,688127" type="Object" script="Teleporter" display_model="Teleporter" params="Map 3" angle="0" skill="easy" spawn="always" />
+<Spot id="20" c3="469029,93717,687838" type="Object" script="destroyer_bot" angle="0" skill="easy" spawn="always" />
 </Spots>
 </Map>
