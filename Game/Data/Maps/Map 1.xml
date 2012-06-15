@@ -124,7 +124,7 @@
 </Images>
 </Fill>
 <Fill id="17" shine_factor="10" glow_rate="100" glow_min="0" glow_max="1" shader="Default" material_name="None_untitled">
-<Scale x="0.25" y="0.25" />
+<Scale x="0.2776" y="0.2416" />
 <Images>
 <Image wait="100" bitmap="plasmaTube_tex" />
 </Images>
@@ -214,19 +214,19 @@
 </Images>
 </Fill>
 <Fill id="206" shine_factor="10" glow_rate="100" glow_min="0" glow_max="1" material_name="Light Map 014">
-<Scale x="0.25" y="0.25" />
+<Scale x="0.2776" y="0.2416" />
 <Images>
 <Image wait="100" bitmap="LightMaps/Map_1/lm014" />
 </Images>
 </Fill>
 <Fill id="207" shine_factor="10" glow_rate="100" glow_min="0" glow_max="1" material_name="Light Map 015">
-<Scale x="0.25" y="0.25" />
+<Scale x="0.2776" y="0.2416" />
 <Images>
 <Image wait="100" bitmap="LightMaps/Map_1/lm015" />
 </Images>
 </Fill>
 <Fill id="208" shine_factor="10" glow_rate="100" glow_min="0" glow_max="1" material_name="Light Map 016">
-<Scale x="0.25" y="0.25" />
+<Scale x="0.2776" y="0.2416" />
 <Images>
 <Image wait="100" bitmap="LightMaps/Map_1/lm016" />
 </Images>
@@ -242,7 +242,7 @@
 <Static follow="true" />
 </Camera>
 <Editor_Views>
-<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="500322,499476,493575" ang="344.400238,270.999756,0" uv_layer="1" />
+<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="499125,499477,493555" ang="344.400238,270.999756,0" uv_layer="0" />
 </Editor_Views>
 <Meshes>
 <Mesh lock_uv="true">
