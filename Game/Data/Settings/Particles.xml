@@ -384,6 +384,42 @@
 <Color start="FFFFDD" end="AAAAFF" />
 <Alpha start="1" end="0" />
 </Particle>
+<Particle name="Bot Explosion Smoke">
+<Settings count="16" time="500" ambient="1" />
+<Image file="smoke" count="1" time="0" />
+<Trail count="0" step="1.5" reduce="1" />
+<Gravity start="0" add="-0.6" />
+<Size start="200" end="2000" />
+<X offset="0" move="70" rot="0" rot_accel="0" />
+<Y offset="0" move="0" rot="0" rot_accel="0" />
+<Z offset="0" move="70" rot="0" rot_accel="0" />
+<Color start="B0B0B0" end="797979" />
+<Alpha start="0.3" end="0" />
+</Particle>
+<Particle name="Bot Explosion Sparks">
+<Settings count="50" time="800" ambient="1" additive="true" />
+<Image file="spark" count="1" time="0" />
+<Trail count="16" step="0.1" reduce="0.9" />
+<Gravity start="0" add="0" />
+<Size start="10" end="50" />
+<X offset="0" move="200" rot="0" rot_accel="0" />
+<Y offset="0" move="100" rot="0" rot_accel="0" />
+<Z offset="0" move="200" rot="0" rot_accel="0" />
+<Color start="FFE1A9" end="FFFAC8" />
+<Alpha start="1" end="0" />
+</Particle>
+<Particle name="Bot Explosion Fire">
+<Settings count="16" time="300" ambient="1" additive="true" />
+<Image file="flame" count="1" time="0" />
+<Trail count="0" step="0" reduce="1" />
+<Gravity start="0" add="0" />
+<Size start="1000" end="1500" />
+<X offset="0" move="100" rot="0" rot_accel="0" />
+<Y offset="0" move="100" rot="0" rot_accel="0" />
+<Z offset="0" move="100" rot="0" rot_accel="0" />
+<Color start="FF8C4B" end="FFFDBC" />
+<Alpha start="1" end="1" />
+</Particle>
 </Particles>
 <Particle_Groups>
 <Particle_Group name="Missile Explosion">
@@ -407,6 +443,13 @@
 <Particles>
 <Particle name="Fire 1" offset="0" />
 <Particle name="Fire 2" offset="0" />
+</Particles>
+</Particle_Group>
+<Particle_Group name="Bot Explosion">
+<Particles>
+<Particle name="Bot Explosion Smoke" offset="0" />
+<Particle name="Bot Explosion Fire" offset="0" />
+<Particle name="Bot Explosion Sparks" offset="0" />
 </Particles>
 </Particle_Group>
 </Particle_Groups>
