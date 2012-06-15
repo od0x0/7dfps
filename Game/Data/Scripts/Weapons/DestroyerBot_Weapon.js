@@ -24,12 +24,13 @@ function OnConstruct(weap,subEvent,id,tick)
 	weap.projectile.objectFireBoneName='Fire1';
 	weap.projectile.objectFirePoseName='Idle';
 		
-	weap.projectile.add('SecurityBot_Bullet');
+	weap.projectile.add('DestroyerBot_Grenade');
 }
 
 function OnFire(weap,subEvent,id,tick) {
-    weap.projectile.objectFireBoneName='Fire'+fireBone;
-	weap.projectile.spawnFromObjectBoneSlop('SecurityBot_Bullet',5);
+    weap.projectile.objectFireBoneName='Grenade'+fireBone;
+    iface.console.write(weap.projectile.objectFireBoneName);
+	weap.projectile.spawnFromObjectBone('DestroyerBot_Grenade');
 	fireBone += 1;
-	if (fireBone > 3) fireBone = 1;
+	if (fireBone > 4) fireBone = 1;
 }

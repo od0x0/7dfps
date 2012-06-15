@@ -19,8 +19,8 @@ var fireWait = 1;
 
 function enemyConstruct(obj,subEvent,id,tick) {
     script.callParent();
-    obj.model.name = "Little Guy"; // TODO: Change this
-    obj.weapon.add("SecurityBot_Weapon");
+    obj.model.name = "Big Guy"; // TODO: Change this
+    //obj.weapon.add("SecurityBot_Weapon");
     obj.weapon.add("DestroyerBot_Weapon");
     obj.health.maximum = 100;
     obj.health.start = 100;
@@ -39,14 +39,31 @@ function startFire(obj,tick) { // fires for a few seconds? randomly
     obj.motionVector.stop(); // stop movement to fire
 	
 	// decide what to fire
-	if(grenadeMinDistance < obj.position.distanceToPlayer() < grenadeMaxDistance) {
+	/*if(grenadeMinDistance < obj.position.distanceToPlayer() < grenadeMaxDistance) {
 	    fireGrenade(obj,tick);
 	    fireWait = 5;
 	} else {
-	    fireGun(obj,tick);
+	    //fireGun(obj,tick);
 	    fireWait = 1;
-    }
+    }*/
 	
+    shotsFired += 1; // We just fired!
+    if (shotsFired <= 0) return; // first "empty" shot to delay a bit
+    reloadTick = parseInt(tick); // we didnt reload, so were fine here
+    if (shotsFired > 4) { // you fired enough for now
+        shotsFired = -1; // reset this
+        reloadTick += grenadeWait; // gotta reload
+        return;
+    }
+    obj.weapon.fire("DestroyerBot_Weapon",1); // BAM
+    fireWait = 1;
+    
+    // Lights and Sounds
+    //spawn.particle(obj.model.bone.findPosition("Idle","Fire"+fireBone),"Bot Muzzle Flash");
+	//spawn.particle(obj.model.bone.findPosition("Idle","Fire"+fireBone),"Explosion White Center");
+    //sound.playAtObject("Gun Fire",obj.setting.id,1.0);
+
+
 	// repeat
 	obj.event.chain(fireWait,"startFire");
 }
@@ -73,10 +90,11 @@ function fireGun(obj,tick) {
 }
 
 function fireGrenade(obj,tick) { // Fire 4 grenades in quick succession
+    grenadesFired++;
     if(grenadesFired <= 0) return; // first empty nade, delay
     grenadeTick = parseInt(tick);
-    if (shotsFired > 4) { // fired 4 shots
-        shotsFired = -1; // reset
+    if (grenadesFired > 4) { // fired 4 shots
+        grenadesFired = -1; // reset
         grenadeTick += grenadeWait; // reload
         return;
     }
