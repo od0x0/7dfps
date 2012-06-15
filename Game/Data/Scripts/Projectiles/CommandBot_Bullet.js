@@ -5,22 +5,21 @@ const DAMAGE_BASE = 5;
 
 var skill_factor = 1;
 
-switch(singleplayer.setting.skill) {
-    case DIM3_SKILL_EASY:
-        skill_factor = 1;
-        break;
-    case DIM3_SKILL_MEDIUM:
-        skill_factor = 2;
-        break;
-    case DIM3_SKILL_HARD:
-        skill_factor = 5;
-        break;
-}
-
-
 function OnConstruct(projectile, subevent, id, tick)
 {
 	projectile.setting.hitScan=true;
+	
+	switch(singleplayer.setting.skill) {
+        case DIM3_SKILL_EASY:
+            skill_factor = 1;
+            break;
+        case DIM3_SKILL_MEDIUM:
+            skill_factor = 2;
+            break;
+        case DIM3_SKILL_HARD:
+            skill_factor = 5;
+            break;
+    }
 	
 	projectile.speed.maxHitScanDistance=150000;
 	

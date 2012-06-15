@@ -23,7 +23,7 @@ var fireWait = 1;
 
 function enemyConstruct(obj,subEvent,id,tick) {
     script.callParent();
-    
+
     switch(singleplayer.setting.skill) {
         case DIM3_SKILL_EASY:
             skill_factor = 1;
@@ -35,7 +35,7 @@ function enemyConstruct(obj,subEvent,id,tick) {
             skill_factor = 5;
             break;
     }
-    
+
     obj.model.name = "Big Guy"; // TODO: Change this
     //obj.weapon.add("SecurityBot_Weapon");
     obj.weapon.add("DestroyerBot_Weapon");

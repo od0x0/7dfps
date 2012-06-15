@@ -6,13 +6,13 @@ const DAMAGE_BASE = 6;
 var skill_factor = 1;
 
 switch(singleplayer.setting.skill) {
-    case DIM3_SKILL_EASY:
+    case 0:
         skill_factor = 1;
         break;
-    case DIM3_SKILL_MEDIUM:
+    case 1:
         skill_factor = 2;
         break;
-    case DIM3_SKILL_HARD:
+    case 2:
         skill_factor = 5;
         break;
 }

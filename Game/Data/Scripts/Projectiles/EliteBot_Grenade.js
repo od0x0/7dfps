@@ -2,7 +2,7 @@ script.attachEvent(DIM3_EVENT_CONSTRUCT, "OnConstruct");
 script.attachEvent(DIM3_EVENT_HIT, "OnContact");
 script.attachEvent(DIM3_EVENT_SPAWN, "OnSpawn");
 
-const DAMAGE_BASE = 17;
+const DAMAGE_BASE = 25;
 
 var skill_factor = 1;
 
@@ -19,7 +19,7 @@ function OnConstruct(projectile, subevent, id, tick) {
             skill_factor = 5;
             break;
     }
-
+    
 	projectile.setting.hitScan=false;
 	
     projectile.model.on = true;

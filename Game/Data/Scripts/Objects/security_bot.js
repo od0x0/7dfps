@@ -10,19 +10,6 @@ const HEALTH_BASE = 50;
 
 var skill_factor = 1;
 
-switch(singleplayer.setting.skill) {
-    case DIM3_SKILL_EASY:
-        skill_factor = 1;
-        break;
-    case DIM3_SKILL_MEDIUM:
-        skill_factor = 2;
-        break;
-    case DIM3_SKILL_HARD:
-        skill_factor = 5;
-        break;
-}
-
-
 var fireBone = 1;
 var shotsFired = -1;
 var reloadWait = 2000;
@@ -31,6 +18,23 @@ var reloadTick = 0;
 
 function enemyConstruct(obj,subEvent,id,tick) {
     script.callParent();
+    
+    switch(singleplayer.setting.skill) {
+        case 0:
+            skill_factor = 1;
+            break;
+        case 1:
+            skill_factor = 2;
+            break;
+        case 2:
+            skill_factor = 5;
+            break;
+    }
+    
+    iface.console.write(singleplayer.setting.skill);
+    iface.console.write(skill_factor);
+    iface.console.write("DERP");
+    
     obj.model.name = "Little Guy";
     obj.weapon.add("SecurityBot_Weapon");
     obj.health.maximum = HEALTH_BASE*skill_factor;
