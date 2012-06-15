@@ -1,7 +1,7 @@
 <Model version="3">
 <Options diffuse_boost="0" />
 <Center offset="0,0,0" />
-<View_Box size="498,1000,511" offset="0,0,0" />
+<View_Box size="498,1000,511" offset="0,-800,0" />
 <Bones>
 <Bone name="Head Base" c3="0,-750,6" o3="0,0,0" r3="0,0,0" parent="Body" />
 <Bone name="Head Top" c3="0,-938,-75" o3="0,0,0" r3="0,0,0" parent="Head Base" />
@@ -33,6 +33,8 @@
 </Halos>
 <Name />
 <Hit_Boxes>
+<Hit_Box name="Body" bone="Body" size="500,600,500" offset="0,0,0" />
+<Hit_Box name="Head" bone="Head Base" size="335,258,353" offset="0,-750,0" />
 </Hit_Boxes>
 <Rigid_Body y_factor="0.8" y_smooth="0.2" x_max_ang="45" x_factor="0.8" x_smooth="0.2" z_max_ang="45" z_factor="0.8" z_smooth="0.2" />
 <Import factor="833.333313" />

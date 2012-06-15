@@ -105,6 +105,7 @@ function enemyConstruct(obj,subEvent,id,tick) {
     
     obj.setting.damage=true;
     obj.setting.bumpUp=true;
+    obj.setting.hitBox=true;
     
     obj.health.maximum = 100;
     obj.health.start = 100;

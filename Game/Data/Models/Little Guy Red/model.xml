@@ -33,6 +33,8 @@
 </Halos>
 <Name />
 <Hit_Boxes>
+<Hit_Box name="Body" bone="Body" size="500,600,500" offset="0,0,0" />
+<Hit_Box name="Head" bone="Head Base" size="300,250,300" offset="0,-750,0" />
 </Hit_Boxes>
 <Rigid_Body y_factor="0.8" y_smooth="0.2" x_max_ang="45" x_factor="0.8" x_smooth="0.2" z_max_ang="45" z_factor="0.8" z_smooth="0.2" />
 <Import factor="833.333313" />
