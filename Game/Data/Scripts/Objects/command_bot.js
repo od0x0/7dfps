@@ -10,6 +10,7 @@ script.attachEvent(DIM3_EVENT_WATCH,'enemyWatch');
 script.attachEvent(DIM3_EVENT_DIE,'enemyDie');
 
 const HEALTH_BASE = 40;
+const BOUNTY = 1000;
 
 
 var fireBone = 1;
@@ -29,6 +30,8 @@ function enemyConstruct(obj,subEvent,id,tick) {
     obj.weapon.add("CommandBot_Weapon");
     obj.health.maximum = HEALTH_BASE;
     obj.health.start = HEALTH_BASE;
+
+    script.callParentFunction("enemySetBounty", BOUNTY);
 }
 
 function enemySpawn(obj,subEvent,id,tick) {

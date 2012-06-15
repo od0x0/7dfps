@@ -71,7 +71,6 @@ const WATCH_DISTANCE = 20000;
 const ATTACK_DISTANCE = 15000;
 const LISTEN_SOUNDS = new Array("Gun Fire","Shell Fire");
 
-
 //
 // variables
 //
@@ -92,6 +91,13 @@ var dead = false;
 
 // How often the enemy was targeted. Resets to 0 after dodging.
 var targettedCount = 0;
+
+//Points awarded to the player upon enemy death
+var enemyBounty = 100;
+function enemySetBounty(obj, bounty)
+{
+    enemyBounty = bounty;
+}
 
 //
 // functions
@@ -340,6 +346,7 @@ function enemyDie(obj,subEvent,id,tick) {
     obj.setting.damage = false;
 	sound.play('Robot Explosion 1',obj.position,1.0);
 	spawn.particle(obj.position,'Bot Explosion');
+    obj.event.callPlayer("AddPointsToScore", enemyBounty);
 }
 
 // being targetted
