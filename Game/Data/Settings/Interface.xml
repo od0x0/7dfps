@@ -69,16 +69,7 @@
 <Item id="1" data="Setup" multiplayer_disable="true" />
 <Item id="2" data="Save Game" multiplayer_disable="true" />
 <Item id="3" data="Load Game" multiplayer_disable="true" />
-<Item id="4" data="Interface Examples" sub_menu="InterfaceMenu" multiplayer_disable="true" />
 <Item id="5" data="Quit" quit="true" />
-</Items>
-</Menu>
-<Menu name="InterfaceMenu">
-<Items>
-<Item id="10" data="Title" />
-<Item id="11" data="Chooser" />
-<Item id="12" data="Cinema" />
-<Item id="13" data="Main Menu" sub_menu="MainMenu" />
 </Items>
 </Menu>
 </Menus>
