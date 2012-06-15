@@ -163,4 +163,8 @@
 <Wave file="Robot Bark Heard Player" />
 <Distance min="1500" max="30000" />
 </Sound>
+<Sound name="Amb Machinery 2">
+<Wave file="Amb Machinery 2" />
+<Distance min="1500" max="30000" />
+</Sound>
 </Sounds>
