@@ -1,11 +1,11 @@
 <Sounds>
 <Sound name="Amb Eerie">
 <Wave file="Amb Eerie" />
-<Distance min="1500" max="30000" />
+<Distance min="1500" max="25000" />
 </Sound>
 <Sound name="Amb Machinery">
 <Wave file="Amb Machinery" />
-<Distance min="1500" max="30000" />
+<Distance min="1500" max="15000" />
 </Sound>
 <Sound name="Robot Explosion 1">
 <Wave file="Robot Explosion 1" />
@@ -138,5 +138,9 @@
 <Sound name="MapGeometryBulletHit">
 <Wave file="MapGeometryBulletHit" />
 <Distance min="10" max="30000" />
+</Sound>
+<Sound name="Amb Force Field">
+<Wave file="Amb Force Field" />
+<Distance min="1500" max="12000" />
 </Sound>
 </Sounds>
