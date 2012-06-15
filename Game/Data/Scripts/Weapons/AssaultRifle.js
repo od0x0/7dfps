@@ -86,7 +86,7 @@ function OnConstruct(weap,subEvent,id,tick)
 	weap.zoom.crawlTurnFactor=0.5;
 	weap.zoom.swayFactor=0;
 	weap.zoom.crawlSwayFactor=0.2;
-	//weap.zoom.maskName='xcross';
+	weap.zoom.maskName='scope';
 	weap.zoom.showWeapon=true;
 }
 
