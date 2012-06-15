@@ -8,6 +8,23 @@ script.attachEvent(DIM3_EVENT_CONSTRUCT,"enemyConstruct");
 script.attachEvent(DIM3_EVENT_SPAWN,"enemySpawn");
 script.attachEvent(DIM3_EVENT_WATCH,'enemyWatch');
 
+const HEALTH_BASE = 25;
+
+var skill_factor = 1;
+
+switch(singleplayer.setting.skill) {
+    case DIM3_SKILL_EASY:
+        skill_factor = 1;
+        break;
+    case DIM3_SKILL_MEDIUM:
+        skill_factor = 2;
+        break;
+    case DIM3_SKILL_HARD:
+        skill_factor = 5;
+        break;
+}
+
+
 var fireBone = 1;
 var shotsFired = -1;
 var reloadWait = 2000;
@@ -20,9 +37,9 @@ var summon_spots = new Array();
 function enemyConstruct(obj,subEvent,id,tick) {
     script.callParent();
     obj.model.name = "Little Guy Red";
-    obj.weapon.add("SecurityBot_Weapon");
-    obj.health.maximum = 30;
-    obj.health.start = 30;
+    obj.weapon.add("CommandBot_Weapon");
+    obj.health.maximum = HEALTH_BASE*skill_factor;
+    obj.health.start = HEALTH_BASE*skill_factor;
 }
 
 function enemySpawn(obj,subEvent,id,tick) {
@@ -75,7 +92,7 @@ function startFire(obj,tick) { // fires for a few seconds? randomly
         reloadTick += reloadWait; // gotta reload
         return;
     }
-    obj.weapon.fire("SecurityBot_Weapon",1); // BAM
+    obj.weapon.fire("CommandBot_Weapon",1); // BAM
     
     // Lights and Sounds
     spawn.particle(obj.model.bone.findPosition("Idle","Fire"+fireBone),"Bot Muzzle Flash");

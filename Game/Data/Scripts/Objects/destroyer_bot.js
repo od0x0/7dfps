@@ -6,6 +6,22 @@
 script.implements('enemy_base');
 script.attachEvent(DIM3_EVENT_CONSTRUCT,"enemyConstruct");
 
+const HEALTH_BASE = 100;
+
+var skill_factor = 1;
+
+switch(singleplayer.setting.skill) {
+    case DIM3_SKILL_EASY:
+        skill_factor = 1;
+        break;
+    case DIM3_SKILL_MEDIUM:
+        skill_factor = 2;
+        break;
+    case DIM3_SKILL_HARD:
+        skill_factor = 5;
+        break;
+}
+
 var fireBone = 1;
 var shotsFired = -1;
 var grenadesFired = -1;
@@ -22,8 +38,8 @@ function enemyConstruct(obj,subEvent,id,tick) {
     obj.model.name = "Big Guy"; // TODO: Change this
     //obj.weapon.add("SecurityBot_Weapon");
     obj.weapon.add("DestroyerBot_Weapon");
-    obj.health.maximum = 100;
-    obj.health.start = 100;
+    obj.health.maximum = HEALTH_BASE*skill_factor;
+    obj.health.start = HEALTH_BASE*skill_factor;
 }
 
 function enemyAttack(obj,tick) {

@@ -2,6 +2,22 @@ script.attachEvent(DIM3_EVENT_CONSTRUCT, "OnConstruct");
 script.attachEvent(DIM3_EVENT_HIT, "OnContact");
 script.attachEvent(DIM3_EVENT_SPAWN, "OnSpawn");
 
+const DAMAGE_BASE = 17;
+
+var skill_factor = 1;
+
+switch(singleplayer.setting.skill) {
+    case DIM3_SKILL_EASY:
+        skill_factor = 1;
+        break;
+    case DIM3_SKILL_MEDIUM:
+        skill_factor = 2;
+        break;
+    case DIM3_SKILL_HARD:
+        skill_factor = 5;
+        break;
+}
+
 function OnConstruct(projectile, subevent, id, tick) {
 	projectile.setting.hitScan=false;
 	
@@ -26,7 +42,7 @@ function OnConstruct(projectile, subevent, id, tick) {
 	projectile.melee.strikeBoneName='Body';
 	projectile.melee.strikePoseName='Idle';
 	projectile.melee.radius=5000;
-	projectile.melee.damage=25;
+	projectile.melee.damage=DAMAGE_BASE*skill_factor;
 	projectile.melee.force=40;
 }
 

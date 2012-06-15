@@ -6,17 +6,35 @@
 script.implements('enemy_base');
 script.attachEvent(DIM3_EVENT_CONSTRUCT,"enemyConstruct");
 
+const HEALTH_BASE = 50;
+
+var skill_factor = 1;
+
+switch(singleplayer.setting.skill) {
+    case DIM3_SKILL_EASY:
+        skill_factor = 1;
+        break;
+    case DIM3_SKILL_MEDIUM:
+        skill_factor = 2;
+        break;
+    case DIM3_SKILL_HARD:
+        skill_factor = 5;
+        break;
+}
+
+
 var fireBone = 1;
 var shotsFired = -1;
 var reloadWait = 2000;
 var reloadTick = 0;
 
+
 function enemyConstruct(obj,subEvent,id,tick) {
     script.callParent();
     obj.model.name = "Little Guy";
     obj.weapon.add("SecurityBot_Weapon");
-    obj.health.maximum = 50;
-    obj.health.start = 50;
+    obj.health.maximum = HEALTH_BASE*skill_factor;
+    obj.health.start = HEALTH_BASE*skill_factor;
 }
 
 function enemyAttack(obj,tick) {
