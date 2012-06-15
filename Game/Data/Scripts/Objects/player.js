@@ -38,8 +38,8 @@ function OnConstruct(object, subevent, id, tick)
 	object.setting.bumpUp=true;
 	object.objectSpeed.bumpHeight=3000;
 	
-	object.click.crosshairUp="Use";
-	object.click.crosshairDown="Use";
+	object.click.crosshairUp="interact";
+	//object.click.crosshairDown="Use";
 
 	object.setting.singleSpeed = false;
 	
