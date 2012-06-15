@@ -3,6 +3,10 @@
 <Wave file="Amb Eerie" />
 <Distance min="1500" max="25000" />
 </Sound>
+<Sound name="Shotgun">
+<Wave file="Shotgun" />
+<Distance min="1500" max="25000" />
+</Sound>
 <Sound name="Amb Machinery">
 <Wave file="Amb Machinery" />
 <Distance min="1500" max="15000" />
