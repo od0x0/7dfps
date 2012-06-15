@@ -743,7 +743,7 @@
 <Flash bone="Barrel" intensity="8000" time="40" fade_time="200" exponent="1" color="FFD400" />
 <Shake distance="0" size="0" time="0" />
 <Particles>
-<Particle particle="Muzzle Flash" bone="Barrel" particle_motion_factor="1" particle_slop="0,0,0" />
+<Particle particle="Shotgun Muzzle Flash" bone="Barrel" particle_motion_factor="1" particle_slop="0,0,0" />
 </Particles>
 <Rings>
 </Rings>
