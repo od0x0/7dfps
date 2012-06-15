@@ -212,7 +212,7 @@
 <Static follow="true" />
 </Camera>
 <Editor_Views>
-<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="437376,93639,685101" ang="348.998444,19.798489,0" uv_layer="1" />
+<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="432250,92279,683402" ang="349.998688,96.398483,0" uv_layer="1" />
 </Editor_Views>
 <Meshes>
 <Mesh lock_uv="true">
@@ -27616,7 +27616,7 @@
 <Spots>
 <Spot id="0" c3="439330,94743,674662" name="Start" type="Player" script="player" angle="180" skill="easy" spawn="always" />
 <Spot id="1" c3="433696,94829,688075" type="Object" script="command_bot" display_model="Little Guy Red" params="1|||bot" angle="66" skill="easy" spawn="always" />
-<Spot id="2" c3="439330,94167,678262" name="Shotgun" type="Object" script="PickupWeapon" display_model="PickupAssaultRifle" angle="0" skill="easy" spawn="always" />
+<Spot id="2" c3="438738,94823,683570" name="Shotgun" type="Object" script="PickupWeapon" display_model="PickupAssaultRifle" angle="0" skill="easy" spawn="always" />
 <Spot id="3" c3="447586,95319,688162" name="field_1" type="Object" script="ForceField" display_model="ForceField" angle="91" skill="easy" spawn="always" />
 <Spot id="4" c3="429401,94359,687099" name="bot" type="Spawn" display_model="Little Guy" angle="96" skill="easy" spawn="always" />
 <Spot id="5" c3="429437,94319,688473" name="bot" type="Spawn" display_model="Little Guy" angle="84" skill="easy" spawn="always" />
