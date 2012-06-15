@@ -141,8 +141,6 @@ function enemySpawn(obj,subEvent,id,tick) {
 // return to normal behavior
 
 function enemyBehaviorReset(obj) {
-
-    iface.console.write("Reset behavior.");
     
     obj.event.clearChain();
     
@@ -234,7 +232,7 @@ function enemyWatch(obj,subEvent,id,tick) {
 // chasing
 
 function enemyStartChase(obj,tick) {
-    iface.console.write("Sighted. Start chase.");
+    //iface.console.write("Sighted. Start chase.");
     chasing_player = true;
     searching_player = false;
     robotVoice(obj,"Robot Bark Attack",tick,"10000");
@@ -242,7 +240,7 @@ function enemyStartChase(obj,tick) {
 }
 
 function enemyStopChase(obj,tick) {
-    iface.console.write("Lost sight. Stop chase.");
+    //iface.console.write("Lost sight. Stop chase.");
     chasing_player = false;
     searching_player = true;
     enemyChaseLoop(obj,tick);
@@ -355,9 +353,9 @@ function enemyBeingTargetted(obj) {
 // voice samples
 
 function robotVoice(obj,name,tick,wait) {
-    iface.console.write("Try to play sound "+name);
+    //iface.console.write("Try to play sound "+name);
     var voice_tick_wait = parseInt(voice_tick) + parseInt(voice_wait);
-    iface.console.write(tick+"/"+(voice_tick_wait));
+    //iface.console.write(tick+"/"+(voice_tick_wait));
     if(tick < voice_tick_wait) return;
     voice_tick = tick;
     voice_wait = wait;
