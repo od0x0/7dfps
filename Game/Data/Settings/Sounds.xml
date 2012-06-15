@@ -167,4 +167,8 @@
 <Wave file="Amb Machinery 2" />
 <Distance min="1500" max="30000" />
 </Sound>
+<Sound name="EnemyBulletHit">
+<Wave file="Bullet Impact Enemy 1" />
+<Distance min="1500" max="30000" />
+</Sound>
 </Sounds>
