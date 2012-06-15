@@ -31,7 +31,7 @@ function enemyConstruct(obj,subEvent,id,tick) {
     obj.health.maximum = HEALTH_BASE;
     obj.health.start = HEALTH_BASE;
     
-    obj.setting.invincible = false;
+    obj.setting.invincible = true;
 
     script.callParentFunction("enemySetBounty", BOUNTY);
 }
