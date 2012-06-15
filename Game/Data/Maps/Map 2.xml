@@ -230,7 +230,7 @@
 <Static follow="true" />
 </Camera>
 <Editor_Views>
-<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="439283,92643,686772" ang="352.198975,268.398315,0" uv_layer="1" />
+<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="429720,93777,688817" ang="357.999023,88.598366,0" uv_layer="1" />
 </Editor_Views>
 <Meshes>
 <Mesh lock_uv="true">
@@ -27645,7 +27645,6 @@
 <Liquids>
 </Liquids>
 <Sceneries>
-<Scenery c3="440806,94869,689062" model_name="Teleporter" angle="0,0,0" contact="true" contact_projectile="true" contact_hit_box="true" frames="0,0,0,0,0,0,0,0" resize="1" />
 </Sceneries>
 <Lights>
 <Light c3="439264,92141,689087" type="normal" light_map="true" direction="all" intensity="12000" exponent="1" rgb="589BD5" />
@@ -27711,5 +27710,6 @@
 <Spot id="18" c3="444436,94167,738246" type="Object" script="security_bot" display_model="Little Guy" params="2" angle="338" skill="easy" spawn="always" />
 <Spot id="19" c3="441034,94167,738270" type="Object" script="security_bot" display_model="Little Guy" params="2" angle="338" skill="easy" spawn="always" />
 <Spot id="20" c3="438687,94863,692452" name="AssaultRifle" type="Object" script="PickupWeapon" display_model="PickupAssaultRifle" angle="0" skill="easy" spawn="always" />
+<Spot id="21" c3="475559,94953,688127" type="Object" script="Teleporter" display_model="Teleporter" params="Map 3" angle="0" skill="easy" spawn="always" />
 </Spots>
 </Map>
