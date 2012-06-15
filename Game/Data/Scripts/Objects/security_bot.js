@@ -16,10 +16,6 @@ var reloadTick = 0;
 
 function enemyConstruct(obj,subEvent,id,tick) {
     script.callParent();
-
-    iface.console.write(singleplayer.setting.skill);
-    iface.console.write(skill_factor);
-    iface.console.write("DERP");
     
     obj.model.name = "Little Guy";
     obj.weapon.add("SecurityBot_Weapon");
