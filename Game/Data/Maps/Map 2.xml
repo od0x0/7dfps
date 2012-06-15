@@ -202,19 +202,19 @@
 </Images>
 </Fill>
 <Fill id="205" shine_factor="10" glow_rate="100" glow_min="0" glow_max="1" material_name="Light Map 013">
-<Scale x="0.25" y="0.25" />
+<Scale x="0.2776" y="0.2416" />
 <Images>
 <Image wait="100" bitmap="LightMaps/Map_2/lm013" />
 </Images>
 </Fill>
 <Fill id="206" shine_factor="10" glow_rate="100" glow_min="0" glow_max="1" material_name="Light Map 014">
-<Scale x="0.25" y="0.25" />
+<Scale x="0.2776" y="0.2416" />
 <Images>
 <Image wait="100" bitmap="LightMaps/Map_2/lm014" />
 </Images>
 </Fill>
 <Fill id="207" shine_factor="10" glow_rate="100" glow_min="0" glow_max="1" material_name="Light Map 015">
-<Scale x="0.25" y="0.25" />
+<Scale x="0.2776" y="0.2416" />
 <Images>
 <Image wait="100" bitmap="LightMaps/Map_2/lm015" />
 </Images>
@@ -230,7 +230,7 @@
 <Static follow="true" />
 </Camera>
 <Editor_Views>
-<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="433490,92163,699630" ang="354.598938,154.598343,0" uv_layer="1" />
+<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="439283,92643,686772" ang="352.198975,268.398315,0" uv_layer="1" />
 </Editor_Views>
 <Meshes>
 <Mesh lock_uv="true">
@@ -27645,6 +27645,7 @@
 <Liquids>
 </Liquids>
 <Sceneries>
+<Scenery c3="440806,94869,689062" model_name="Teleporter" angle="0,0,0" contact="true" contact_projectile="true" contact_hit_box="true" frames="0,0,0,0,0,0,0,0" resize="1" />
 </Sceneries>
 <Lights>
 <Light c3="439264,92141,689087" type="normal" light_map="true" direction="all" intensity="12000" exponent="1" rgb="589BD5" />
@@ -27670,6 +27671,7 @@
 <Light c3="450469,93172,705589" type="normal" light_map="true" direction="all" intensity="10000" exponent="1" rgb="21567A" />
 <Light c3="461692,93591,687979" type="normal" light_map="true" direction="all" intensity="10000" exponent="1" rgb="459CFF" />
 <Light c3="468600,93591,688171" type="normal" light_map="true" direction="all" intensity="10000" exponent="1" rgb="459CFF" />
+<Light c3="440998,94228,688468" type="normal" direction="all" intensity="2000" exponent="1" rgb="53E6FF" />
 </Lights>
 <Sounds>
 <Sound name="Amb Machinery" c3="438767,92956,714185" pitch="1" />
