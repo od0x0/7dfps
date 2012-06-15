@@ -10,8 +10,6 @@ script.attachEvent(DIM3_EVENT_WATCH,'enemyWatch');
 
 const HEALTH_BASE = 25;
 
-var skill_factor = 1;
-
 
 var fireBone = 1;
 var shotsFired = -1;
@@ -25,22 +23,10 @@ var summon_spots = new Array();
 function enemyConstruct(obj,subEvent,id,tick) {
     script.callParent();
     
-    switch(singleplayer.setting.skill) {
-        case 0:
-            skill_factor = 1;
-            break;
-        case 1:
-            skill_factor = 2;
-            break;
-        case 2:
-            skill_factor = 5;
-            break;
-    }
-    
     obj.model.name = "Little Guy Red";
     obj.weapon.add("CommandBot_Weapon");
-    obj.health.maximum = HEALTH_BASE*skill_factor;
-    obj.health.start = HEALTH_BASE*skill_factor;
+    obj.health.maximum = HEALTH_BASE;
+    obj.health.start = HEALTH_BASE;
 }
 
 function enemySpawn(obj,subEvent,id,tick) {
