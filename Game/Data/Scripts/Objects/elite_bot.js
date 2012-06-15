@@ -5,6 +5,7 @@
 
 script.implements('enemy_base');
 script.attachEvent(DIM3_EVENT_CONSTRUCT,"enemyConstruct");
+script.attachEvent(DIM3_EVENT_DIE,'enemyDie');
 
 const HEALTH_BASE = 200;
 const BOUNTY = 5000;
@@ -64,7 +65,7 @@ function startFire(obj,tick) { // fires for a few seconds? randomly
         return;
     }
     obj.weapon.fire("DestroyerBot_Weapon",1); // BAM
-    fireWait = 1;
+    fireWait = 10;
     
     // Lights and Sounds
     //spawn.particle(obj.model.bone.findPosition("Idle","Fire"+fireBone),"Bot Muzzle Flash");
@@ -112,7 +113,15 @@ function fireGrenade(obj,tick) { // Fire 4 grenades in quick succession
     
 }
 
-
-function OnSwitchToggle(object, isEnabled) {
+function OnSwitchToggle(obj, isEnabled) {
     obj.setting.invincible = false;
+}
+
+function enemyDie(obj,subevent,id,tick) {
+    script.callParent();
+    obj.event.chain(50,"gameEnd");
+}
+
+function gameEnd() {
+    iface.interaction.quit();
 }

@@ -62,7 +62,7 @@ function startFire(obj,tick) { // fires for a few seconds? randomly
         return;
     }
     obj.weapon.fire("DestroyerBot_Weapon",1); // BAM
-    fireWait = 1;
+    fireWait = 10;
     
     // Lights and Sounds
     //spawn.particle(obj.model.bone.findPosition("Idle","Fire"+fireBone),"Bot Muzzle Flash");
