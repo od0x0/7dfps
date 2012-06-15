@@ -93,9 +93,9 @@
 </Mesh>
 </Meshes>
 <Fills>
-<Fill shine_factor="10" glow_rate="100" glow_min="0" glow_max="1" shader="Default" material_name="None_untitled">
+<Fill shine_factor="10" glow_rate="0" glow_min="0" glow_max="1" shader="Default" material_name="None_untitled">
 <Images>
-<Image wait="0" bitmap="button_tex" />
+<Image wait="100" bitmap="button_tex" />
 </Images>
 </Fill>
 </Fills>

@@ -109,11 +109,11 @@ function OnConstruct(object, subevent, id, tick)
 	
    // object.setting.contactProjectile=false;
    
-   	for(var i = 0; i < Weapons.length; i++)
+   	/*for(var i = 0; i < Weapons.length; i++)
 	{
 		object.weapon.hideSingle(Weapons[i].name, true);
 	}
-	object.weapon.hideSingle(Weapons[3].name, false);
+	object.weapon.hideSingle(Weapons[3].name, false);*/
 	object.weapon.setSelect(Weapons[3].name);
 }
 
@@ -141,6 +141,22 @@ function OnSpawn(object, subevent, id, tick)
 	object.status.freezeInput(false);
 
 	iface.text.hide("DeathInfo");
+
+	switch(subevent)
+	{
+		case DIM3_EVENT_SPAWN_MAP_CHANGE:
+			break;
+		case DIM3_EVENT_SPAWN_INIT:
+		case DIM3_EVENT_SPAWN_REBORN:
+		case DIM3_EVENT_SPANW_GAME_RESET:
+			for(var i = 0; i < Weapons.length; i++)
+			{
+				object.weapon.hideSingle(Weapons[i].name, true);
+			}
+			object.weapon.hideSingle(Weapons[3].name, false);
+			object.weapon.setSelect(Weapons[3].name);
+			break;
+	}
 
 	UpdateWeaponDisplay(object);
 	OnHealthUpdate(object, subevent, id, tick);
@@ -216,6 +232,7 @@ function playerDieEnd(obj,tick)
 
 	obj.status.freezeRespawn(false);
 	iface.text.hide("DeathInfo");
+
 	map.action.restartMap();
 }
 

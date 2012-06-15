@@ -738,7 +738,7 @@
 <Loop repeat="true" start="0" end="0" />
 <Poses>
 <Pose name="Idle" time="100" sway="0,0,0" move="0,0,0" acceleration="0">
-<Sound name="Shotgun" pitch="1" />
+<Sound name="Shell Fire" pitch="1" />
 <Fade in_time="0" life_time="0" out_time="0" />
 <Flash bone="Barrel" intensity="8000" time="40" fade_time="200" exponent="1" color="FFD400" />
 <Shake distance="0" size="0" time="0" />
