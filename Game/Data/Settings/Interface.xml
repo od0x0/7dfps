@@ -67,8 +67,6 @@
 <Items>
 <Item id="0" data="Continue" />
 <Item id="1" data="Setup" multiplayer_disable="true" />
-<Item id="2" data="Save Game" multiplayer_disable="true" />
-<Item id="3" data="Load Game" multiplayer_disable="true" />
 <Item id="5" data="Quit" quit="true" />
 </Items>
 </Menu>
@@ -90,7 +88,7 @@
 <Game_Setup x="800" y="496" width="128" height="32" on="true" />
 <Multiplayer_Host x="700" y="100" width="200" height="50" />
 <Multiplayer_Join x="700" y="200" width="200" height="50" />
-<Credit x="200" y="670" width="200" height="50" />
+<Credit x="800" y="542" width="128" height="32" on="true" />
 <Quit x="800" y="670" width="128" height="32" on="true" />
 <Simple_Start_0 x="0" y="0" desc_x="0" desc_y="0" progress_x="0" progress_y="0" />
 <Simple_Erase_0 x="0" y="0" />
