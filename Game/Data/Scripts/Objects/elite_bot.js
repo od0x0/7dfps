@@ -27,6 +27,8 @@ function enemyConstruct(obj,subEvent,id,tick) {
     obj.weapon.add("DestroyerBot_Weapon");
     obj.health.maximum = HEALTH_BASE;
     obj.health.start = HEALTH_BASE;
+    
+    obj.setting.invincible = true;
 }
 
 function enemyAttack(obj,tick) {
@@ -105,4 +107,9 @@ function fireGrenade(obj,tick) { // Fire 4 grenades in quick succession
     
     // TODO: Lights and Sounds
     
+}
+
+
+function OnSwitchToggle(object, isEnabled) {
+    obj.setting.invincible = false;
 }
