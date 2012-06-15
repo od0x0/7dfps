@@ -230,7 +230,7 @@
 <Static follow="true" />
 </Camera>
 <Editor_Views>
-<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="516387,501368,516461" ang="350.400299,189.200623,0" uv_layer="1" />
+<Editor_View box_top_left="0,0" box_bottom_right="1,1" pnt="510290,500565,499845" ang="349.399597,269.200745,0" uv_layer="1" />
 </Editor_Views>
 <Meshes>
 <Mesh lock_uv="true">
@@ -34325,16 +34325,17 @@
 <Spot id="10" c3="505781,502532,481175" name="NE" type="Object" script="ForceField" display_model="ForceField" angle="90" skill="easy" spawn="always" />
 <Spot id="11" c3="519591,500913,525444" name="SE" type="Object" script="Button" display_model="Button" params="Red" angle="90" skill="easy" spawn="always" />
 <Spot id="12" c3="485960,501685,496997" name="AssaultRifle" type="Object" script="PickupWeapon" display_model="PickupAssaultRifle" params="AssaultRifle" angle="0" skill="easy" spawn="always" />
-<Spot id="13" c3="508482,501715,518873" name="Shotgun" type="Object" script="PickupWeapon" display_model="PickupShotgun" params="Shotgun" angle="0" skill="easy" spawn="always" />
+<Spot id="13" c3="510207,501715,518891" name="Shotgun" type="Object" script="PickupWeapon" display_model="PickupShotgun" params="Shotgun" angle="0" skill="easy" spawn="always" />
 <Spot id="14" c3="485050,501706,481185" type="Object" script="command_bot" display_model="Little Guy Red" params="|||ohno" angle="90" skill="easy" spawn="always" />
 <Spot id="15" c3="480472,501686,476790" name="ohno" type="Spawn" angle="0" skill="easy" spawn="always" />
 <Spot id="16" c3="489268,501686,485486" name="ohno" type="Spawn" angle="0" skill="easy" spawn="always" />
-<Spot id="17" c3="519721,501711,479957" type="Object" script="destroyer_bot" display_model="Big Guy" params="2" angle="63" skill="easy" spawn="always" />
+<Spot id="17" c3="519662,501711,475920" type="Object" script="destroyer_bot" display_model="Big Guy" params="1" angle="63" skill="easy" spawn="always" />
 <Spot id="18" c3="482832,501569,522120" type="Object" script="security_bot" display_model="Little Guy" params="2" angle="61" skill="easy" spawn="always" />
 <Spot id="19" c3="482934,501569,515990" type="Object" script="security_bot" display_model="Little Guy" params="2" angle="201" skill="easy" spawn="always" />
 <Spot id="20" c3="486508,501569,518732" type="Object" script="security_bot" display_model="Little Guy" params="2" angle="201" skill="easy" spawn="always" />
-<Spot id="21" c3="524313,501602,523441" name="gosh" type="Player" angle="0" skill="easy" spawn="always" />
-<Spot id="22" c3="514863,501703,513946" name="gosh" type="Spawn" angle="0" skill="easy" spawn="always" />
-<Spot id="23" c3="514780,501259,523749" type="Object" script="command_bot" display_model="Little Guy Red" params="|||gosh" angle="0" skill="easy" spawn="always" />
+<Spot id="21" c3="517384,501734,515223" type="Object" script="destroyer_bot" display_model="Big Guy" params="1" angle="311" skill="easy" spawn="always" />
+<Spot id="22" c3="492986,501706,507151" name="Health" type="Object" script="PickupHealth" params="20" angle="0" skill="easy" spawn="always" />
+<Spot id="23" c3="507032,501706,492803" name="Health" type="Object" script="PickupHealth" params="20" angle="0" skill="easy" spawn="always" />
+<Spot id="24" c3="515377,501719,514390" name="Health" type="Object" script="PickupHealth" angle="0" skill="easy" spawn="always" />
 </Spots>
 </Map>
