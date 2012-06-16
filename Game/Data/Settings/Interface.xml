@@ -84,11 +84,11 @@
 <Score x="0" y="0" width="150" height="200" text_size="20" format="Number" color="FFFFFF" />
 <Buttons>
 <Game_New x="800" y="400" width="128" height="32" on="true" />
-<Game_Load x="800" y="448" width="128" height="32" on="true" />
-<Game_Setup x="800" y="496" width="128" height="32" on="true" />
+<Game_Load x="800" y="448" width="128" height="32" />
+<Game_Setup x="800" y="448" width="128" height="32" on="true" />
 <Multiplayer_Host x="700" y="100" width="200" height="50" />
 <Multiplayer_Join x="700" y="200" width="200" height="50" />
-<Credit x="800" y="542" width="128" height="32" on="true" />
+<Credit x="800" y="496" width="128" height="32" on="true" />
 <Quit x="800" y="670" width="128" height="32" on="true" />
 <Simple_Start_0 x="0" y="0" desc_x="0" desc_y="0" progress_x="0" progress_y="0" />
 <Simple_Erase_0 x="0" y="0" />
@@ -125,5 +125,5 @@
 <Model />
 </Models>
 </Preload>
-<Project name="7dfps" modernize="true" no_shaders="true" />
+<Project name="Attack of the Killer Robots fr" modernize="true" no_shaders="true" />
 </Interface>
