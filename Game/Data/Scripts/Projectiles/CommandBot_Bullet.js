@@ -1,7 +1,7 @@
 script.attachEvent(DIM3_EVENT_CONSTRUCT, "OnConstruct");
 script.attachEvent(DIM3_EVENT_HIT, "OnContact");
 
-const DAMAGE_BASE = 5;
+const DAMAGE_BASE = 2;
 
 var skill_factor = 1;
 
