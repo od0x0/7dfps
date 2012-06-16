@@ -10,24 +10,24 @@
 <Action name="duck" display="Duck" show="true" />
 <Action name="up" display="Up" show="true" />
 <Action name="down" display="Down" show="true" />
-<Action name="enter-exit" display="Enter-Exit Vehicle" show="true" />
+<Action name="enter-exit" display="Enter-Exit Vehicle" />
 <Action name="next_weapon" display="Next Weapon" show="true" />
 <Action name="previous_weapon" display="Previous Weapon" show="true" />
 <Action name="fire_0" display="Fire" show="true" />
-<Action name="fire_1" display="Alternate Fire 1" show="true" />
-<Action name="fire_2" display="Alternate Fire 2" show="true" />
+<Action name="fire_1" display="Alternate Fire 1" />
+<Action name="fire_2" display="Alternate Fire 2" />
 <Action name="fire_3" />
 <Action name="zoom" display="Scope On/Off" show="true" />
 <Action name="zoom_increase" display="Scope Zoom Increase" show="true" />
 <Action name="zoom_decrease" display="Scope Zoom Decrease" show="true" />
-<Action name="target_next" display="Next Homing Target" show="true" />
-<Action name="target_previous" display="Previous Homing Target" show="true" />
-<Action name="weapon_0" display="Hammer" show="true" />
-<Action name="weapon_1" display="Pistol" show="true" />
-<Action name="weapon_2" display="Ray Gun" show="true" />
-<Action name="weapon_3" display="Missile Launcher" show="true" />
-<Action name="weapon_4" display="Mines" show="true" />
-<Action name="weapon_5" display="Shock Gun" show="true" />
+<Action name="target_next" display="Next Homing Target" />
+<Action name="target_previous" display="Previous Homing Target" />
+<Action name="weapon_0" display="Hammer" />
+<Action name="weapon_1" display="Pistol" />
+<Action name="weapon_2" display="Ray Gun" />
+<Action name="weapon_3" display="Missile Launcher" />
+<Action name="weapon_4" display="Mines" />
+<Action name="weapon_5" display="Shock Gun" />
 <Action name="weapon_6" />
 <Action name="weapon_7" />
 <Action name="weapon_8" />
@@ -62,11 +62,11 @@
 <Action name="game_17" />
 <Action name="game_18" />
 <Action name="game_19" />
-<Action name="player_0" display="Throw Grenade" show="true" />
+<Action name="player_0" display="Throw Grenade" />
 <Action name="player_1" />
-<Action name="player_2" display="Fly Mode" show="true" />
-<Action name="player_3" display="Camera Mode" show="true" />
-<Action name="player_4" display="Reload" show="true" />
+<Action name="player_2" display="Fly Mode" />
+<Action name="player_3" display="Camera Mode" />
+<Action name="player_4" display="Reload" />
 <Action name="player_5" display="Sprint" show="true" />
 <Action name="player_6" />
 <Action name="player_7" />
@@ -84,11 +84,11 @@
 <Action name="player_19" />
 <Action name="console" display="Console" show="true" />
 <Action name="menu" display="Menu" show="true" />
-<Action name="quick_save" display="Quick Save" show="true" />
-<Action name="save" display="Save Game" show="true" />
-<Action name="load" display="Load Game" show="true" />
-<Action name="message" display="Type Multiplayer Message" show="true" />
-<Action name="network_score" display="Show Network Score" show="true" />
+<Action name="quick_save" display="Quick Save" />
+<Action name="save" display="Save Game" />
+<Action name="load" display="Load Game" />
+<Action name="message" display="Type Multiplayer Message" />
+<Action name="network_score" display="Show Network Score" />
 <Action name="debug_status" display="Print Debug Status" show="true" />
 <Action name="debug_screenshot" display="Screenshot" show="true" />
 </Actions>

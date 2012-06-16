@@ -103,7 +103,7 @@
 </Buttons>
 <Confirm x="0" y="0" />
 </Intro>
-<Setup game_video="true" game_audio="true" game_control="true" game_action="true" game_debug="true" />
+<Setup game_video="true" game_audio="true" game_control="true" game_action="true" />
 <Sound />
 <Preload>
 <Models>
