@@ -37,7 +37,7 @@
 <Window value="true" />
 <Window_Editor value="true" />
 <Actions>
-<Action name="move_forward" attach_0="upArrow" attach_1="W" attach_2="Keypad8" attach_3="MouseRight" />
+<Action name="move_forward" attach_0="upArrow" attach_1="W" attach_2="Keypad8" />
 <Action name="move_backward" attach_0="DownArrow" attach_1="S" attach_2="Keypad5" />
 <Action name="turn_left" attach_0="LeftArrow" attach_1="Keypad4" />
 <Action name="turn_right" attach_1="RightArrow" />
@@ -73,7 +73,7 @@
 <Action name="enter-exit" attach_0="Return" />
 <Action name="player_1" attach_0="Space" />
 <Action name="weapon_zoom" attach_0="Z" />
-<Action name="zoom" attach_0="Z" />
+<Action name="zoom" attach_0="Z" attach_1="MouseRight"/>
 <Action name="zoom_increase" attach_0="MouseWheelUp" />
 <Action name="zoom_decrease" attach_0="MouseWheelDown" />
 <Action name="player_2" attach_0="F9" />
